@@ -2,9 +2,9 @@
 
 Dark and Cyan (DC) theme for Sublime Text 3.
 
-Based on Soda Theme by Ian Hill \([buymeasoda.com]\)(http://buymeasoda.com/), and inspired by many others.
+Based on Soda Theme by Ian Hill [(buymeasoda.com)](http://buymeasoda.com/), and inspired by many others.
 
-Project site: [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
+Project site: [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc).
 
 ## Images
 
