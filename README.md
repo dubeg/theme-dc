@@ -1,6 +1,6 @@
 # DC Theme
 
-Dark and Cyan (DC) theme for Sublime Text 3.
+Dark and Cyan (DC) theme for Sublime Text 2/3.
 
 Based on Soda Theme by Ian Hill [(buymeasoda.com)](http://buymeasoda.com/), and inspired by many others.
 
@@ -46,15 +46,19 @@ While inside the `Packages` directory, clone the theme repository using the comm
 To configure Sublime Text to use the theme, follow the instructions below.
 
 
-### Sublime Text 3
-
 * Open your User Settings Preferences file `Sublime Text -> Preferences -> Settings - User`.
-* Add (or update) your theme entry to be `"theme": "DC.sublime-theme"`.
+* Add (or update) your theme entry.
 
-**Example User Settings**
+**Example User Settings Sublime Text 3**
 
     {
-        "theme": "DC.sublime-theme"
+        "theme": "DC_3.sublime-theme"
+    }
+
+**Example User Settings Sublime Text 2**
+
+    {
+        "theme": "DC_2.sublime-theme"
     }
 
 ## Additional Features

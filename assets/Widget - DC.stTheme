@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>Ian Hill</string>
+	<string>Ian Hill, mod by dubeg</string>
 	<key>comment</key>
-	<string>A widget theme for the UI components of the Dark Cyan theme.</string>
+	<string>A widget theme for the UI components of the Dark and Cyan theme.</string>
 	<key>name</key>
 	<string>Dark Cyan - Widget Theme</string>
 	<key>settings</key>
