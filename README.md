@@ -18,9 +18,9 @@ DC theme is designed to work with the latest development builds of Sublime Text 
 
 If you are using Will Bond's [Sublime Package Control](http://wbond.net/sublime_packages/package_control), 
 you will be able to install DC Theme via the `Package Control: Install Package` menu item. 
-The Soda Theme package will be listed as `Theme - DC` in the packages list.
+The DC Theme package will be listed as `Theme - DC` in the packages list.
 
-Soon.
+I'll try to add it to wbond's package control relatively soon.
 
 ### Using Git
 
