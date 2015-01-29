@@ -854,7 +854,9 @@
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - DC/assets/icon-reverse-on.png"
+
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
     },
 
 
