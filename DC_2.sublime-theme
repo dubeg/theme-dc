@@ -203,7 +203,7 @@
 
     {
         "class": "puck_control",
-        "settings": ["white_puck"],
+        "settings": ["dc_use_white_puck"],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
     },
@@ -211,7 +211,7 @@
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "settings": ["white_puck"],
+        "settings": ["dc_use_white_puck"],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
     },
@@ -752,16 +752,27 @@
 //  PANEL FIND/REPLACE - ICONS
 //
 
+    //
     // REGEX ICON
+    //
     {
         "class": "icon_regex",
+        "content_margin": [8,8],
         "layer0.texture": "Theme - DC/icons/pnl/icon_regex.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_regex.png",
 
         "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
-        "content_margin": [8,8]
+        "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_regex",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_regex.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_regex.png"
+    },
+    //          STATE SELECTED
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -770,7 +781,9 @@
     },
 
 
+    //
     // CASE SENSITIVE
+    //
     {
         "class": "icon_case",
         "content_margin": [8,8],
@@ -780,6 +793,15 @@
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_case",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_case.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_case.png"
+    },
+    //          STATE SELECTED
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -788,16 +810,27 @@
     },
 
 
+    //
     // WHOLE WORD MATCH
+    //
     {
         "class": "icon_whole_word",
+        "content_margin": [8,8],
         "layer0.texture": "Theme - DC/icons/pnl/icon_wholeword.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_wholeword.png",
 
         "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
-        "content_margin": [8,8]
+        "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_whole_word",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_wholeword.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_wholeword.png"
+    },
+    //          STATE SELECTED
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -806,16 +839,27 @@
     },
 
 
+    //
     // SHOW CONTEXT
+    //
     {
         "class": "icon_context",
+        "content_margin": [8,8],
         "layer0.texture": "Theme - DC/icons/pnl/icon_context.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_context.png",
 
         "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
-        "content_margin": [8,8]
+        "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_context",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_context.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_context.png"
+    },
+    //          STATE SELECTED
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -824,15 +868,27 @@
     },
 
 
+    //
     // USE BUFFER
+    //
     {
         "class": "icon_use_buffer",
+        "content_margin": [8,8],
         "layer0.texture": "Theme - DC/icons/pnl/icon_buffer.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_buffer.png",
+
         "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
-        "content_margin": [8,8]
+        "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_use_buffer",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_buffer.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_buffer.png"
+    },
+    //          STATE SELECTED
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -841,7 +897,9 @@
     },
 
 
+    //
     // REVERSE DIRECTION
+    //
     {
         "class": "icon_reverse",
         "content_margin": [9, 9],
@@ -851,25 +909,43 @@
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_reverse",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_reverse.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_reverse.png"
+    },
+    //          STATE SELECTED
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 1.0
+        "layer0.texture": "Theme - DC/assets/icon-reverse-on.png"
     },
 
 
-    // WRAP 
+    //
+    // WRAP
+    // 
     {
         "class": "icon_wrap",
+        "content_margin": [8,8],
+
         "layer0.texture": "Theme - DC/icons/pnl/icon_wrap.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_wrap.png",
-
         "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
-        "content_margin": [8,8]
+        "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_wrap",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_wrap.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_wrap.png"
+    },
+    //          STATE SELECTED
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -878,16 +954,27 @@
     },
 
 
+    //
     // IN SELECTION
+    //
     {
         "class": "icon_in_selection",
+        "content_margin": [8,8],
+
         "layer0.texture": "Theme - DC/icons/pnl/icon_inselection.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_inselection.png",
-
         "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
-        "content_margin": [8,8]
+        "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_in_selection",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_inselection.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_inselection.png"
+    },
+    //          STATE SELECTED
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -896,16 +983,27 @@
     },
 
 
+    //
     // PRESERVE CASE
+    //
     {
         "class": "icon_preserve_case",
+        "content_margin": [8,8],
+
         "layer0.texture": "Theme - DC/icons/pnl/icon_preservecase.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_preservecase.png",
-
         "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
-        "content_margin": [8,8]
+        "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_preserve_case",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_preservecase.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_preservecase.png"
+    },
+    //          STATE SELECTED
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -914,16 +1012,27 @@
     },
 
 
+    //
     // HIGHLIGHT RESULTS
+    //
     {
         "class": "icon_highlight",
+        "content_margin": [8,8],
+
         "layer0.texture": "Theme - DC/icons/pnl/icon_highlight.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_highlight.png",
-
         "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
-        "content_margin": [8,8]
+        "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_highlight",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_highlight.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_highlight.png"
+    },
+    //          STATE SELECTED
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
