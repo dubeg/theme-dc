@@ -262,7 +262,7 @@
 
     {
         "class": "puck_control",
-        "settings": ["white_puck"],
+        "settings": ["dc_use_white_puck"],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0,
     },
@@ -270,9 +270,54 @@
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "settings": ["white_puck"],
+        "settings": ["dc_use_white_puck"],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0,
+    },
+
+
+//
+// OVERLAY SCROLLBARS
+//
+
+    // Overlay toggle scroll bar
+    {
+        "class": "scroll_area_control",
+        "overlay": false
+    },
+    {
+        "class": "scroll_area_control",
+        "settings": ["dc_autohide_scrollbar"],
+        "overlay": true
+    },
+
+    // Overlay vertical scroll bar
+    {
+        "class": "scroll_bar_control",
+        "settings": ["dc_autohide_scrollbar"],
+        "layer0.opacity" : 0
+    },
+    // Overlay horizontal scroll bar
+    {
+        "class": "scroll_bar_control",
+        "settings": ["dc_autohide_scrollbar"],
+        "attributes": ["horizontal"],
+        "layer0.opacity" : 0
+    },
+
+    // Overlay puck transparent
+    {
+        "class": "puck_control",
+        "settings": ["dc_autohide_scrollbar"],
+        "layer0.opacity" : 0.5,
+    },
+
+    // Display only horizontal scrollbar
+    {
+        "class": "puck_control",
+        "settings": ["dc_hide_scrollbars"],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 0.0,
     },
 
 
@@ -304,20 +349,20 @@
 
     {
         "class": "minimap_control",
-        "settings": ["always_show_minimap_viewport"],
+        "settings": ["dc_always_show_minimap_viewport"],
         "viewport_color": [68, 68, 68, 96],
         "viewport_opacity": 1.0
     },
     {
         "class": "minimap_control",
-        "settings": ["!always_show_minimap_viewport"],
+        "settings": ["!dc_always_show_minimap_viewport"],
         "viewport_color": [68, 68, 68, 96],
         "viewport_opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" }
     },
     {
         "class": "minimap_control",
         "attributes": ["hover"],
-        "settings": ["!always_show_minimap_viewport"],
+        "settings": ["!dc_always_show_minimap_viewport"],
         "viewport_opacity": 1.0
     },
 
@@ -484,23 +529,23 @@
         "font.bold": false,
         "font.italic": false
     },
-    // Sidebar folder
+    // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         "color": [190, 190, 190]
     },
-    // Sidebar folder HOVER
+    // Sidebar folder entry HOVER
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         "color": [235, 235, 235]
     },
-    // Sidebar folder BOLD
+    // Sidebar folder entry BOLD
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "settings": ["bold_folder_labels"],
+        "settings": ["dc_bold_folder_labels"],
         "font.bold": true
     },
     // Sidebar item SELECTED
@@ -584,69 +629,103 @@
 // SIDEBAR - GENERAL FILE ICONS
 //
 
-    // Sidebar Group closed (arrow)
+    //
+    // GROUP ICON
+    //
     {
         "class": "disclosure_button_control",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - DC/icons/group_closed.png",
-        "layer0.inner_margin": 0,
 
-        "layer1.texture": "Theme - DC/icons/group_opened.png",
+        "layer0.texture": "Theme - DC/icons/sb/group_closed1.png",
+        "layer1.texture": "Theme - DC/icons/sb/group_opened1.png",
+        "layer0.inner_margin": 0,
         "layer1.inner_margin": 0,
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
     },
-    // Sidebar Group open (arrow 2)
+    //          ALTERNATE ICON 2
+    {
+        "class": "disclosure_button_control",
+        "settings": ["dc_use_group_icon2"],
+        "layer0.texture": "Theme - DC/icons/sb/group_closed2.png",
+        "layer1.texture": "Theme - DC/icons/sb/group_opened2.png",
+    },
+    //          ALTERNATE ICON 3
+    {
+        "class": "disclosure_button_control",
+        "settings": ["dc_use_group_icon3"],
+        "layer0.texture": "Theme - DC/icons/sb/group_closed3.png",
+        "layer1.texture": "Theme - DC/icons/sb/group_opened3.png",
+    },
+    //          ALTERNATE ICON 4
+    {
+        "class": "disclosure_button_control",
+        "settings": ["dc_use_group_icon4"],
+        "layer0.texture": "Theme - DC/icons/sb/group_closed4.png",
+        "layer1.texture": "Theme - DC/icons/sb/group_opened4.png",
+    },
+    //          STATE OPENED
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0,
     },
-    // Hide Group Icons (arrows)
+    //          STATE HIDDEN
     {
         "class": "disclosure_button_control",
-        "settings" : ["dc_hide_arrows"],
+        "settings" : ["dc_hide_group_icons"],
         "layer0.opacity": 0.0,
         "layer1.opacity": 0.0,
     },
 
-    // Sidebar Folder closed
+
+    //
+    // FOLDER ICON
+    //
     {
         "class": "icon_folder",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - DC/icons/dir_closed.png",
-        "layer0.inner_margin": 0,
 
-        "layer1.texture": "Theme - DC/icons/dir_opened.png",
+        "layer0.texture": "Theme - DC/icons/sb/dir_closed.png",
+        "layer1.texture": "Theme - DC/icons/sb/dir_opened.png",
+        "layer0.inner_margin": 0,
         "layer1.inner_margin": 0,
 
         "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
+        "layer1.opacity": 0.0
     },
+    //          ALTERNATE ICON 2
     {
         "class": "icon_folder",
-        "settings" : ["dc_hide_folders"],
+        "settings" : ["dc_use_folder_icon2"],
+        "layer0.texture": "Theme - DC/icons/sb/dir_closed2.png",
+        "layer1.texture": "Theme - DC/icons/sb/dir_opened2.png",
     },
-
-    // Sidebar Folder opened
+    //          ALTERNATE ICON 3
+    {
+        "class": "icon_folder",
+        "settings" : ["dc_use_folder_icon3"],
+        "layer0.texture": "Theme - DC/icons/sb/dir_closed3.png",
+        "layer1.texture": "Theme - DC/icons/sb/dir_opened3.png",
+    },
+    //          STATE OPENED
     {
         "class": "icon_folder",
         "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.opacity": 0.0,
-        "layer1.opacity": 1.0,
+        "layer1.opacity": 1.0
     },
-    // Hide Folder Icons
+    //          STATE HIDDEN
     {
         "class": "icon_folder",
         "settings" : ["dc_hide_folders"],
         "content_margin" : 0,
         "layer0.opacity": 0.0,
-        "layer1.opacity": 0.0,
+        "layer1.opacity": 0.0
     },
-
-    // Sidebar Folder loading (spinner animation)
+    //          STATE LOADING
     {
         "class": "icon_folder_loading",
         "layer0.texture":
@@ -669,33 +748,38 @@
         "content_margin": [8, 8]
     },
 
-    // Sidebar File icons
+
+    //
+    // FILE ICON
+    //
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
-    // Hide File Icons
+    //          STATE HIDDEN 1
     {
         "class": "icon_file_type",
         "settings" : ["dc_hide_folders"],
         "content_margin" : 0,
-        "layer0.opacity" : 0.0,
+        "layer0.opacity" : 0.0
     },
-    // Hide File Icons
+    //          STATE HIDDEN 2
     {
         "class": "icon_file_type",
-        "settings" : ["dc_hide_fileicons"],
+        "settings" : ["dc_hide_file_icons"],
         "content_margin" : 0,
-        "layer0.opacity" : 0.0,
+        "layer0.opacity" : 0.0
     },
 
 
 //
 // STANDARD TEXT BUTTONS
 //
-    // Default button state
+    //
+    // BUTTON
+    //
     {
         "class": "button_control",
         "content_margin": [6, 5, 6, 6],
@@ -704,17 +788,17 @@
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [6, 6]
     },
-    // MouseHover button state
+    //          STATE HOVER
     {
         "class": "button_control",
         "attributes": ["hover"],
-        "layer0.tint" : [50,50,50],
+        "layer0.tint" : [50,50,50]
     },
-    // Pressed button state
+    //          STATE PRESSED
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "layer0.tint" : [75,75,75],
+        "layer0.tint" : [75,75,75]
     },
 
 
@@ -722,7 +806,9 @@
 // TEXT INPUT FIELD
 //
 
-    // Text input field item
+    //
+    // TEXT INPUT FIELD
+    //
     {
         "class": "text_line_control",
         "layer0.tint" : [220,220,220],
@@ -731,7 +817,10 @@
         "content_margin": [3, 4, 3, 3]
     },
 
-    // Text input dropdown
+
+    //
+    // TEXT INPUT DROPDOWN
+    //
     {
         "class": "dropdown_button_control",
         "content_margin": [8, 8],
@@ -739,6 +828,7 @@
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [4, 4]
     },
+    //          STATE HOVER
     {
         "class": "dropdown_button_control",
         "attributes": ["hover"],
@@ -765,6 +855,8 @@
         "layer0.opacity": 1.0,
         "content_margin": [1,1]
     },
+
+
 
 
 //
@@ -892,38 +984,7 @@
         "layer0.opacity": 0.0,
         "layer1.opacity": 0.0,
     },
-/*
-    // Button group left
-    {
-        "class": "icon_button_control",
-        "attributes": ["left"],
-        "content_margin": [3,3]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "selected"],
-    },
-    // Button group right
-    {
-        "class": "icon_button_control",
-        "attributes": ["right"],
-        "content_margin": [3,3]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["right", "selected"],
-    },
-    // Button single
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "right"],
-        "content_margin": [3, 3]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "right", "selected"],
-    },
-*/
+
 
     // Panel close button
     {
@@ -946,20 +1007,30 @@
 
 
 //
-//  PANEL FIND/REPLACE - ICONS
+//  PANEL FIND/REPLACE - SEARCH ICONS
 //
 
+    //
     // REGEX ICON
+    //
     {
         "class": "icon_regex",
+        "content_margin": [8,8],
         "layer0.texture": "Theme - DC/icons/pnl/icon_regex.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_regex.png",
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
-        //"layer1.tint": [0, 252, 255],
-        "content_margin": [8,8],
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_regex",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_regex.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_regex.png",
+    },
+    //          STATE SELECTED
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -968,7 +1039,9 @@
     },
 
 
+    //
     // CASE SENSITIVE
+    //
     {
         "class": "icon_case",
         "content_margin": [8,8],
@@ -977,8 +1050,16 @@
        
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
-        //"layer1.tint": [0, 252, 255],
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_case",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_case.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_case.png",
+    },
+    //          STATE SELECTED
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -987,18 +1068,27 @@
     },
 
 
+    //
     // WHOLE WORD MATCH
+    //
     {
         "class": "icon_whole_word",
+        "content_margin": [8,8],
         "layer0.texture": "Theme - DC/icons/pnl/icon_wholeword.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_wholeword.png",
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
-        //"layer1.tint": [0, 252, 255],
-
-        "content_margin": [8,8],
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_whole_word",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_wholeword.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_wholeword.png",
+    },
+    //          STATE SELECTED
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -1007,17 +1097,27 @@
     },
 
 
+    //
     // SHOW CONTEXT
+    //
     {
         "class": "icon_context",
+        "content_margin": [8,8],
         "layer0.texture": "Theme - DC/icons/pnl/icon_context.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_context.png",
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
-        //"layer1.tint": [0, 252, 255],
-        "content_margin": [8,8],
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_context",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_context.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_context.png",
+    },
+    //          STATE SELECTED
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -1026,16 +1126,27 @@
     },
 
 
+    //
     // USE BUFFER
+    //
     {
         "class": "icon_use_buffer",
+        "content_margin": [8,8],
         "layer0.texture": "Theme - DC/icons/pnl/icon_buffer.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_buffer.png",
+
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
-        //"layer1.tint": [0, 252, 255],
-        "content_margin": [8,8]
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_use_buffer",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_buffer.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_buffer.png",
+    },
+    //          STATE SELECTED
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -1044,7 +1155,9 @@
     },
 
 
+    //
     // REVERSE DIRECTION
+    //
     {
         "class": "icon_reverse",
         "content_margin": [9, 9],
@@ -1053,8 +1166,16 @@
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_reverse.png",
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
-        //"layer1.tint": [0, 252, 255],
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_reverse",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_reverse.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_reverse.png",
+    },
+    //          STATE SELECTED
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -1062,19 +1183,27 @@
     },
 
 
-    // WRAP 
+    //
+    // WRAP
+    // 
     {
         "class": "icon_wrap",
+        "content_margin": [8,8],
+
         "layer0.texture": "Theme - DC/icons/pnl/icon_wrap.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_wrap.png",
-
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
-
-        //"layer1.tint": [0, 252, 255],
-
-        "content_margin": [8,8],
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_wrap",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_wrap.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_wrap.png",
+    },
+    //          STATE SELECTED
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -1083,18 +1212,27 @@
     },
 
 
+    //
     // IN SELECTION
+    //
     {
         "class": "icon_in_selection",
+        "content_margin": [8,8],
+
         "layer0.texture": "Theme - DC/icons/pnl/icon_inselection.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_inselection.png",
-
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
-        //"layer1.tint": [0, 252, 255],
-
-        "content_margin": [8,8],
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_in_selection",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_inselection.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_inselection.png",
+    },
+    //          STATE SELECTED
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -1103,17 +1241,27 @@
     },
 
 
+    //
     // PRESERVE CASE
+    //
     {
         "class": "icon_preserve_case",
+        "content_margin": [8,8],
+
         "layer0.texture": "Theme - DC/icons/pnl/icon_preservecase.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_preservecase.png",
-
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
-        //"layer1.tint": [0, 252, 255],
-        "content_margin": [8,8],
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_preserve_case",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_preservecase.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_preservecase.png",
+    },
+    //          STATE SELECTED
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
@@ -1122,18 +1270,27 @@
     },
 
 
+    //
     // HIGHLIGHT RESULTS
+    //
     {
         "class": "icon_highlight",
+        "content_margin": [8,8],
+
         "layer0.texture": "Theme - DC/icons/pnl/icon_highlight.png",
         "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_highlight.png",
-
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
-        //"layer1.tint": [255, 252, 255],
-
-        "content_margin": [8,8],
     },
+    //          ALTERNATE ICON
+    {
+        "class": "icon_highlight",
+        "settings" : ["dc_use_soda_search_icons"],
+        "content_margin": [9,9],
+        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_highlight.png",
+        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_highlight.png",
+    },
+    //          STATE SELECTED
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
