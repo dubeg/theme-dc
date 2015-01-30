@@ -23,11 +23,19 @@ Gallery of [screenshots on imgur](http://imgur.com/a/TFZWb).
 
 ### Alternate folder icons
 
-![Default](http://i.imgur.com/IVnn1tf.png)
+![Compare](http://i.imgur.com/pMJkIs5.png)
 
-![Alt 1](http://i.imgur.com/k4jw98A.png)
+### Alternate group icons
 
-![Alt 2](http://i.imgur.com/mwUubO3.png)
+![Compare](http://i.imgur.com/4apuFcD.png)
+
+### Alternate search icons
+
+![CTRL + F](http://i.imgur.com/xCG4hgg.png)
+
+![CTRL + SHIFT + F](http://i.imgur.com/3z0LwIh.png)
+
+![CTRL + H](http://i.imgur.com/kCBFkmW.png)
 
 ## Installation
 
