@@ -1,0 +1,5 @@
+Changelog v1.2.2
+===============================================
+
+- Added file '.no-sublime-package' to fix invisible file icons at ST startup.
+- Fixed names of ST2 settings. 

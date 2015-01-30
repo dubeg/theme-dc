@@ -497,66 +497,9 @@
     // Hide Group Icons (arrows)
     {
         "class": "disclosure_button_control",
-        "settings" : ["dc_hide_arrows"],
+        "settings" : ["dc_hide_group_icons"],
         "layer0.opacity": 0.0,
         "layer1.opacity": 0.0
-    },
-
-    // Sidebar Folder closed
-    {
-        "class": "icon_folder",
-        "content_margin": [8, 8],
-        "layer0.texture": "Theme - DC/icons/dir_closed.png",
-        "layer0.inner_margin": 0,
-
-        "layer1.texture": "Theme - DC/icons/dir_opened.png",
-        "layer1.inner_margin": 0,
-
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0
-    },
-    {
-        "class": "icon_folder",
-        "settings" : ["dc_hide_folders"]
-    },
-
-    // Sidebar Folder opened
-    {
-        "class": "icon_folder",
-        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 1.0
-    },
-    // Hide Folder Icons
-    {
-        "class": "icon_folder",
-        "settings" : ["dc_hide_folders"],
-        "content_margin" : 0,
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 0.0
-    },
-
-
-    // Sidebar File icons
-    {
-        "class": "icon_file_type",
-        // layer0.texture is filled in by code with the relevant icon name
-        "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
-    },
-    // Hide File Icons
-    {
-        "class": "icon_file_type",
-        "settings" : ["dc_hide_folders"],
-        "content_margin" : 0,
-        "layer0.opacity" : 0.0
-    },
-    // Hide File Icons
-    {
-        "class": "icon_file_type",
-        "settings" : ["dc_hide_fileicons"],
-        "content_margin" : 0,
-        "layer0.opacity" : 0.0
     },
 
 
