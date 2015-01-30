@@ -40,10 +40,11 @@ Project site: [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc).
 
 ### Using Sublime Package Control
 
-Using Will Bond's [Sublime Package Control](http://wbond.net/sublime_packages/package_control), 
-    - Open the mini quick panel.
-    - Type `Package Control: Install Package`.
-    - Search for `Theme - DC` in the packages list.
+Using Will Bond's [Sublime Package Control](http://wbond.net/sublime_packages/package_control),
+
+- Open the mini quick panel.
+- Type `Package Control: Install Package`.
+- Search for `Theme - DC` in the packages list.
 
 ### Download Manually
 
@@ -57,16 +58,16 @@ Using Will Bond's [Sublime Package Control](http://wbond.net/sublime_packages/pa
 To configure Sublime Text to use the theme, follow the instructions below.
 
 * Open your User Settings Preferences file `Sublime Text -> Preferences -> Settings - User`.
-* Add (or update) your theme entry.
+* Add (or update) your theme entry according to your version of Sublime text.
 
-**Example ST3 User Settings**
+**ST3**
 
     {
         "theme": "DC_3.sublime-theme"
     }
 
 
-**Example ST2 User Settings**
+**ST2**
 
     {
         "theme": "DC_2.sublime-theme"
@@ -78,7 +79,6 @@ To configure Sublime Text to use the theme, follow the instructions below.
 ### User Settings
 
 You can use the settings below to customize the theme to your liking.
-To activate the setting, set it to true.
 
 **Example User Settings**
 
