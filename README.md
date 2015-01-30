@@ -126,8 +126,6 @@ It is made available by buymeasoda. Here's how to get it:
 
 The file icons seen in the screenshot are assets collected from the [Seti_ST3 repository](https://github.com/ctf0/Seti_ST3).
 
-I have included them in the wbond's package control DC theme package.
-
 
 
 ## License
