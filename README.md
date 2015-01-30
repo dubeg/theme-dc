@@ -17,8 +17,6 @@ Project site: [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc).
 
 ## Images
 
-Gallery of [screenshots on imgur](http://imgur.com/a/TFZWb).
-
 ![Main screen](http://i.imgur.com/AvyhY2z.png)
 
 ### Alternate folder icons
