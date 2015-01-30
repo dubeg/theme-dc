@@ -136,4 +136,4 @@ The following details apply to the Creative Commons license "author specified" c
 
 * Attribution example: Based on DC Theme.
 
-* Naming guidelines: If you create and distribute a derivative theme, please give your theme a unique and original name that does not directly include "Soda Theme" (or a close variant) in the main project title, repo name or Package Control name.
+* Naming guidelines: If you create and distribute a derivative theme, please give your theme a unique and original name that does not directly include "DC Theme" (or a close variant) in the main project title, repo name or Package Control name.
