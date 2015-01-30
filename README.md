@@ -5,10 +5,11 @@ Dark and Cyan (DC) theme for Sublime Text 2/3.
 Based on Soda Theme by Ian Hill [(buymeasoda.com)](http://buymeasoda.com/), and inspired by many others.
 
 Uses assets made by:
-    - Ian Hill, from the Soda theme (search icons, and others)
-    - the Numix project (alternate folder icon)
-    - VisualStudio (alternate folder icon)
-    - the Seti_UI project (file icons)
+
+- Ian Hill, from the Soda theme (search icons, and others)
+- the Numix project (alternate folder icon)
+- VisualStudio (alternate folder icon)
+- the Seti_UI project (file icons)
 
 And probably more than I remember right now..
 
@@ -64,7 +65,8 @@ To configure Sublime Text to use the theme, follow the instructions below.
         "theme": "DC_3.sublime-theme"
     }
 
-**Example ST2 User Settings **
+
+**Example ST2 User Settings**
 
     {
         "theme": "DC_2.sublime-theme"
