@@ -107,7 +107,7 @@ You can use the settings below to customize the theme to your liking.
 
 ### Resolution Support
 
-Unfortunately, I've been too lazy to test the DC Theme on high DPI displays (over 1080p).
+Unfortunately, I've been too lazy to test the DC Theme on high DPI displays.
 However, I'll probably add the support if requested, or when I start using devices with such displays.
 
 ## Bonus
