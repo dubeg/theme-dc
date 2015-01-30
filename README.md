@@ -86,6 +86,7 @@ To activate the setting, set it to true.
     "dc_hide_folders": false,
     "dc_hide_group_icons": false,
     "dc_hide_scrollbars" : false,
+    "dc_hide_btn_close_tab" : false,
 
     "dc_use_group_icon1" : true,
     "dc_use_group_icon2" : false,
