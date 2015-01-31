@@ -1,0 +1,88 @@
+Todo
+===============================================
+
+- [ ] Assets@2x
+- [ ] Cleanup DC_2/3 code.
+- [x] Modify some file icons
+    - [x] C#
+    - [x] C++
+    - [x] JS
+    - [x] PY
+- [ ] Add dc_use_group_icon2/3/4 to DC_2
+- [x] Check dialog 
+
+
+
+
+-----------------------------------------------
+v1.2.3
+-----------------------------------------------
+
+Note: '.no-sublime-package' didnt fix invisible icon.
+      It seems like a bug, sometimes icons will be visible at startup,
+      sometimes they won't. A mouse click on a file will fix it.
+
+      Also, not all filetypes are working. '.c' and '.h', for ex, 
+      don't have a specific icon.
+
+Package
+- Replaced file_type_c#, file_type_c++, and file_type_c
+  icons from the Seti_UI set with VisualStudio's icons.
+
+
+
+
+-----------------------------------------------
+v1.2.2
+-----------------------------------------------
+
+Package
+- Added .no-sublime-package to fix invisible folder icons.
+- Added messages on package install.
+- Modified README.md, include corrections.
+
+
+DC_2
+- Fixed names of settings.
+
+
+-----------------------------------------------
+v1.2.1
+-----------------------------------------------
+
+DC_3
+- Added sidebar group icons
+    dc_use_group_icon1
+    dc_use_group_icon2
+    dc_use_group_icon3
+    dc_use_group_icon4
+
+- Added sidebar folder icons
+    dc_use_folder_icon1
+    dc_use_folder_icon2
+    dc_use_folder_icon3
+    dc_use_folder_icon4
+
+- Added scrollbar overlays
+- Added scrollbar settings
+    dc_hide_scrollbars
+    dc_use_white_puck
+    dc_autohide_scrollbar
+
+- Renamed settings
+    old: always_show_minimap_viewport
+    new: dc_always_show_minimap_viewport
+
+    old: dc_hide_arrows
+    new: dc_hide_group_icons
+
+    old: dc_hide_fileicons
+    new: dc_hide_file_icons
+
+    old: bold_folder_labels
+    new: dc_bold_folder_labels
+
+- Added search icons setting
+    dc_use_soda_search_icons
+
+- Added file icons

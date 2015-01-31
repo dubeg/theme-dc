@@ -45,7 +45,7 @@ Other similar themes
 
 Using Will Bond's [Sublime Package Control](http://wbond.net/sublime_packages/package_control),
 
-- Open the mini quick panel.
+- Open the Command Palette `Tools -> Command Palette...`.
 - Type `Package Control: Install Package`.
 - Search for `Theme - DC` in the packages list.
 
