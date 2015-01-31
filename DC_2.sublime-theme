@@ -3,7 +3,6 @@
 //
 // TABS
 //
-
     //
     // TAB SET
     //
@@ -19,9 +18,10 @@
         "tab_height": 30,
         "mouse_wheel_switch": false
     },
+    //          SETTING MOUSE WHEEL SWITCHING
     {
         "class": "tabset_control",
-        "settings": ["mouse_wheel_switches_tabs"],
+        "settings": ["dc_mouse_wheel_switches_tabs"],
         "mouse_wheel_switch": true
     },
 
@@ -54,7 +54,6 @@
 //
 // TAB BUTTONS
 //
-
     //
     // CLOSE BUTTON
     //
@@ -77,13 +76,12 @@
         "layer2.opacity": 0.0,
         "layer3.opacity": 0.0
     },
-    //          STATE HIDDEN
+    //          SETTING HIDDEN
     {
         "class": "tab_close_button",
         "settings" : ["dc_hide_btn_close_tab"],
         "layer0.opacity": 0.0
     },
-
     //          STATE DIRTY
     {
         "class": "tab_close_button",
@@ -117,9 +115,8 @@
 //
 // TAB LABELS
 //
-
     //
-    //  TAB LABEL
+    //  LABEL
     //
     {
         "class": "tab_label",
@@ -146,9 +143,8 @@
 
 
 //
-// FOLD BUTTONS
+// FOLDING
 //
-
     //
     // FOLD BUTTON
     //
@@ -271,7 +267,6 @@
 //
 // LABELS
 //
-
     //
     // GENERAL LABEL
     //
@@ -380,7 +375,7 @@
 
 
     //
-    // DIRECTORY TREE
+    // TREE
     //
     {
         "class": "sidebar_tree",
@@ -434,7 +429,7 @@
         "font.bold": false,
         "font.italic": false
     },
-    //          STATE SELECTED
+    //          STATE ROW-SELECTED
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
@@ -462,7 +457,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "settings": ["bold_folder_labels"],
+        "settings": ["dc_bold_folder_labels"],
         "font.bold": true
     },
 
@@ -612,9 +607,9 @@
     },
 
 
-    //
-    // TEXT INPUT FIELD
-    //
+//
+// TEXT INPUT FIELD
+//
     {
         "class": "text_line_control",
         "layer0.tint" : [220,220,220],
@@ -813,7 +808,7 @@
 
 
 //
-//  SEARCH ICONS
+//  SEARCH PANEL ICONS
 //
     //
     // REGEX
@@ -984,7 +979,8 @@
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - DC/assets/icon-reverse-on.png"
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
     },
 
 

@@ -2,21 +2,7 @@
 
 Dark and Cyan (DC) theme for Sublime Text 2/3.
 
-Based on Soda Theme by Ian Hill [(buymeasoda.com)](http://buymeasoda.com/), and inspired by many others.
-
-Project site: [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc).
-
-Some assets are made by or modified from:
-
-- the Soda theme project (search icons, and others)
-- the Numix project (alternate folder icon)
-- VisualStudio (alternate folder icon)
-- the Seti_UI project (file icons)
-
-Other similar themes
-
-- [Seti_ST3](https://github.com/ctf0/Seti_ST3)
-- [Cobalt2](https://github.com/wesbos/cobalt2)
+Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 
 ## Images
@@ -85,9 +71,9 @@ You can use the settings below to customize the theme to your liking.
 
 **Example User Settings**
 
-    "dc_hide_file_icons": false,
-    "dc_hide_folders": false,
-    "dc_hide_group_icons": false,
+    "dc_hide_file_icons" : false,
+    "dc_hide_folders" : false,
+    "dc_hide_group_icons" : false,
     "dc_hide_scrollbars" : false,
     "dc_hide_btn_close_tab" : false,
 
@@ -105,7 +91,8 @@ You can use the settings below to customize the theme to your liking.
     "dc_autohide_scrollbar" : false,
     "dc_use_white_puck" : false,
     "dc_always_show_minimap_viewport" : true,
-    "dc_bold_folder_labels": true,
+    "dc_bold_folder_labels" : true,
+    "dc_mouse_wheel_switches_tabs" : true
     
 
 ### Resolution Support
@@ -125,9 +112,26 @@ It is made available by buymeasoda. Here's how to get it:
 * Unzip and place the extracted `tmtheme` files in the Sublime Text `Packages/User` folder
 * Enable the colour scheme via `Preferences -> Color Scheme -> User`
 
-### File icons
+### Filetype icons
 
 The file icons seen in the screenshot are assets collected from the [Seti_ST3 repository](https://github.com/ctf0/Seti_ST3).
+
+
+### Similar themes
+
+- [Seti_ST3](https://github.com/ctf0/Seti_ST3)
+- [Cobalt2](https://github.com/wesbos/cobalt2)
+
+
+## Credits
+
+Based on Soda Theme by Ian Hill [(buymeasoda.com)](http://buymeasoda.com/), and inspired by many others.
+
+Some assets used in this theme are from (or modified from):
+- the Soda theme project (search icons and a few others)
+- the Numix project (alternate folder icons)
+- Visual Studio 2013 (alternate folder icons, and a few filetype icons)
+- the Seti_UI project (most of the filetype icons)
 
 
 

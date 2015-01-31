@@ -28,27 +28,28 @@ Sublime Text 3 - User Settings
 -----------------------------------------------
 {
     "dc_hide_btn_close_tab" : true,
-    "dc_always_show_minimap_viewport": true,
-    "dc_autohide_scrollbar": true,
-    "dc_bold_folder_labels": true,
+    "dc_always_show_minimap_viewport" : true,
+    "dc_autohide_scrollbar" : true,
+    "dc_bold_folder_labels" : true,
+    "dc_mouse_wheel_switches_tabs" : true,
     
-    "dc_hide_file_icons": true,
-    "dc_hide_folders": true,
-    "dc_hide_group_icons": true,
-    "dc_hide_scrollbars": true,
+    "dc_hide_file_icons" : true,
+    "dc_hide_folders" : true,
+    "dc_hide_group_icons" : true,
+    "dc_hide_scrollbars" : true,
 
-    "dc_use_soda_search_icons": true,
-    "dc_use_white_puck": true,
+    "dc_use_soda_search_icons" : true,
+    "dc_use_white_puck" : true,
 
-    "dc_use_folder_icon1": true,
-    "dc_use_folder_icon2": true,
-    "dc_use_folder_icon3": true,
+    "dc_use_folder_icon1" : true,
+    "dc_use_folder_icon2" : true,
+    "dc_use_folder_icon3" : true,
 
-    "dc_use_group_icon1": true,
-    "dc_use_group_icon2": true,
-    "dc_use_group_icon3": true,
-    "dc_use_group_icon4": true,
-}
+    "dc_use_group_icon1" : true,
+    "dc_use_group_icon2" : true,
+    "dc_use_group_icon3" : true,
+    "dc_use_group_icon4" : true
+} 
 
 
 
@@ -56,9 +57,16 @@ Sublime Text 3 - User Settings
 Sublime Text 2 - User Settings
 -----------------------------------------------
 {
-    "dc_hide_group_icons": true,
-    "dc_use_soda_search_icons": true,
-    "dc_use_white_puck": true
+    "dc_hide_group_icons" : true,
+    "dc_use_soda_search_icons" : true,
+    "dc_use_white_puck" : true,
+    "dc_mouse_wheel_switches_tabs" : true,
+    "dc_bold_folder_labels" : true,
+
+    "dc_use_group_icon1" : true,
+    "dc_use_group_icon2" : true,
+    "dc_use_group_icon3" : true,
+    "dc_use_group_icon4" : true
 }
 
 
