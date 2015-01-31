@@ -2,15 +2,16 @@ Todo
 ===============================================
 
 - [ ] Assets@2x
-- [ ] Cleanup DC_2/3 code.
+- [x] Cleanup DC_2 code.
+- [ ] Cleanup DC_3 code.
 - [x] Modify some file icons
     - [x] C#
     - [x] C++
     - [x] JS
     - [x] PY
-- [ ] Add dc_use_group_icon2/3/4 to DC_2
+- [x] Add dc_use_group_icon2/3/4 to DC_2
 - [x] Check dialog 
-
+- [ ] Delete .no-sublime-package (it doesnt fix the problem)
 
 
 

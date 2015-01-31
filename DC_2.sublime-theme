@@ -4,7 +4,9 @@
 // TABS
 //
 
-    // Tab set
+    //
+    // TAB SET
+    //
     {
         "class": "tabset_control",
         "layer0.texture": "Theme - DC/assets/tabset_background.png",
@@ -22,7 +24,11 @@
         "settings": ["mouse_wheel_switches_tabs"],
         "mouse_wheel_switch": true
     },
-    // Tab element
+
+
+    //
+    // TAB ELEMENT
+    //
     {
         "class": "tab_control",
         "content_margin": [12, 3, 7, 5],
@@ -32,12 +38,12 @@
         "layer0.inner_margin": [1,0,1,4],
         "layer0.opacity": 1.0
     },
-    // Tab hover state
+    //          STATE HOVER
     {
         "class": "tab_control",
         "attributes": ["hover"]
     },
-    // Tab active state
+    //          STATE ACTIVE
     {
         "class": "tab_control",
         "attributes": ["selected"],
@@ -49,7 +55,9 @@
 // TAB BUTTONS
 //
 
-    // Tab close button
+    //
+    // CLOSE BUTTON
+    //
     {
         "class": "tab_close_button",
         "content_margin": [7,7],
@@ -69,14 +77,14 @@
         "layer2.opacity": 0.0,
         "layer3.opacity": 0.0
     },
-    // Hide Btn Close Tab
+    //          STATE HIDDEN
     {
         "class": "tab_close_button",
         "settings" : ["dc_hide_btn_close_tab"],
         "layer0.opacity": 0.0
     },
 
-    // Tab dirty button
+    //          STATE DIRTY
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
@@ -85,7 +93,7 @@
         "layer1.opacity": 1.0, 
         "layer2.opacity": 0.0
     }, 
-    // Tab hover button
+    //          STATE HOVER
     {
         "class": "tab_close_button",
         "attributes" : ["hover"],
@@ -94,7 +102,7 @@
         "layer1.opacity": 0.0,  
         "layer2.opacity": 1.0
     },
-    // Tab active button
+    //          STATE PRESSED
     {
         "class": "tab_close_button",
         "attributes" : ["pressed"],
@@ -110,6 +118,9 @@
 // TAB LABELS
 //
 
+    //
+    //  TAB LABEL
+    //
     {
         "class": "tab_label",
         "fade": true,
@@ -118,14 +129,14 @@
         "shadow_offset": [0,0],
         "font.italic": false
     },
-    // Tab Hover
+    //          STATE TAB HOVER
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
         "fg": [235, 235, 235],
         "shadow_color": [30, 30, 30]
     },
-    // Tab Active
+    //          STATE TAB SELECTED
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
@@ -138,7 +149,9 @@
 // FOLD BUTTONS
 //
 
-    // Fold button Control
+    //
+    // FOLD BUTTON
+    //
     {
         "class": "fold_button_control",
         "content_margin": [8, 8],
@@ -152,7 +165,7 @@
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0
     },
-    // Unfolded
+    //          STATE EXPANDED
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
@@ -165,25 +178,30 @@
 // STANDARD SCROLLBARS
 //
 
-    // Standard vertical scroll bar
+    //
+    // STANDARD SCROLLBAR
+    // 
     {
         "class": "scroll_bar_control",
         "layer0.tint" : [30, 30, 30],
         "layer0.opacity": 1.0,
         "blur": false
     },
-    // Standard horizontal scroll bar
-    {
-        "class": "scroll_bar_control",
-        "attributes": ["horizontal"]
-    },
-    // Standard scroll bar corner
+
+
+    //
+    // STANDARD SCROLLBAR CORNER
+    //
     {
         "class": "scroll_corner_control",
         "layer0.tint" : [30, 30, 30],
         "layer0.opacity": 1.0
     },
-    // Standard vertical scroll puck
+
+
+    //
+    // STANDARD SCROLLBAR PUCK
+    //
     {
         "class": "puck_control",
         "layer0.tint": [55, 55, 55],
@@ -193,14 +211,7 @@
         "content_margin": [6, 12],
         "blur": false
     },
-    // Standard horizontal scroll puck
-    {
-        "class": "puck_control",
-        "attributes": ["horizontal"],
-        "content_margin": [0, 6],
-        "blur": false
-    },
-
+    //          SETTING WHITE COLOR 
     {
         "class": "puck_control",
         "settings": ["dc_use_white_puck"],
@@ -208,6 +219,17 @@
         "layer1.opacity": 1.0
     },
 
+
+    //
+    // STANDARD HORIZONTAL SCROLLBAR PUCK
+    //
+    {
+        "class": "puck_control",
+        "attributes": ["horizontal"],
+        "content_margin": [0, 6],
+        "blur": false
+    },
+    //          SETTING WHITE COLOR 
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
@@ -220,7 +242,6 @@
 //
 // EMPTY WINDOW BACKGROUND
 //
-
     {
         "class": "sheet_container_control",
         "layer0.tint": [25, 25, 25],
@@ -231,7 +252,6 @@
 //
 // GRID LAYOUT
 //
-
     {
         "class": "grid_layout_control",
         "border_size": 1,
@@ -242,7 +262,6 @@
 //
 // MINI MAP
 //
-
     {
         "class": "minimap_control",
         "color": [68, 68, 68, 96]
@@ -253,19 +272,29 @@
 // LABELS
 //
 
-    // General labels
+    //
+    // GENERAL LABEL
+    //
     {
         "class": "label_control",
         "color": [204, 204, 204]
     },
-    // Text field labels
+
+
+    //
+    // TEXT FIELD LABEL
+    //
     {
         "class": "label_control",
         "parents": [{"class": "panel_control"}],
         "shadow_color": [50, 50, 50],
         "shadow_offset": [0, -1]
     },
-    // Button labels
+
+
+    //
+    // BUTTON LABEL
+    //
     {
         "class": "label_control",
         "parents": [{"class": "button_control"}],
@@ -277,8 +306,9 @@
 //
 // TOOLTIP
 //
-
-    // Tooltip container
+    //
+    // CONTAINER
+    //
     {
         "class": "tool_tip_control",
         "layer0.texture": "Theme - DC/assets/tooltip.png",
@@ -286,7 +316,11 @@
         "layer0.opacity": 0.95,
         "content_margin": [3, 3]
     },
-    // Tooltip content
+
+
+    //
+    // LABEL
+    //
     {
         "class": "tool_tip_label_control",
         "color": [0, 0, 0]
@@ -296,8 +330,9 @@
 //
 // STATUS BAR
 //
-
-    // Status bar container
+    //
+    // CONTAINER
+    // 
     {
         "class": "status_bar",
         "layer0.texture": "Theme - DC/assets/statusbar_bg.png",
@@ -306,12 +341,20 @@
         "layer0.opacity": 1.0,
         "content_margin": [8, 8, 8, 8]
     },
-    // Status bar button
+
+
+    //
+    // BUTTON
+    //
     {
         "class": "status_button",
         "min_size": [100, 0]
     },
-    // Status bar label
+
+
+    //
+    // LABEL
+    //
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
@@ -324,8 +367,9 @@
 //
 // SIDEBAR
 //
-
-    // Sidebar container
+    //
+    // CONTAINER
+    // 
     {
         "class": "sidebar_container",
         "layer0.texture": "Theme - DC/assets/sidebar_bg.png",
@@ -333,7 +377,11 @@
         "layer0.inner_margin": [1, 1, 2, 1],
         "content_margin": [0, 1, 0, 0]
     },
-    // Sidebar tree
+
+
+    //
+    // DIRECTORY TREE
+    //
     {
         "class": "sidebar_tree",
         "row_padding": [8,2,8,5],
@@ -342,7 +390,11 @@
         "indent_top_level": false,
         "dark_content": true
     },
-    // Sidebar rows
+
+
+    //
+    // TREE ROW
+    //
     {
         "class": "tree_row",
         "layer0.texture": "Theme - DC/assets/sidebar_active_row.png",
@@ -350,14 +402,18 @@
         "content_margin": [0, 1, 0, 0],
         "layer0.opacity" : 0.0
     },
-    // Sidebar row selected
+    //          STATE SELECTED
     {
         "class": "tree_row",
         "attributes": ["selected"],
         "settings" : ["highlight_active_sidebar_row"],
         "layer0.opacity" : 1.0
     },
-    // Sidebar heading
+
+
+    //
+    // HEADERS
+    //
     {
         "class": "sidebar_heading",
         "color": [70,70,70],
@@ -365,13 +421,11 @@
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, -1]
     },
-    // Sidebar heading selected
-    {
-        "class": "sidebar_heading",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "shadow_offset": [1, 1]
-    },
-    // Sidebar entry
+
+
+    //
+    // ENTRY LABEL
+    //
     {
         "class": "sidebar_label",
         "color": [125, 125, 125],
@@ -380,26 +434,7 @@
         "font.bold": false,
         "font.italic": false
     },
-    // Sidebar folder entry
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [190, 190, 190]
-    },
-    //      HOVER
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        "color": [235, 235, 235]
-    },
-    //      BOLD
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "settings": ["bold_folder_labels"],
-        "font.bold": true
-    },
-    // Sidebar entry selected
+    //          STATE SELECTED
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
@@ -409,11 +444,35 @@
     },
 
 
-//
-// SIDEBAR - OPEN FILE ICONS
-//
+    //
+    // DIRECTORY ENTRY LABEL
+    //
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "color": [190, 190, 190]
+    },
+    //      STATE HOVER
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
+        "color": [235, 235, 235]
+    },
+    //      SETTING BOLD
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "settings": ["bold_folder_labels"],
+        "font.bold": true
+    },
 
-    // Close button
+
+//
+// SIDEBAR - OPENED FILE ICONS
+//
+    //
+    // CLOSE BUTTON
+    //
     {
         "class": "close_button",
         "layer0.texture": "Theme - DC/assets/btn_close_tab.png",
@@ -435,13 +494,13 @@
         "layer2.opacity": 0.0,
         "layer3.opacity": 0.0
     },
-    // File entry HOVER
+    //          STATE TREE-ROW HOVER
     { 
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "layer0.opacity": 1.0
     },
-    // Close button DIRTY
+    //          STATE DIRTY
     {
         "class": "close_button", 
         "attributes": ["dirty"],
@@ -450,7 +509,7 @@
         "layer2.opacity": 0.0,
         "layer3.opacity": 1.0 
     }, 
-    // Close button HOVER
+    //          STATE HOVER
     {
         "class": "close_button",
         "attributes": ["hover"],
@@ -459,7 +518,7 @@
         "layer2.opacity": 0.0, 
         "layer3.opacity": 0.0
     },
-    // Close Button PRESSED
+    //          STATE PRESSED
     {
         "class": "close_button",
         "attributes": ["pressed"],
@@ -471,30 +530,52 @@
 
 
 //
-// SIDEBAR - GENERAL FILE ICONS
+// SIDEBAR - GROUP ICONS
 //
-
-    // Sidebar Group closed (arrow)
+    //
+    // GROUP CONTROL
+    //
     {
         "class": "disclosure_button_control",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - DC/icons/group_closed.png",
-        "layer0.inner_margin": 0,
 
-        "layer1.texture": "Theme - DC/icons/group_opened.png",
+        "layer0.texture": "Theme - DC/icons/sb/group_closed1.png",
+        "layer1.texture": "Theme - DC/icons/sb/group_opened1.png",
+        "layer0.inner_margin": 0,
         "layer1.inner_margin": 0,
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0
     },
-    // Sidebar Group open (arrow 2)
+    //          ALTERNATE ICON 2
+    {
+        "class": "disclosure_button_control",
+        "settings": ["dc_use_group_icon2"],
+        "layer0.texture": "Theme - DC/icons/sb/group_closed2.png",
+        "layer1.texture": "Theme - DC/icons/sb/group_opened2.png"
+    },
+    //          ALTERNATE ICON 3
+    {
+        "class": "disclosure_button_control",
+        "settings": ["dc_use_group_icon3"],
+        "layer0.texture": "Theme - DC/icons/sb/group_closed3.png",
+        "layer1.texture": "Theme - DC/icons/sb/group_opened3.png"
+    },
+    //          ALTERNATE ICON 4
+    {
+        "class": "disclosure_button_control",
+        "settings": ["dc_use_group_icon4"],
+        "layer0.texture": "Theme - DC/icons/sb/group_closed4.png",
+        "layer1.texture": "Theme - DC/icons/sb/group_opened4.png"
+    },
+    //          STATE EXPANDED
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
     },
-    // Hide Group Icons (arrows)
+    //          SETTING HIDDEN
     {
         "class": "disclosure_button_control",
         "settings" : ["dc_hide_group_icons"],
@@ -504,9 +585,11 @@
 
 
 //
-// STANDARD TEXT BUTTONS
+// STANDARD CONTROLS
 //
-    // Default button state
+    //
+    // BUTTON
+    //
     {
         "class": "button_control",
         "content_margin": [6, 5, 6, 6],
@@ -515,13 +598,13 @@
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [6, 6]
     },
-    // MouseHover button state
+    //          STATE HOVER
     {
         "class": "button_control",
         "attributes": ["hover"],
         "layer0.tint" : [50,50,50]
     },
-    // Pressed button state
+    //          STATE PRESSED
     {
         "class": "button_control",
         "attributes": ["pressed"],
@@ -529,11 +612,9 @@
     },
 
 
-//
-// TEXT INPUT FIELD
-//
-
-    // Text input field item
+    //
+    // TEXT INPUT FIELD
+    //
     {
         "class": "text_line_control",
         "layer0.tint" : [220,220,220],
@@ -544,10 +625,11 @@
 
 
 //
-// PANEL BACKGROUNDS
+// PANELS
 //
-
-    // Bottom panel background
+    //
+    // PANEL CONTROL (Search panel background, ...)
+    //
     {
         "class": "panel_control",
         "layer0.texture": "Theme - DC/assets/statusbar_bg.png",
@@ -555,7 +637,11 @@
         "layer0.opacity": 1.0,
         "content_margin": [5, 2, 5, 1]
     },
-    // Quick panel background
+
+
+    //
+    // OVERLAY CONTROL (Quick panel background, ...)
+    //
     {
         "class": "overlay_control",
         "layer0.tint": [20, 20, 20 ],
@@ -566,7 +652,10 @@
 
 //
 // QUICK PANEL
-// CTRL + P
+//
+    //
+    // QUICK PANEL (Goto Anything)
+    //
     {
         "class": "quick_panel",
         "row_padding": [5,2],
@@ -574,18 +663,29 @@
         "layer0.opacity": 1.0,
         "dark_content": true
     },
+
+
+    //
+    // ENTRY ROW
+    //
     {
         "class": "quick_panel_row",
         "layer0.texture": "Theme - DC/assets/quick-panel-row.png",
         "layer0.inner_margin": [2,2],
         "layer0.opacity": 1.0
     },
+    //          STATE SELECTED
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "Theme - DC/assets/quick-panel-row-selected.png",
         "layer0.opacity" : 1.0
     },
+
+
+    //
+    // ENTRY LABEL
+    //
     {
         "class": "quick_panel_label",
         "fg": [210, 210, 210, 255],
@@ -594,6 +694,11 @@
         "selected_fg": [255, 255, 255, 255],
         "selected_match_fg": [32, 255, 237]
     },
+
+
+    //
+    // PATH LABEL
+    //
     {
         "class": "quick_panel_path_label",
         "fg": [130, 130, 130, 255],
@@ -601,6 +706,11 @@
         "selected_fg": [175, 175, 175, 255],
         "selected_match_fg": [220, 220, 220, 255]
     },
+
+
+    //
+    // SCORE LABEL
+    //
     {
         "class": "quick_panel_score_label",
         "fg": [120,120,120,120],
@@ -609,15 +719,18 @@
 
 
 //
-// MINI QUICK PANEL
-// CTRL + SHIFT + P
-
+// MINI QUICK PANEL (Command palette, ...)
+//
+    //
+    // ENTRY ROW 
+    //
     {
         "class": "mini_quick_panel_row",
         "layer0.texture": "Theme - DC/assets/quick-panel-row.png",
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
+    //          STATE SELECTED
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
@@ -628,17 +741,29 @@
 //
 // CODE COMPLETION DROPDOWN
 //
-
+    //
+    // POPUP CONTROL 
+    //
     {
         "class": "popup_control",
         "content_margin": [2, 2],
         "layer0.tint": [30, 30, 30],
         "layer0.opacity": 1.0
     },
+
+
+    //
+    // AUTO COMPLETE (???)
+    //
     {
         "class": "auto_complete",
         "row_padding": [4, 2]
     },
+
+
+    //
+    // AUTO COMPLETE LABEL (???)
+    //
     {
         "class": "auto_complete_label",
         "fg": [200, 200, 200],
@@ -650,6 +775,11 @@
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0,1]
     },
+
+
+    //
+    // TABLE ROW (???)
+    //
     {
         "class": "table_row",
         "layer0.texture": "",
@@ -657,6 +787,7 @@
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [3, 1]
     },
+    //          STATE SELECTED
     {
         "class": "table_row",
         "attributes": ["selected"],
@@ -665,38 +796,27 @@
 
 
 //
-// BOTTOM PANEL BUTTONS
+// SEARCH PANEL
 //
-
-    // Button group middle
-    {
-        "class": "icon_button_control",
-        "content_margin": [5,5,5,5],
-
-        "layer0.texture": "Theme - DC/assets/button/f2.png",
-        "layer0.opacity": 0.0,
-        "layer0.inner_margin":[4,4],
-
-        "layer1.texture": "Theme - DC/assets/button/f1.png",
-        "layer1.opacity": 0.0,
-        "layer1.inner_margin":[4,4]
-
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["selected"],
-
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 0.0
-    },
-
-
-//
-//  PANEL FIND/REPLACE - ICONS
-//
-
     //
-    // REGEX ICON
+    // ICON BUTTON
+    //
+    {
+        "class": "icon_button_control",
+        "content_margin": [5,5,5,5]
+    },
+    //          STATE SELECTED
+    {
+        "class": "icon_button_control",
+        "attributes": ["selected"]
+    },
+
+
+//
+//  SEARCH ICONS
+//
+    //
+    // REGEX
     //
     {
         "class": "icon_regex",
