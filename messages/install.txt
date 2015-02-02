@@ -32,6 +32,7 @@ Sublime Text 3 - User Settings
     "dc_autohide_scrollbar" : true,
     "dc_bold_folder_labels" : true,
     "dc_mouse_wheel_switches_tabs" : true,
+    "dc_highlight_active_sidebar_row" : true,
     
     "dc_hide_file_icons" : true,
     "dc_hide_folders" : true,
@@ -62,6 +63,7 @@ Sublime Text 2 - User Settings
     "dc_use_white_puck" : true,
     "dc_mouse_wheel_switches_tabs" : true,
     "dc_bold_folder_labels" : true,
+    "dc_highlight_active_sidebar_row" : true,
 
     "dc_use_group_icon1" : true,
     "dc_use_group_icon2" : true,
@@ -70,4 +72,5 @@ Sublime Text 2 - User Settings
 }
 
 
-More info at github.com/dubeg/theme-dc
+More info at :
+github.com/dubeg/theme-dc

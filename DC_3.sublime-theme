@@ -333,6 +333,11 @@
         "settings": ["dc_autohide_scrollbar"],
         "overlay": true
     },
+    {
+        "class": "scroll_area_control",
+        "settings": ["overlay_scroll_bars"],
+        "overlay": true
+    },
     //          SETTING HIDE SCROLLBARS
     {
         "class": "scroll_bar_control",
@@ -570,16 +575,16 @@
     //
     {
         "class": "tree_row",
-        "layer0.texture": "Theme - DC/assets/sidebar_active_row.png",
         "layer0.inner_margin" : [3, 0, 0, 0],
         "content_margin": [0, 1, 0, 0],
-        "layer0.opacity" : 0.0
+        "layer0.opacity" : 0.0,
+        "layer0.tint" : [50,50,50]
     },
     //          STATE SELECTED
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "settings" : ["highlight_active_sidebar_row"],
+        "settings" : ["dc_highlight_active_sidebar_row"],
         "layer0.opacity" : 1.0
     },
 

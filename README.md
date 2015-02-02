@@ -92,7 +92,8 @@ You can use the settings below to customize the theme to your liking.
     "dc_use_white_puck" : false,
     "dc_always_show_minimap_viewport" : true,
     "dc_bold_folder_labels" : true,
-    "dc_mouse_wheel_switches_tabs" : true
+    "dc_mouse_wheel_switches_tabs" : true,
+    "dc_highlight_active_sidebar_row" : true
     
 
 ### Resolution Support

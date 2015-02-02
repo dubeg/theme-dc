@@ -2,12 +2,27 @@ Todo
 ===============================================
 
 - [ ] Assets@2x
-
-
+- [ ] Add support for new file icons 
 
 
 -----------------------------------------------
-v1.2.4 (WIP)
+v1.2.5
+-----------------------------------------------
+Note: I am dumb
+    overlay_scroll_bars works, it just needs acceptable values
+        - enabled
+        - disabled
+        - system
+
+DC_3
+---
+    * Added support for default setting overlay_scroll_bars, which does the same thing
+      than dc_autohide_scrollbars.
+    * Added setting "dc_highlight_active_sidebar_row"
+
+
+-----------------------------------------------
+v1.2.4
 -----------------------------------------------
 
 Note: '.no-sublime-package' didnt fix invisible icon.
@@ -48,58 +63,3 @@ DC_3
     * Cleaned up code
     * Fixed setting "dc_hide_scrollbars" behavior
 
-
------------------------------------------------
-v1.2.2
------------------------------------------------
-
-Package
-- Added .no-sublime-package to fix invisible folder icons.
-- Added messages on package install.
-- Modified README.md, include corrections.
-
-
-DC_2
-- Fixed names of settings.
-
-
------------------------------------------------
-v1.2.1
------------------------------------------------
-
-DC_3
-- Added sidebar group icons
-    dc_use_group_icon1
-    dc_use_group_icon2
-    dc_use_group_icon3
-    dc_use_group_icon4
-
-- Added sidebar folder icons
-    dc_use_folder_icon1
-    dc_use_folder_icon2
-    dc_use_folder_icon3
-    dc_use_folder_icon4
-
-- Added scrollbar overlays
-- Added scrollbar settings
-    dc_hide_scrollbars
-    dc_use_white_puck
-    dc_autohide_scrollbar
-
-- Renamed settings
-    old: always_show_minimap_viewport
-    new: dc_always_show_minimap_viewport
-
-    old: dc_hide_arrows
-    new: dc_hide_group_icons
-
-    old: dc_hide_fileicons
-    new: dc_hide_file_icons
-
-    old: bold_folder_labels
-    new: dc_bold_folder_labels
-
-- Added search icons setting
-    dc_use_soda_search_icons
-
-- Added file icons
