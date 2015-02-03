@@ -5,26 +5,27 @@ Dark and Cyan (DC) theme for Sublime Text 2/3.
 Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Table of Contents**
 
-- [Theme - DC](#)
-	- [Screenshots](#Screenshots)
-		- [Alternate folder icons](#Alternate folder icons)
-		- [Alternate group icons](#)
-		- [Alternate search icons](#)
-	- [Installation](#)
-		- [Using Sublime Package Control](#)
-		- [Download Manually](#)
-	- [Activating the theme](#)
-	- [Additional Features](#)
-		- [User Settings](#)
-		- [Resolution Support](#)
-	- [Bonus](#)
-		- [Color Scheme](#)
-		- [Filetype icons](#)
-		- [Similar themes](#)
-	- [Credits](#)
-	- [License](#)
+- [Theme - DC](#theme---dc)
+	- [Screenshots](#screenshots)
+	 	- [Main screen](#main-screen)
+		- [Alternate folder icons](#alternate-folder-icons)
+		- [Alternate group icons](#alternate-group-icons)
+		- [Alternate search icons](#alternate-search-icons)
+	- [Installation](#installation)
+		- [Using Sublime Package Control](#using-sublime-package-control)
+		- [Download Manually](#download-manually)
+	- [Activation](#activation)
+	- [Configuration](#configuration)
+		- [User Settings](#user-settings)
+	- [Resolution Support](#resolution-support)
+	- [Bonus](#bonus)
+		- [Color Scheme](#color-scheme)
+		- [Filetype icons](#filetype-icons)
+		- [Similar themes](#similar-themes)
+	- [Credits](#credits)
+	- [License](#license)
 
 
 
@@ -67,7 +68,7 @@ Using Will Bond's [Sublime Package Control](http://wbond.net/sublime_packages/pa
 * Find your `Packages` directory using the menu item  `Preferences -> Browse Packages...`
 * Copy the folder into your Sublime Text `Packages` directory
 
-## Activating the theme
+## Activation
 
 To configure Sublime Text to use the theme, follow the instructions below.
 
@@ -87,7 +88,7 @@ To configure Sublime Text to use the theme, follow the instructions below.
         "theme": "DC_2.sublime-theme"
     }
 
-## Additional Features
+## Configuration
 
 
 ### User Settings
@@ -121,7 +122,7 @@ You can use the settings below to customize the theme to your liking.
     "dc_highlight_active_sidebar_row" : true
     
 
-### Resolution Support
+## Resolution Support
 
 Unfortunately, I've been too lazy to test the DC Theme on high DPI displays.
 However, I'll probably add the support if requested, or when I start using devices with such displays.
