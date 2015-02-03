@@ -5,7 +5,32 @@ Dark and Cyan (DC) theme for Sublime Text 2/3.
 Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 
-## Images
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [DC Theme](#)
+	- [Screenshots](#)
+		- [Alternate folder icons](#)
+		- [Alternate group icons](#)
+		- [Alternate search icons](#)
+	- [Installation](#)
+		- [Using Sublime Package Control](#)
+		- [Download Manually](#)
+	- [Activating the theme](#)
+	- [Additional Features](#)
+		- [User Settings](#)
+		- [Resolution Support](#)
+	- [Bonus](#)
+		- [Color Scheme](#)
+		- [Filetype icons](#)
+		- [Similar themes](#)
+	- [Credits](#)
+	- [License](#)
+
+
+
+## Screenshots
+
+### Main screen
 
 ![Main screen](http://i.imgur.com/AvyhY2z.png)
 
