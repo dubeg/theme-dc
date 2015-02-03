@@ -1,4 +1,4 @@
-# DC Theme
+# Theme - DC
 
 Dark and Cyan (DC) theme for Sublime Text 2/3.
 
@@ -7,9 +7,9 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
-- [DC Theme](#)
-	- [Screenshots](#)
-		- [Alternate folder icons](#)
+- [Theme - DC](#)
+	- [Screenshots](#Screenshots)
+		- [Alternate folder icons](#Alternate folder icons)
 		- [Alternate group icons](#)
 		- [Alternate search icons](#)
 	- [Installation](#)
