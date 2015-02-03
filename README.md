@@ -18,7 +18,6 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 		- [Download Manually](#download-manually)
 	- [Activation](#activation)
 	- [Configuration](#configuration)
-		- [User Settings](#user-settings)
 	- [Resolution Support](#resolution-support)
 	- [Bonus](#bonus)
 		- [Color Scheme](#color-scheme)
@@ -89,9 +88,6 @@ To configure Sublime Text to use the theme, follow the instructions below.
     }
 
 ## Configuration
-
-
-### User Settings
 
 You can use the settings below to customize the theme to your liking.
 
