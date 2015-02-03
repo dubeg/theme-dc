@@ -9,7 +9,7 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 - [Theme - DC](#theme---dc)
 	- [Screenshots](#screenshots)
-        - [Main window](#main-window)
+        	- [Main window](#main-window)
 	 	- [Alternate widget colors](#alternate-widget-colors)
 		- [Alternate folder icons](#alternate-folder-icons)
 		- [Alternate group icons](#alternate-group-icons)
