@@ -9,7 +9,8 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 - [Theme - DC](#theme---dc)
 	- [Screenshots](#screenshots)
-	 	- [Main screen](#main-screen)
+        - [Main window](#main-window)
+	 	- [Alternate widget colors](#alternate-widget-colors)
 		- [Alternate folder icons](#alternate-folder-icons)
 		- [Alternate group icons](#alternate-group-icons)
 		- [Alternate search icons](#alternate-search-icons)
@@ -30,9 +31,17 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 ## Screenshots
 
-### Main screen
+### Main window
 
-![Main screen](http://i.imgur.com/AvyhY2z.png)
+![Main window](http://i.imgur.com/AvyhY2z.png)
+
+### Alternate widget colors
+
+![DC_3](http://i.imgur.com/71HGEdo.png)
+
+![DC_3_LW](http://i.imgur.com/eYR07Sy.png)
+
+![DC_3_GW](http://i.imgur.com/vA1VzVT.png)
 
 ### Alternate folder icons
 
@@ -44,11 +53,12 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 ### Alternate search icons
 
-![CTRL + F](http://i.imgur.com/xCG4hgg.png)
+![CTRL + F](http://i.imgur.com/URLemr8.png)
 
-![CTRL + SHIFT + F](http://i.imgur.com/3z0LwIh.png)
+### New file icons
 
-![CTRL + H](http://i.imgur.com/kCBFkmW.png)
+![File icons](http://i.imgur.com/57G0GMJ.png)
+
 
 ## Installation
 
@@ -76,16 +86,20 @@ To configure Sublime Text to use the theme, follow the instructions below.
 
 **ST3**
 
-    {
-        "theme": "DC_3.sublime-theme"
-    }
+    // Theme with dark widget colors
+    "theme": "DC_3.sublime-theme"
+
+    // Theme with dark widget backgrounds and white input fields
+    "theme": "DC_3_LW.sublime-theme"
+
+    // Theme with gray/dark widget colors
+    "theme": "DC_3_GW.sublime-theme"
 
 
 **ST2**
 
-    {
-        "theme": "DC_2.sublime-theme"
-    }
+    "theme": "DC_2.sublime-theme"
+
 
 ## Configuration
 
@@ -139,6 +153,8 @@ It is made available by buymeasoda. Here's how to get it:
 
 The file icons seen in the screenshot are assets collected from the [Seti_ST3 repository](https://github.com/ctf0/Seti_ST3).
 
+I modified and added a few of my own however.
+
 
 ### Similar themes
 
@@ -151,6 +167,7 @@ The file icons seen in the screenshot are assets collected from the [Seti_ST3 re
 Based on Soda Theme by Ian Hill [(buymeasoda.com)](http://buymeasoda.com/), and inspired by many others.
 
 Some assets used in this theme are from (or modified from):
+
 - the Soda theme project (search icons and a few others)
 - the Numix project (alternate folder icons)
 - Visual Studio 2013 (alternate folder icons, and a few filetype icons)

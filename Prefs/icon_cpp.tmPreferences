@@ -7,7 +7,7 @@
     <key>settings</key>
     <dict>
         <key>icon</key>
-        <string>file_type_c++</string>
+        <string>file_type_cpp</string>
     </dict>
 </dict>
 </plist>

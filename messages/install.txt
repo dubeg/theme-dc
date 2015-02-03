@@ -1,32 +1,30 @@
-===============================================
-  Activation
-===============================================
+# Activation
+
+**Sublime Text 3 - User Settings**
+
+    {
+        // Theme with dark widget colors
+        "theme": "DC_3.sublime-theme"
+    
+        // Theme with dark widget backgrounds and white input fields
+        "theme": "DC_3_LW.sublime-theme"
+    
+        // Theme with gray/dark widget colors
+        "theme": "DC_3_GW.sublime-theme"
+    }
 
 
-Sublime Text 3 - User Settings
------------------------------------------------
-{
-    "theme" : "DC_3.sublime-theme"
-}
+**Sublime Text 2 - User Settings**
+
+    {
+        "theme" : "DC_2.sublime-theme"
+    }
 
 
+# Customization
 
-Sublime Text 2 - User Settings
------------------------------------------------
-{
-    "theme" : "DC_2.sublime-theme"
-}
+**Sublime Text 3 - User Settings**
 
-
-
-===============================================
-  Customization
-===============================================
-
-
-Sublime Text 3 - User Settings
------------------------------------------------
-{
     "dc_hide_btn_close_tab" : true,
     "dc_always_show_minimap_viewport" : true,
     "dc_autohide_scrollbar" : true,
@@ -50,14 +48,10 @@ Sublime Text 3 - User Settings
     "dc_use_group_icon2" : true,
     "dc_use_group_icon3" : true,
     "dc_use_group_icon4" : true
-} 
 
 
+**Sublime Text 2 - User Settings**
 
-
-Sublime Text 2 - User Settings
------------------------------------------------
-{
     "dc_hide_group_icons" : true,
     "dc_use_soda_search_icons" : true,
     "dc_use_white_puck" : true,
@@ -69,8 +63,10 @@ Sublime Text 2 - User Settings
     "dc_use_group_icon2" : true,
     "dc_use_group_icon3" : true,
     "dc_use_group_icon4" : true
-}
 
 
-More info at :
-github.com/dubeg/theme-dc
+# Information
+
+More info and screenshots at:
+
+    github.com/dubeg/theme-dc

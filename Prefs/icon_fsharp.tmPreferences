@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
     <key>scope</key>
-    <string>source.cs</string>
+    <string>source.fsharp</string>
     <key>settings</key>
     <dict>
         <key>icon</key>
-        <string>file_type_c#</string>
+        <string>file_type_fsharp</string>
     </dict>
 </dict>
 </plist>

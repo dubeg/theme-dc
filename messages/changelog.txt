@@ -1,65 +1,23 @@
-Todo
-===============================================
+v1.2.6
+----------
+Release Date: 3 Feb 2015
 
-- [ ] Assets@2x
-- [ ] Add support for new file icons 
+    * Added 2 themes files, attached to different widget colors:
+        - DC_3_LW.sublime-theme, Light Widget colors (white input fields)
+        - DC_3_GW.sublime-theme, Gray Widget colors (gray background panels)
+        - DC_3.sublime-theme, Dark Widget colors (black background, gray in. fields)
+
+    * DC_2.sublime-theme is attached to dark widget colors.
+
+    * Added icon support for...
+        - reStructuredText files (.rst, .rest)
+        - fsharp files (.fs, .fsi)
 
 
------------------------------------------------
 v1.2.5
------------------------------------------------
-Note: I am dumb
-    overlay_scroll_bars works, it just needs acceptable values
-        - enabled
-        - disabled
-        - system
+----------
 
-DC_3
----
-    * Added support for default setting overlay_scroll_bars, which does the same thing
-      than dc_autohide_scrollbars.
+    DC_3
+
+    * Added support for default setting overlay_scroll_bars
     * Added setting "dc_highlight_active_sidebar_row"
-
-
------------------------------------------------
-v1.2.4
------------------------------------------------
-
-Note: '.no-sublime-package' didnt fix invisible icon.
-      It seems like a bug, sometimes icons will be visible at startup,
-      sometimes they won't. A mouse click on any tree row will fix it.
-
-      Also, not all filetypes are working. '.c' and '.h', for ex, 
-      don't have a specific icon. Others are simply not recognized.
-
-
-General
----
-    * Replaced icons for filetypes
-        - C#
-        - C++
-        - text 
-    * Deleted .no-sublime-package because it doesnt seem to fix the problem.
-    * Renamed setting "mouse_wheel_switches_tabs" to "dc_mouse_wheel_switches_tabs"
-    * Renamed setting "bold_folder_labels" to "dc_bold_folder_labels"
-
-    * Compatible with Theme - Default settings
-        * show_tab_close_buttons
-        * mouse_wheel_switches_tabs
-        * bold_folder_labels
-        NOTE: 
-            highlight_modified_tabs     not included
-            enable_tab_scrolling        not included/unnecessary
-            overlay_scroll_bars         not included/doesnt work for some reason
-
-DC_2
----
-    * Cleaned up code
-    * Added setting "dc_use_group_icon[2, 3, 4]"
-    * Fixed selected icon-reverse code
-
-DC_3
----
-    * Cleaned up code
-    * Fixed setting "dc_hide_scrollbars" behavior
-

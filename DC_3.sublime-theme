@@ -267,6 +267,19 @@
 
 
     //
+    // CONSOLE SCROLLBAR
+    // 
+    {
+        "class": "scroll_bar_control",
+        "parents": [{"class": "panel_control"}],
+        "layer0.tint" : [25, 25, 25],
+        "layer0.opacity": 1.0,
+        "blur": false
+    },
+
+
+
+    //
     // STANDARD SCROLLBAR CORNER
     //
     {
@@ -465,6 +478,7 @@
     {
         "class": "label_control",
         "parents": [{"class": "panel_control"}],
+        "font.size" : 12,
         "shadow_color": [50, 50, 50],
         "shadow_offset": [0, -1]
     },
@@ -476,8 +490,9 @@
     {
         "class": "label_control",
         "parents": [{"class": "button_control"}],
+        "font.size" : 12,
         "shadow_color": [55, 55, 55],
-        "shadow_offset": [0, -1]
+        "shadow_offset": [1,1]
     },
 
 
@@ -868,14 +883,14 @@
 
 
 //
-// STANDARD TEXT BUTTONS
+// STANDARD BUTTONS
 //
     //
-    // BUTTON
+    // GENERAL BUTTON
     //
     {
         "class": "button_control",
-        "content_margin": [6, 5, 6, 6],
+        "content_margin": [6, 8, 6, 6],
         "min_size": [75, 0],
         "layer0.tint" : [30,30,30],
         "layer0.opacity": 1.0,
@@ -900,14 +915,38 @@
 //
 
     //
-    // TEXT INPUT FIELD
+    // GENERAL INPUT
     //
     {
         "class": "text_line_control",
-        "layer0.tint" : [220,220,220],
+        "layer0.tint" : [20,20,20],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [0,0],
         "content_margin": [3, 4, 3, 3]
+    },
+
+
+    //
+    // PANEL INPUT
+    //
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "panel_control"}],
+        "layer0.tint" : [47,47,47],
+        "content_margin": [5,6,5,5]
+    },
+
+
+    //
+    // OVERLAY INPUT
+    //
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "overlay_control"}],
+        "layer0.tint" : [47,47,47],
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [0,0],
+        "content_margin": [5,6,5,5]
     },
 
 
@@ -933,7 +972,7 @@
 // PANELS
 //
     //
-    // PANEL CONTROL (Search panel background, ...)
+    // PANEL CONTROL (Search panel background, Console panel BG, ...)
     //
     {
         "class": "panel_control",
@@ -1078,9 +1117,6 @@
 
         "match_fg": [32, 255, 237],
         "selected_match_fg": [32, 255, 237],
-
-        "shadow_color": [0, 0, 0],
-        "shadow_offset": [0,1]
     },
 
 
@@ -1124,22 +1160,24 @@
     //
     {
         "class": "panel_close_button",
-        "layer0.texture": "Theme - DC/assets/panel-close.png",
-        "layer0.opacity": 0.85,
-        "content_margin": [8, 12]
+        "layer0.texture": "Theme - DC/assets/btn_close_panel.png",
+        "layer0.tint" : [255,255,255],
+        "layer0.opacity": 0.4,
+        "content_margin": [12,14]
     },
     //          STATE HOVER
     {
         "class": "panel_close_button",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - DC/assets/panel-close.png",
-        "layer0.opacity": 1.0
+        "layer0.tint" : [0,255,255],
+        "layer0.opacity": 1
     },
     //          STATE PRESSED
     {
         "class": "panel_close_button",
         "attributes": ["pressed"],
-        "layer0.texture": "Theme - DC/assets/panel-close-pressed.png"
+        "layer0.tint" : [100,100,100],
+        "layer0.opacity": 1
     },
 
 

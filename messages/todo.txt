@@ -1,0 +1,10 @@
+Todo
+===============================================
+
+- [ ] Assets@2x
+- [ ] Add support for new file icons 
+    - [ ] .csproj 
+    - [x] .f#
+    - [ ] .h  (possible?)
+    - [ ] .c  (possible?)
+    - [x] .reST, .rst 
