@@ -1578,7 +1578,7 @@
 {
     "class": "text_line_control",
     "parents": [{"class": "panel_control"}],
-    "layer0.tint" : [220,220,220],
+    "layer0.tint" : [20,20,20],
     "content_margin": [5,6,5,5]
 },
 
@@ -1589,7 +1589,7 @@
 {
     "class": "text_line_control",
     "parents": [{"class": "overlay_control"}],
-    "layer0.tint" : [220,220,220],
+    "layer0.tint" : [20,20,20],
     "content_margin": [3, 4, 3, 3]
 },
 
