@@ -196,7 +196,14 @@
     //          STATE HOVER
     {
         "class": "show_tabs_dropdown_button",
-        "attributes": ["hover"]
+        "attributes": ["hover"],
+        "layer0.opacity": 0.7
+    },
+    //          STATE PRESSED
+    {
+        "class": "show_tabs_dropdown_button",
+        "attributes": ["pressed"],
+        "layer0.opacity": 0.5
     },
     
 
@@ -213,7 +220,14 @@
     //          STATE HOVER
     {
         "class": "scroll_tabs_left_button",
-        "attributes": ["hover"]
+        "attributes": ["hover"],
+        "layer0.opacity": 0.7
+    },
+    //          STATE PRESSED
+    {
+        "class": "scroll_tabs_left_button",
+        "attributes": ["pressed"],
+        "layer0.opacity": 0.5
     },
     
 
@@ -230,7 +244,14 @@
     //          STATE HOVER
     {
         "class": "scroll_tabs_right_button",
-        "attributes": ["hover"]
+        "attributes": ["hover"],
+        "layer0.opacity": 0.7
+    },
+    //          STATE PRESSED
+    {
+        "class": "scroll_tabs_right_button",
+        "attributes": ["pressed"],
+        "layer0.opacity": 0.5
     },
 
 
@@ -616,21 +637,21 @@
         "layer0.tint" : [50,50,50],
         "layer0.texture" : ""
     },
-    //          ALTERMATE STYLE 1
+    //          ALTERNATE STYLE 1
     {
         "class": "tree_row",
         "settings" : ["dc_use_sidebar_active_row_style2"],
         "layer0.texture" : "Theme - DC/assets/sidebar_active_row.png",
         "layer0.tint" : [255,255,255],
-        "layer0.inner_margin" : [1, 0, 0, 0],
+        "layer0.inner_margin" : [3, 0, 0, 0],
     },
-    //          ALTERMATE STYLE 2
+    //          ALTERNATE STYLE 2
     {
         "class": "tree_row",
         "settings" : ["dc_use_sidebar_active_row_style3"],
         "layer0.texture" : "Theme - DC/assets/sidebar_active_row2.png",
         "layer0.tint" : [255,255,255],
-        "layer0.inner_margin" : [0, 0, 1, 0],
+        "layer0.inner_margin" : [0, 0, 3, 0],
     },
     //          STATE SELECTED
     {
