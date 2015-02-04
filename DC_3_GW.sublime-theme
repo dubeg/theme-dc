@@ -1054,7 +1054,7 @@
     {
         "class": "overlay_control",
         "layer0.texture" : "",
-        "layer0.tint": [30,30,30],
+        "layer0.tint": [28,28,28],
         "layer0.opacity": 1.0,
         "content_margin": [5,5,5,5]
     },
@@ -1094,15 +1094,15 @@
 
 
     //
-    // ENTRY LABEL
+    // ENTRY LABEL / QUICK PANEL LABEL
     //
     {
         "class": "quick_panel_label",
-        "fg": [210, 210, 210, 255],
-        "match_fg": [32, 255, 237],
+        "fg": [130, 130, 130, 255],
+        "match_fg": [170, 170, 170, 255],
 
-        "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [32, 255, 237]
+        "selected_fg": [32, 255, 237],
+        "selected_match_fg": [32, 255, 237],
     },
 
 
@@ -1111,10 +1111,11 @@
     //
     {
         "class": "quick_panel_path_label",
-        "fg": [130, 130, 130, 255],
-        "match_fg": [220, 220, 220, 255],
-        "selected_fg": [175, 175, 175, 255],
-        "selected_match_fg": [220, 220, 220, 255]
+        "fg": [60, 60, 60, 255],
+        "match_fg": [60, 60, 60, 255],
+
+        "selected_fg": [130, 130, 130, 255],
+        "selected_match_fg":[130, 130, 130, 255]
     },
 
 
@@ -1123,7 +1124,7 @@
     //
     {
         "class": "quick_panel_score_label",
-        "fg": [120,120,120,120],
+        "fg": [130, 130, 130, 255],
         "selected_fg": [32, 255, 237]
     },
 
@@ -1152,7 +1153,7 @@
 // CODE COMPLETION DROPDOWN
 //
     //
-    // POPUP CONTROL 
+    // POPUP CONTROL (Completion Panel Background)
     //
     {
         "class": "popup_control",
@@ -1163,36 +1164,33 @@
 
 
     //
-    // AUTO COMPLETE (???)
-    //
-    {
-        "class": "auto_complete",
-        "row_padding": [4, 2]
-    },
-
-
-    //
-    // AUTO COMPLETE LABEL (???)
-    //
+    // COMPLETION LABEL
+    // 
     {
         "class": "auto_complete_label",
-        "fg": [200, 200, 200],
-        "selected_fg": [255, 255, 255],
+        "fg": [70, 70, 70, 255],
+        "match_fg": [130, 130, 130, 255],
 
-        "match_fg": [32, 255, 237],
-        "selected_match_fg": [32, 255, 237],
+        "selected_fg": [32, 255, 237],
+        "selected_match_fg":  [32, 255, 237]
     },
 
 
     //
-    // TABLE ROW (???)
+    // ENTRY ROW / COMPLETION ROW
     //
     {
         "class": "table_row",
         "layer0.texture": "",
-        "layer0.tint": [75, 75, 75],
+        "layer0.tint": [50, 50, 50],
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [3, 1]
+        
+    },
+    //          ROW PADDING
+    {
+        "class": "auto_complete",
+        "row_padding": [4, 2]
     },
     //          STATE SELECTED
     {
