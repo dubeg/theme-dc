@@ -18,6 +18,12 @@
         "tab_height": 30,
         "mouse_wheel_switch": false
     },
+    //          SETTING DARKER_TAB_COLOR
+    {
+        "class": "tabset_control",
+        "settings" : ["dc_use_darker_tab_colors"],
+        "layer0.texture": "Theme - DC/assets/tabset_background2.png",
+    },
     //          SETTING MOUSE WHEEL SWITCHING
     {
         "class": "tabset_control",
@@ -43,6 +49,12 @@
         "layer0.inner_margin": [1,0,1,4],
         "layer0.opacity": 1.0
     },
+    //          SETTING DARKER_TAB_COLOR
+    {
+        "class": "tab_control",
+        "settings" : ["dc_use_darker_tab_colors"],
+        "layer0.texture": "Theme - DC/assets/tab_inactive2.png",
+    },
     //          STATE HOVER
     {
         "class": "tab_control",
@@ -52,7 +64,14 @@
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - DC/assets/tab_active3.png"
+        "layer0.texture": "Theme - DC/assets/tab_active.png"
+    },
+    //          SETTING DARKER_TAB_COLOR
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "settings" : ["dc_use_darker_tab_colors"],
+        "layer0.texture": "Theme - DC/assets/tab_active2.png",
     },
 
  
@@ -141,15 +160,17 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [235, 235, 235],
-        "shadow_color": [30, 30, 30]
+        "fg": [220, 220, 220],
     },
     //          STATE TAB SELECTED
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [32, 255, 237],
-        "shadow_offset": [1,2]
+        //"fg": [30,30,30],
+        "fg": [0,255,226],
+        "shadow_color": [0,0,0],
+        "shadow_offset": [1,1],
+        "font.bold": false
     }, 
     //          STATE TRANSIENT
     {
@@ -590,10 +611,26 @@
     //
     {
         "class": "tree_row",
-        "layer0.inner_margin" : [3, 0, 0, 0],
         "content_margin": [0, 1, 0, 0],
         "layer0.opacity" : 0.0,
-        "layer0.tint" : [50,50,50]
+        "layer0.tint" : [50,50,50],
+        "layer0.texture" : ""
+    },
+    //          ALTERMATE STYLE 1
+    {
+        "class": "tree_row",
+        "settings" : ["dc_use_sidebar_active_row_style2"],
+        "layer0.texture" : "Theme - DC/assets/sidebar_active_row.png",
+        "layer0.tint" : [255,255,255],
+        "layer0.inner_margin" : [1, 0, 0, 0],
+    },
+    //          ALTERMATE STYLE 2
+    {
+        "class": "tree_row",
+        "settings" : ["dc_use_sidebar_active_row_style3"],
+        "layer0.texture" : "Theme - DC/assets/sidebar_active_row2.png",
+        "layer0.tint" : [255,255,255],
+        "layer0.inner_margin" : [0, 0, 1, 0],
     },
     //          STATE SELECTED
     {
@@ -602,6 +639,7 @@
         "settings" : ["dc_highlight_active_sidebar_row"],
         "layer0.opacity" : 1.0
     },
+
 
 
     //
@@ -617,7 +655,7 @@
 
 
     //
-    // ENTRY LABEL
+    // ENTRY LABEL / SIDEBAR LABEL
     //
     {
         "class": "sidebar_label",
@@ -626,6 +664,12 @@
         "shadow_offset": [0, -1],
         "font.bold": false,
         "font.italic": false
+    },
+    //          STATE ROW-HOVERED
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [235, 235, 235],
     },
     //          STATE ROW-SELECTED
     {
@@ -890,7 +934,7 @@
     //
     {
         "class": "button_control",
-        "content_margin": [6, 8, 6, 6],
+        "content_margin": [6, 7, 6, 6],
         "min_size": [75, 0],
         "layer0.tint" : [30,30,30],
         "layer0.opacity": 1.0,
@@ -988,11 +1032,11 @@
     //
     {
         "class": "overlay_control",
-        "layer0.tint": [20, 20, 20 ],
+        "layer0.texture" : "",
+        "layer0.tint": [30,30,30],
         "layer0.opacity": 1.0,
-        "content_margin": [1,1]
+        "content_margin": [5,5,5,5]
     },
-
 
 
 

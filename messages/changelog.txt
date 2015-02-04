@@ -1,3 +1,19 @@
+v1.2.7 (WIP)
+----------
+
+* DC_3 Command palette now looks more like DC_3_GW
+* Fixed different button height between theme files 
+* Added 2 alternate sidebar_row_active styles
+    - dc_use_sidebar_active_row_style2
+    - dc_use_sidebar_active_row_style3
+* Added darker tab style activated with the following setting 
+    - dc_use_darker_tab_colors
+* Removed unused assets
+
+Note:
+    I really need a script to merge changes between the theme files.
+
+
 v1.2.6
 ----------
 Release Date: 3 Feb 2015
