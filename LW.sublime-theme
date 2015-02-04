@@ -1,0 +1,65 @@
+//
+// CONSOLE SCROLLBAR
+// 
+{
+    "class": "scroll_bar_control",
+    "parents": [{"class": "panel_control"}],
+    "layer0.tint" : [30,30,30],
+    "layer0.opacity": 1.0,
+    "blur": false
+},
+
+
+//
+// BUTTON LABEL
+//
+{
+    "class": "label_control",
+    "parents": [{"class": "button_control"}],
+    "shadow_offset": [0, -1]
+},
+
+
+//
+// GENERAL INPUT
+//
+{
+    "class": "text_line_control",
+    "layer0.tint" : [220,220,220],
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [0,0],
+    "content_margin": [3, 4, 3, 3]
+},
+
+
+//
+// PANEL TEXT INPUT
+//
+{
+    "class": "text_line_control",
+    "parents": [{"class": "panel_control"}],
+    "layer0.tint" : [220,220,220],
+    "content_margin": [5,6,5,5]
+},
+
+
+//
+// OVERLAY TEXT INPUT
+//
+{
+    "class": "text_line_control",
+    "parents": [{"class": "overlay_control"}],
+    "layer0.tint" : [220,220,220],
+    "content_margin": [3, 4, 3, 3]
+},
+
+
+//
+// OVERLAY CONTROL (Quick panel background, ...)
+//
+{
+    "class": "overlay_control",
+    "layer0.tint": [20, 20, 20 ],
+    "layer0.opacity": 1.0,
+    "content_margin": [1,1]
+},

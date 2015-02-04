@@ -55,6 +55,7 @@
         "class": "tab_control",
         "settings" : ["dc_use_darker_tab_colors"],
         "layer0.texture": "Theme - DC/assets/tab_inactive2.png",
+        "layer0.inner_margin": [2,0,2,4]
     },
     //          STATE HOVER
     {
@@ -255,6 +256,7 @@
         "layer0.opacity": 0.5
     },
 
+
 //
 // FOLDING
 //
@@ -318,7 +320,6 @@
         "layer0.opacity": 1.0,
         "blur": false
     },
-
 
 
     //
@@ -662,7 +663,6 @@
     },
 
 
-
     //
     // HEADERS
     //
@@ -971,7 +971,7 @@
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "layer0.tint" : [75,75,75]
+        "layer0.tint" : [40,40,40]
     },
 
 
@@ -1058,7 +1058,6 @@
         "layer0.opacity": 1.0,
         "content_margin": [5,5,5,5]
     },
-
 
 
 //

@@ -1,0 +1,134 @@
+// ==============================
+// GRAY WIDGET MODIFICATIONS
+// ==============================
+
+
+//
+// BUTTON LABEL
+//
+{
+    "class": "label_control",
+    "parents": [{"class": "button_control"}],
+    "font.size" : 12,
+    "shadow_color": [20,20,20],
+    "shadow_offset": [1,1]
+},
+
+
+//
+// STANDARD BUTTONS
+//
+//
+// GENERAL BUTTON
+//
+{
+    "class": "button_control",
+    "content_margin": [6, 7, 6, 6],
+    "min_size": [75, 0],
+    "layer0.tint" : [50,50,50],
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [6, 6]
+},
+//          STATE HOVER
+{
+    "class": "button_control",
+    "attributes": ["hover"],
+    "layer0.tint" : [30,30,30]
+},
+//          STATE PRESSED
+{
+    "class": "button_control",
+    "attributes": ["pressed"],
+    "layer0.tint" : [20,20,20]
+},
+
+
+//
+// TEXT INPUT FIELD
+//
+
+//
+// GENERAL TEXT INPUT
+//
+{
+    "class": "text_line_control",
+    "layer0.tint" : [30,30,30],
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [0,0],
+    "content_margin": [3, 4, 3, 3]
+},
+
+
+//
+// PANEL TEXT INPUT
+//
+{
+    "class": "text_line_control",
+    "parents": [{"class": "panel_control"}],
+    "layer0.tint" : [30,30,30],
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [0,0],
+    "content_margin": [5,6,5,5]
+},
+
+
+
+//
+// OVERLAY TEXT INPUT
+//
+{
+    "class": "text_line_control",
+    "parents": [{"class": "overlay_control"}],
+    "layer0.tint" : [30,30,30],
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [0,0],
+    "content_margin": [3, 4, 3, 3]
+},
+
+
+//
+// PANELS
+//
+//
+// PANEL CONTROL (Search panel background, Console panel BG, ...)
+//
+{
+    "class": "panel_control",
+    "layer0.texture": "Theme - DC/assets/statusbar_bg2.png",
+    "layer0.tint" : [255,255,255],
+    "layer0.inner_margin": [1,1],
+    "layer0.opacity": 1.0,
+    "content_margin": [5, 2, 5, 1]
+},
+
+
+//
+// OVERLAY CONTROL (Quick panel background, ...)
+//
+{
+    "class": "overlay_control",
+    "layer0.tint" : [50,50,50],
+    "layer0.inner_margin": [1,1],
+    "layer0.opacity": 1.0,
+    "content_margin": [5,5,5,5]
+},
+
+
+//
+// SEARCH PANEL
+//
+//
+// ICON BUTTON
+//
+{
+    "class": "icon_button_control",
+    "content_margin": [5,5,5,5],
+    "layer0.opacity": 0
+},
+{
+    "class": "icon_button_control",
+    "settings" : ["!dc_use_soda_search_icons"],
+    "content_margin": [6,6,6,6],
+    "layer0.tint" : [30,30,30],
+    "layer0.opacity": 1
+},
