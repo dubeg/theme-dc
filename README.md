@@ -33,13 +33,11 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 ### Main window
 
-![Main window](http://i.imgur.com/AvyhY2z.png)
-
-### Alternate widget colors
-
 **DC_3**
 
-![DC_3](http://i.imgur.com/71HGEdo.png)
+![Main window](http://i.imgur.com/GjVCVAy.png)
+
+### Alternate widget colors
 
 **DC_3_GW**
 
@@ -47,7 +45,11 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 **DC_3_LW**
 
-![DC_3_LW](http://i.imgur.com/eYR07Sy.png)
+![DC_3_LW](http://i.imgur.com/gznWnEs.png)
+
+**DC_3_DD**
+
+![DC_3_DD](http://i.imgur.com/Xfiuh0q.png)
 
 ### Alternate folder icons
 
