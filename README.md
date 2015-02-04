@@ -33,21 +33,21 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 ### Main window
 
-**DC_3**
+#### DC_3
 
 ![Main window](http://i.imgur.com/GjVCVAy.png)
 
 ### Alternate widget colors
 
-**DC_3_GW**
+#### DC_3_GW
 
 ![DC_3_GW](http://i.imgur.com/vA1VzVT.png)
 
-**DC_3_LW**
+#### DC_3_LW
 
 ![DC_3_LW](http://i.imgur.com/gznWnEs.png)
 
-**DC_3_DD**
+#### DC_3_DD
 
 ![DC_3_DD](http://i.imgur.com/Xfiuh0q.png)
 
