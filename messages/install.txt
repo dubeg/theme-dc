@@ -3,13 +3,16 @@
 **Sublime Text 3 - User Settings**
 
     {
-        // Theme with dark widget colors
+        // Theme with
+        // dark/gray widget colors.
         "theme": "DC_3.sublime-theme"
     
-        // Theme with dark widget backgrounds and white input fields
+        // Theme with
+        // dark/white widget colors.
         "theme": "DC_3_LW.sublime-theme"
     
-        // Theme with gray/dark widget colors
+        // Theme with
+        // gray/dark widget colors.
         "theme": "DC_3_GW.sublime-theme"
     }
 
@@ -40,14 +43,23 @@
     "dc_use_soda_search_icons" : true,
     "dc_use_white_puck" : true,
 
-    "dc_use_folder_icon1" : true,
+    "dc_use_folder_icon1" : true, // default
     "dc_use_folder_icon2" : true,
     "dc_use_folder_icon3" : true,
 
-    "dc_use_group_icon1" : true,
+    "dc_use_group_icon1" : true, // default
     "dc_use_group_icon2" : true,
     "dc_use_group_icon3" : true,
-    "dc_use_group_icon4" : true
+    "dc_use_group_icon4" : true,
+
+    //-------------------------------
+    // New with v1.2.7
+    //-------------------------------
+    "dc_use_darker_tab_colors": true,
+
+    "dc_use_sidebar_active_row_style1": true, // default
+    "dc_use_sidebar_active_row_style2": true,
+    "dc_use_sidebar_active_row_style3": true,
 
 
 **Sublime Text 2 - User Settings**
@@ -62,7 +74,17 @@
     "dc_use_group_icon1" : true,
     "dc_use_group_icon2" : true,
     "dc_use_group_icon3" : true,
-    "dc_use_group_icon4" : true
+    "dc_use_group_icon4" : true,
+
+    //-------------------------------
+    // New with v1.2.7
+    //-------------------------------
+    "dc_use_darker_tab_colors": true,
+
+    "dc_use_sidebar_active_row_style1": true, // default
+    "dc_use_sidebar_active_row_style2": true,
+    "dc_use_sidebar_active_row_style3": true,
+
 
 
 # Information

@@ -1,5 +1,6 @@
-v1.2.7 (WIP)
+v1.2.7
 ----------
+Release Date : 4 Feb 2015
 
 * DC_3 Command palette now looks more like DC_3_GW
 * Fixed different button height between theme files 
@@ -9,31 +10,27 @@ v1.2.7 (WIP)
 * Added darker tab style activated with the following setting 
     - dc_use_darker_tab_colors
 * Removed unused assets
-
-Note:
-    I really need a script to merge changes between the theme files.
+* Added files GW and LW from which DC_3_GW and DC_3_LW are created.
 
 
 v1.2.6
 ----------
 Release Date: 3 Feb 2015
 
-    * Added 2 themes files, attached to different widget colors:
-        - DC_3_LW.sublime-theme, Light Widget colors (white input fields)
-        - DC_3_GW.sublime-theme, Gray Widget colors (gray background panels)
-        - DC_3.sublime-theme, Dark Widget colors (black background, gray in. fields)
+* Added 2 themes files, attached to different widget colors:
+    - DC_3_LW.sublime-theme, Light Widget colors (white input fields)
+    - DC_3_GW.sublime-theme, Gray Widget colors (gray background panels)
+    - DC_3.sublime-theme, Dark Widget colors (black background, gray in. fields)
 
-    * DC_2.sublime-theme is attached to dark widget colors.
+* DC_2.sublime-theme is attached to dark widget colors.
 
-    * Added icon support for...
-        - reStructuredText files (.rst, .rest)
-        - fsharp files (.fs, .fsi)
+* Added icon support for...
+    - reStructuredText files (.rst, .rest)
+    - fsharp files (.fs, .fsi)
 
 
 v1.2.5
 ----------
 
-    DC_3
-
-    * Added support for default setting overlay_scroll_bars
-    * Added setting "dc_highlight_active_sidebar_row"
+* Added support for default setting overlay_scroll_bars
+* Added setting "dc_highlight_active_sidebar_row"

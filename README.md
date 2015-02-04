@@ -37,11 +37,17 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 ### Alternate widget colors
 
+**DC_3**
+
 ![DC_3](http://i.imgur.com/71HGEdo.png)
 
-![DC_3_LW](http://i.imgur.com/eYR07Sy.png)
+**DC_3_GW**
 
 ![DC_3_GW](http://i.imgur.com/vA1VzVT.png)
+
+**DC_3_LW**
+
+![DC_3_LW](http://i.imgur.com/eYR07Sy.png)
 
 ### Alternate folder icons
 
@@ -86,13 +92,16 @@ To configure Sublime Text to use the theme, follow the instructions below.
 
 **ST3**
 
-    // Theme with dark widget colors
+    // Theme with
+    // dark/gray widget colors.
     "theme": "DC_3.sublime-theme"
 
-    // Theme with dark widget backgrounds and white input fields
+    // Theme with
+    // dark/white widget colors.
     "theme": "DC_3_LW.sublime-theme"
 
-    // Theme with gray/dark widget colors
+    // Theme with
+    // gray/dark widget colors.
     "theme": "DC_3_GW.sublime-theme"
 
 
@@ -107,29 +116,38 @@ You can use the settings below to customize the theme to your liking.
 
 **Example User Settings**
 
-    "dc_hide_file_icons" : false,
-    "dc_hide_folders" : false,
-    "dc_hide_group_icons" : false,
-    "dc_hide_scrollbars" : false,
-    "dc_hide_btn_close_tab" : false,
-
-    "dc_use_group_icon1" : true,
-    "dc_use_group_icon2" : false,
-    "dc_use_group_icon3" : false,
-    "dc_use_group_icon4" : false,
-
-    "dc_use_folder_icon1" : true,
-    "dc_use_folder_icon2" : false,
-    "dc_use_folder_icon3" : false,
-
-    "dc_use_soda_search_icons" : false,
-    
-    "dc_autohide_scrollbar" : false,
-    "dc_use_white_puck" : false,
+    "dc_hide_btn_close_tab" : true,
     "dc_always_show_minimap_viewport" : true,
+    "dc_autohide_scrollbar" : true,
     "dc_bold_folder_labels" : true,
     "dc_mouse_wheel_switches_tabs" : true,
-    "dc_highlight_active_sidebar_row" : true
+    "dc_highlight_active_sidebar_row" : true,
+    
+    "dc_hide_file_icons" : true,
+    "dc_hide_folders" : true,
+    "dc_hide_group_icons" : true,
+    "dc_hide_scrollbars" : true,
+
+    "dc_use_soda_search_icons" : true,
+    "dc_use_white_puck" : true,
+
+    "dc_use_folder_icon1" : true, // default
+    "dc_use_folder_icon2" : true,
+    "dc_use_folder_icon3" : true,
+
+    "dc_use_group_icon1" : true, // default
+    "dc_use_group_icon2" : true,
+    "dc_use_group_icon3" : true,
+    "dc_use_group_icon4" : true,
+
+    //-------------------------------
+    // New with v1.2.7
+    //-------------------------------
+    "dc_use_darker_tab_colors": true,
+
+    "dc_use_sidebar_active_row_style1": true, // default
+    "dc_use_sidebar_active_row_style2": true,
+    "dc_use_sidebar_active_row_style3": true,
     
 
 ## Resolution Support
@@ -153,14 +171,14 @@ It is made available by buymeasoda. Here's how to get it:
 
 The file icons seen in the screenshot are assets collected from the [Seti_ST3 repository](https://github.com/ctf0/Seti_ST3).
 
-I modified and added a few of my own however.
+I modified and added a few of my own as well.
 
 
 ### Similar themes
 
 - [Seti_ST3](https://github.com/ctf0/Seti_ST3)
 - [Cobalt2](https://github.com/wesbos/cobalt2)
-
+- ...
 
 ## Credits
 

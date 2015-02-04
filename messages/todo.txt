@@ -1,9 +1,20 @@
 Todo
 ===============================================
 
+- [ ] Change DC_3_LW a bit, C.Pal. is kinda ugly
 - [ ] Play with color schemes
 - [ ] Assets@2x
-- [ ] Add support for new file icons 
-    - [ ] .csproj 
-    - [ ] .h  (possible?)
-    - [ ] .c  (possible?)
+
+Note: 
+.h  (possible?)
+.c  (possible?)
+
+I tried playing with the syntax package, 
+but its still very obscure. It looks like
+subl assigns only one icon for each scopename, 
+and not for every file extension.
+
+The C++ tmLanguage file includes the .c and .h
+extensions, so cpp, c and h files all share the same scopename,
+and therefore the same icon, and theres nothing we can do about it. 
+I hope jps will change that behavior sometime in the future. 
