@@ -175,6 +175,15 @@
         "shadow_offset": [1,1],
         "font.bold": false
     }, 
+    //          SETTING DARK TAB, TAB SELECTED
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "settings" : ["dc_use_darker_tab_colors"],
+        "fg": [0,255,226],
+        "shadow_offset": [0,0],
+        "font.bold": false
+    }, 
     //          STATE TRANSIENT
     {
         "class": "tab_label",
@@ -630,7 +639,7 @@
 
 
     //
-    // TREE ROW
+    // TREE ROW / SIDEBAR ROW
     //
     {
         "class": "tree_row",
@@ -1055,7 +1064,7 @@
     {
         "class": "overlay_control",
         "layer0.texture" : "",
-        "layer0.tint": [28,28,28],
+        "layer0.tint" : [30,30,30],
         "layer0.opacity": 1.0,
         "content_margin": [5,5,5,5]
     },
@@ -1102,8 +1111,8 @@
         "fg": [130, 130, 130, 255],
         "match_fg": [170, 170, 170, 255],
 
-        "selected_fg": [32, 255, 237],
-        "selected_match_fg": [32, 255, 237],
+        "selected_fg": [230, 230, 230],
+        "selected_match_fg": [30,204,185],
     },
 
 
@@ -1126,7 +1135,7 @@
     {
         "class": "quick_panel_score_label",
         "fg": [130, 130, 130, 255],
-        "selected_fg": [32, 255, 237]
+        "selected_fg": [30,204,185]
     },
 
 
@@ -1600,7 +1609,7 @@
     "class": "overlay_control",
     "layer0.tint": [20, 20, 20 ],
     "layer0.opacity": 1.0,
-    "content_margin": [1,1]
+    "content_margin": [6,6,6,6]
 },
 
 
