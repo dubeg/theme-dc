@@ -1,7 +1,6 @@
 Todo
 ===============================================
 
-- [ ] Change DC_3_LW a bit, C.Pal. is kinda ugly
 - [ ] Play with color schemes
 - [ ] Assets@2x
 

@@ -1,3 +1,12 @@
+v1.2.8
+----------
+Release Date : 5 Feb 2015
+
+* Changed visuals affected by the setting dc_use_darker_tab_colors.
+* Changed colors in CommandPalette and QuickPanel (better IMO)
+* Changed colors in Code Completion Popup (also slightly better IMO)
+
+
 v1.2.7
 ----------
 Release Date : 4 Feb 2015

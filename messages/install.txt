@@ -2,26 +2,20 @@
 
 **Sublime Text 3 - User Settings**
 
-    {
-        // Theme with
-        // dark/gray widget colors.
-        "theme": "DC_3.sublime-theme"
-    
-        // Theme with
-        // dark/white widget colors.
-        "theme": "DC_3_LW.sublime-theme"
-    
-        // Theme with
-        // gray/dark widget colors.
-        "theme": "DC_3_GW.sublime-theme"
-    }
+    "theme": "DC_3.sublime-theme"
+
+    // OR
+    // for different widget colors, 
+    // you can try the following..
+    "theme": "DC_3_LW.sublime-theme"
+    "theme": "DC_3_GW.sublime-theme"
+    "theme": "DC_3_DD.sublime-theme"
+
 
 
 **Sublime Text 2 - User Settings**
 
-    {
-        "theme" : "DC_2.sublime-theme"
-    }
+    "theme" : "DC_2.sublime-theme"
 
 
 # Customization
@@ -55,7 +49,7 @@
     //-------------------------------
     // New with v1.2.7
     //-------------------------------
-    "dc_use_darker_tab_colors": true,
+    "dc_use_darker_tab_colors": true, // Changed visuals in v1.2.8
 
     "dc_use_sidebar_active_row_style1": true, // default
     "dc_use_sidebar_active_row_style2": true,
@@ -79,7 +73,7 @@
     //-------------------------------
     // New with v1.2.7
     //-------------------------------
-    "dc_use_darker_tab_colors": true,
+    "dc_use_darker_tab_colors": true, // Changed visuals in v1.2.8
 
     "dc_use_sidebar_active_row_style1": true, // default
     "dc_use_sidebar_active_row_style2": true,

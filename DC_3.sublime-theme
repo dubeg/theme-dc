@@ -1112,7 +1112,7 @@
         "match_fg": [170, 170, 170, 255],
 
         "selected_fg": [230, 230, 230],
-        "selected_match_fg": [30,204,185],
+        "selected_match_fg": [30,204,185]
     },
 
 

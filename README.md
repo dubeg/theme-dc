@@ -9,7 +9,7 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 - [Theme - DC](#theme---dc)
 	- [Screenshots](#screenshots)
-		* [Main window](#main-window)
+		* [Default theme](#default-theme)
 	 	* [Alternate widget colors](#alternate-widget-colors)
 		* [Alternate folder icons](#alternate-folder-icons)
 		* [Alternate group icons](#alternate-group-icons)
@@ -31,25 +31,31 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 ## Screenshots
 
-### Main window
+### Default theme
 
 #### DC_3
 
-![Main window](http://i.imgur.com/GjVCVAy.png)
+![Main window](http://i.imgur.com/M1UmrCj.png)
 
 ### Alternate widget colors
 
+#### DC_3
+
+![DC_3](http://i.imgur.com/xO2Hfc1.png)
+
+
 #### DC_3_GW
 
-![DC_3_GW](http://i.imgur.com/vA1VzVT.png)
-
-#### DC_3_LW
-
-![DC_3_LW](http://i.imgur.com/gznWnEs.png)
+![DC_3_GW](http://i.imgur.com/USdbckr.png)
 
 #### DC_3_DD
 
-![DC_3_DD](http://i.imgur.com/Xfiuh0q.png)
+![DC_3_DD](http://i.imgur.com/H3dIAyc.png)
+
+#### DC_3_LW
+
+![DC_3_LW](http://i.imgur.com/zg6wRdT.png)
+
 
 ### Alternate folder icons
 
@@ -62,10 +68,6 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 ### Alternate search icons
 
 ![CTRL + F](http://i.imgur.com/URLemr8.png)
-
-### New file icons
-
-![File icons](http://i.imgur.com/57G0GMJ.png)
 
 
 ## Installation
@@ -94,17 +96,14 @@ To configure Sublime Text to use the theme, follow the instructions below.
 
 **ST3**
 
-    // Theme with
-    // dark/gray widget colors.
     "theme": "DC_3.sublime-theme"
 
-    // Theme with
-    // dark/white widget colors.
+    // OR
+    // for different widget colors, 
+    // you can try the following..
     "theme": "DC_3_LW.sublime-theme"
-
-    // Theme with
-    // gray/dark widget colors.
     "theme": "DC_3_GW.sublime-theme"
+    "theme": "DC_3_DD.sublime-theme"
 
 
 **ST2**
@@ -136,6 +135,7 @@ You can use the settings below to customize the theme to your liking.
     "dc_use_folder_icon1" : true, // default
     "dc_use_folder_icon2" : true,
     "dc_use_folder_icon3" : true,
+    "dc_use_folder_icon4" : true,
 
     "dc_use_group_icon1" : true, // default
     "dc_use_group_icon2" : true,
