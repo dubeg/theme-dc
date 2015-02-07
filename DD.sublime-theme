@@ -59,7 +59,7 @@
 //
 {
     "class": "overlay_control",
-    "layer0.tint": [20, 20, 20 ],
+    "layer0.tint": [25,25,25 ],
     "layer0.opacity": 1.0,
     "content_margin": [6,6,6,6]
 },

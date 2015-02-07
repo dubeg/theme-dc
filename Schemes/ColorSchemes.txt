@@ -1,0 +1,12 @@
+===============================================
+ Color Schemes Modification
+===============================================
+
+
+Toy Chest
+-----------------------------------------------
+
+To change: 
+- Selection color
+- Text color, maybe a little too bright
+- Gutter line highlight
