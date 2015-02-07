@@ -18,11 +18,32 @@
         "tab_height": 30,
         "mouse_wheel_switch": false
     },
-    //          SETTING DARKER_TAB_COLOR
+    //          SETTING DARK_TAB_STYLE1
     {
         "class": "tabset_control",
-        "settings" : ["dc_use_darker_tab_colors"],
+        "settings" : ["dc_use_dark_tab_style1"],
+        "layer0.texture": "Theme - DC/assets/tabset_background2.png",
+        "layer0.inner_margin": [1,1,1,4]
+    },
+    //          SETTING DARK_TAB_STYLE2
+    {
+        "class": "tabset_control",
+        "settings" : ["dc_use_dark_tab_style2"],
         "layer0.texture": "Theme - DC/assets/tabset_background3.png",
+        "layer0.inner_margin": [1,1,1,4]
+    },
+    //          SETTING DARK_TAB_STYLE3
+    {
+        "class": "tabset_control",
+        "settings" : ["dc_use_dark_tab_style3"],
+        "layer0.texture": "Theme - DC/assets/tabset_background4.png",
+        "layer0.inner_margin": [1,1,1,4]
+    },
+    //          SETTING DARK_TAB_STYLE4
+    {
+        "class": "tabset_control",
+        "settings" : ["dc_use_dark_tab_style4"],
+        "layer0.texture": "Theme - DC/assets/tabset_background5.png",
         "layer0.inner_margin": [1,1,1,4]
     },
     //          SETTING MOUSE WHEEL SWITCHING
@@ -50,12 +71,35 @@
         "layer0.inner_margin": [1,0,1,4],
         "layer0.opacity": 1.0
     },
-    //          SETTING DARKER_TAB_COLOR
+    //          SETTING DARK_TAB_STYLE1
     {
         "class": "tab_control",
-        "settings" : ["dc_use_darker_tab_colors"],
+        "settings" : ["dc_use_dark_tab_style1"],
+        "layer0.texture": "Theme - DC/assets/tab_inactive2.png",
+        "layer0.inner_margin": [1,1,1,4]
+    },
+    //          SETTING DARK_TAB_STYLE2
+    {
+        "class": "tab_control",
+        "settings" : ["dc_use_dark_tab_style2"],
         "layer0.texture": "Theme - DC/assets/tab_inactive3.png",
-        "layer0.inner_margin": [2,0,2,4]
+        "layer0.inner_margin": [1,1,1,4]
+    },
+    //          SETTING DARK_TAB_STYLE3
+    {
+        "class": "tab_control",
+        "settings" : ["dc_use_dark_tab_style3"],
+        "layer0.texture": "Theme - DC/assets/tab_inactive4.png",
+        "layer0.inner_margin": [1,1,1,4],
+        "content_margin": [12, 5, 7, 5],
+    },
+    //          SETTING DARK_TAB_STYLE4
+    {
+        "class": "tab_control",
+        "settings" : ["dc_use_dark_tab_style4"],
+        "layer0.texture": "Theme - DC/assets/tab_inactive5.png",
+        "layer0.inner_margin": [1,1,1,4],
+        "content_margin": [12, 5, 7, 5],
     },
     //          STATE HOVER
     {
@@ -68,13 +112,37 @@
         "attributes": ["selected"],
         "layer0.texture": "Theme - DC/assets/tab_active.png"
     },
-    //          SETTING DARKER_TAB_COLOR
+    //          SETTING DARK_TAB_STYLE1
     {
         "class": "tab_control",
         "attributes": ["selected"],
         "content_margin": [12, 5, 7, 5],
-        "settings" : ["dc_use_darker_tab_colors"],
+        "settings" : ["dc_use_dark_tab_style1"],
+        "layer0.texture": "Theme - DC/assets/tab_active2.png",
+    },
+    //          SETTING DARK_TAB_STYLE2
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "content_margin": [12, 5, 7, 5],
+        "settings" : ["dc_use_dark_tab_style2"],
         "layer0.texture": "Theme - DC/assets/tab_active3.png",
+    },
+    //          SETTING DARK_TAB_STYLE3
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "content_margin": [12, 5, 7, 5],
+        "settings" : ["dc_use_dark_tab_style3"],
+        "layer0.texture": "Theme - DC/assets/tab_active4.png",
+    },
+    //          SETTING DARK_TAB_STYLE4
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "content_margin": [12, 5, 7, 5],
+        "settings" : ["dc_use_dark_tab_style4"],
+        "layer0.texture": "Theme - DC/assets/tab_active5.png",
     },
 
  
@@ -1021,8 +1089,8 @@
         "layer0.tint" : [47,47,47],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [0,0],
-        "content_margin": [5,6,5,5]
-    },
+        "content_margin": [5,5]
+        },
 
 
     //
@@ -1177,9 +1245,9 @@
     // COMPLETION LABEL
     // 
     {
-        "class": "auto_complete_label",
-        "fg": [70, 70, 70, 255],
-        "match_fg": [130, 130, 130, 255],
+        "class": "auto_complete_label", 
+        "fg": [230, 230, 230], 
+        "match_fg": [40, 150, 150],
 
         "selected_fg": [32, 255, 237],
         "selected_match_fg":  [32, 255, 237]
