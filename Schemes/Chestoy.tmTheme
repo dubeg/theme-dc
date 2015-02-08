@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>Jackson Gariety - Modded</string>
+	<string>Jackson Gariety</string>
 	<key>name</key>
-	<string>Toy Chest - Darker</string>
+	<string>Toy Chest - Chestoy</string>
 	<key>semanticClass</key>
 	<string>theme.dark.toy-chest</string>
 	<key>settings</key>
@@ -18,7 +18,7 @@
 				<key>caret</key>
 				<string>#DDDDDD</string>
 				<key>foreground</key>
-				<string>#34d58e</string>
+				<string>#04bb7b</string>
 				<key>invisibles</key>
 				<string>#3a526b</string>
                 <key>lineHighlight</key>
@@ -29,6 +29,9 @@
                 <string>#313131</string>  
                 <key>findHighlight</key>
                 <string>#FFE792</string>
+
+                
+
                 <key>findHighlightForeground</key>
                 <string>#000000</string>            
 			</dict>
@@ -432,7 +435,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ecdd5d</string>
+				<string>#555555</string>
 			</dict>
 		</dict>
 		<dict>
@@ -501,8 +504,56 @@
 				<string>#34d58e</string>
 			</dict>
 		</dict>
+
+		<!-- =============================================== -->
+		<!--  HTML -->
+		<!-- =============================================== -->
+	    <dict>
+			<key>name</key>
+			<string>HTML: Attribute Punctuation</string>
+			<key>scope</key>
+			<string>meta.tag string punctuation</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string/>
+				<key>foreground</key>
+				<string></string>
+			</dict>
+		</dict>
+        <dict>
+            <key>name</key>
+            <string>HTML: Tag Punctuation</string>
+            <key>scope</key>
+            <string>punctuation.definition.tag</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string/>
+                <key>foreground</key>
+                <string>#a27124</string>
+            </dict>
+        </dict>	
+
+        <dict>
+            <key>name</key>
+            <string>HTML: Attribute Names</string>
+            <key>scope</key>
+            <string>entity.other.attribute-name</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string/>
+                <key>foreground</key>
+                <string>#34d58e90</string>
+            </dict>
+        </dict>
+		<!-- =============================================== -->
+		<!--  END -->
+		<!-- =============================================== -->
 	</array>
+
 	<key>uuid</key>
-	<string>D4333E9B-1DE7-8FF3-57E6-A757C21B4254</string>
+	<string></string>
 </dict>
 </plist>

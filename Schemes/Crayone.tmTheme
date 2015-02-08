@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>name</key>
-    <string>Monokai Soda</string>
+    <string>Kachun</string>
     <key>settings</key>
     <array>
         <dict>
@@ -14,19 +14,19 @@
                 <key>caret</key>
                 <string>#F8F8F0</string>
                 <key>foreground</key>
-                <string>#F8F8F2</string>
+                <string>#999999</string>
                 <key>invisibles</key>
                 <string>#3B3A32</string>
                 <key>lineHighlight</key>
                 <string>#333333</string>
                 <key>selection</key>
-                <string>#444444</string>
+                <string>#333333</string>
                 <key>findHighlight</key>
                 <string>#FFE792</string>
                 <key>findHighlightForeground</key>
                 <string>#000000</string>
                 <key>selectionBorder</key>
-                <string>#1c1c1c</string>
+                <string>#333333</string>
             </dict>
         </dict>
         <dict>
@@ -37,7 +37,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#75715E</string>
+                <string>#444444</string>
             </dict>
         </dict>
         <dict>
@@ -48,7 +48,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#E6DB74</string>
+                <string>#ddd</string>
             </dict>
         </dict>
         <dict>
@@ -59,7 +59,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#AE81FF</string>
+                <string>#555555</string>
             </dict>
         </dict>
         <dict>
@@ -103,7 +103,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#F92672</string>
+                <string>#d74385</string>
             </dict>
         </dict>
         <dict>
@@ -129,7 +129,7 @@
                 <key>fontStyle</key>
                 <string>italic</string>
                 <key>foreground</key>
-                <string>#66D9EF</string>
+                <string>#75c2d0</string>
             </dict>
         </dict>
         <dict>
@@ -168,7 +168,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#A6E22E</string>
+                <string>#cd3997</string>
             </dict>
         </dict>
         <dict>
@@ -181,7 +181,7 @@
                 <key>fontStyle</key>
                 <string>italic</string>
                 <key>foreground</key>
-                <string>#FD971F</string>
+                <string>#537ab5</string>
             </dict>
         </dict>
         <dict>
@@ -194,7 +194,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#F92672</string>
+                <string>#ba3e70</string>
             </dict>
         </dict>
         <dict>
@@ -207,7 +207,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#A6E22E</string>
+                <string>#53ae79</string>
             </dict>
         </dict>
         <dict>
@@ -220,7 +220,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#66D9EF</string>
+                <string>#cd3997</string>
             </dict>
         </dict>
         <dict>
@@ -296,7 +296,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#CFCFC2</string>
+                <string>#666666</string>
             </dict>
         </dict>
 
@@ -344,8 +344,19 @@
                 <string>#E6DB74</string>
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>Punctuation</string>
+            <key>scope</key>
+            <string>punctuation</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#2c4c6d</string>
+            </dict>
+        </dict>
     </array>
     <key>uuid</key>
-    <string>5EAF4173-5DDE-4D64-A1E8-C1671C7EE339</string>
+    <string>fc01c64f-318e-45b7-9682-42c4a3565b46</string>
 </dict>
 </plist>

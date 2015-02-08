@@ -10,3 +10,25 @@ To change:
 - Selection color
 - Text color, maybe a little too bright
 - Gutter line highlight
+
+
+
+
+Look for
+-----------------------------------------------
+Solarized Dark
+Muuki
+Once upon a time
+A touch of crayon
+Arabian Nights Dark
+
+Gruntilda
+Amy
+Future_Frunk
+
+Half life
+Tribal
+Kiwi
+Super
+Piggy
+Github
