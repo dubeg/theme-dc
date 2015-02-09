@@ -14,11 +14,24 @@ settings
 	lineHighlight 				Line Highlight - Background color
 	selection 					Selection - Background color
 	selectionBorder 			Selection - Border color
+	inactiveSelection 			???
+
 	findHighlight 				Find - Background color of Matches
 	findHighlightForeground 	Find - Foreground color of Matches
 
 	gutter 						Gutter - Background color
 	gutterForeground 			Gutter - Foreground color
+
+
+	To confirm 
+	-----------
+	guide 						Guide - Foreground color (tab guide, ...)
+	stackGuide 					???
+	activeGuide 				???
+
+	bracketContentsOptions 		Values: underline, ...
+	tagsForeground 				Tags - Foreground color
+	tagsOption 					Tags - Decoration 			Values: underline
 
 
 
