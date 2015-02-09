@@ -8,3 +8,4 @@
 * Set input/widget to a darker color ( DC_3 )
 * Set minimap color darker.
 * Hide sheet vertical scrollbar when always_show_minimap_viewport and overlay_scroll_bars are enabled
+* Added small tabs setting : dc_use_small_tabs
