@@ -1,3 +1,15 @@
+v1.3.0
+----------
+Release Date : 9 Feb 2015
+
+* Removed setting "dc_use_white_puck"
+* Renamed setting "dc_autohide_scrollbar" to "dc_autohide_scrollbars"
+* Set input/widget to a slightly darker color ( DC_3 )
+* Set minimap color slightly darker.
+* Always hide vertical scrollbar (in view) when "always_show_minimap_viewport" and "overlay_scroll_bars" are enabled
+* Added small tabs setting "dc_use_small_tabs"
+
+
 v1.2.8
 ----------
 Release Date : 5 Feb 2015
