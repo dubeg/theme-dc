@@ -1,32 +1,7 @@
 # Theme - DC
 
 Dark and Cyan (DC) theme for Sublime Text 2/3.
-
 Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
-
-
-**Table of Contents**
-
-- [Theme - DC](#theme---dc)
-	- [Screenshots](#screenshots)
-		* [Default theme](#default-theme)
-	 	* [Alternate widget colors](#alternate-widget-colors)
-		* [Alternate folder icons](#alternate-folder-icons)
-		* [Alternate group icons](#alternate-group-icons)
-		* [Alternate search icons](#alternate-search-icons)
-	- [Installation](#installation)
-		- [Using Sublime Package Control](#using-sublime-package-control)
-		- [Download Manually](#download-manually)
-	- [Activation](#activation)
-	- [Configuration](#configuration)
-	- [Resolution Support](#resolution-support)
-	- [Bonus](#bonus)
-		- [Color Scheme](#color-scheme)
-		- [Filetype icons](#filetype-icons)
-		- [Similar themes](#similar-themes)
-	- [Credits](#credits)
-	- [License](#license)
-
 
 
 ## Screenshots
@@ -115,11 +90,11 @@ To configure Sublime Text to use the theme, follow the instructions below.
 
 You can use the settings below to customize the theme to your liking.
 
-**Example User Settings**
+**All possible User Settings**
 
     "dc_hide_btn_close_tab" : true,
     "dc_always_show_minimap_viewport" : true,
-    "dc_autohide_scrollbar" : true,
+    "dc_autohide_scrollbars" : true,        // Renamed in v1.3.0 ('s' added)
     "dc_bold_folder_labels" : true,
     "dc_mouse_wheel_switches_tabs" : true,
     "dc_highlight_active_sidebar_row" : true,
