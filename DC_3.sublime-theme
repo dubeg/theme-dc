@@ -40,7 +40,9 @@
         "class": "tabset_control",
         "settings" : ["dc_use_dark_tab_style2"],
         "layer0.texture": "Theme - DC/assets/tabset_background3.png",
-        "layer0.inner_margin": [1,1,1,4]
+        "layer0.inner_margin": [1,1,1,4],
+        "tab_width": 140,
+        "tab_min_width": 45
     },
     //          SETTING DARK_TAB_STYLE3
     {
