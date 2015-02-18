@@ -1,3 +1,12 @@
+v1.4.0
+----------
+Release Date : XX Feb 2015
+
+* Changed scrollbars' appearance
+* Changed grid separator color
+* Added darker tab style 6
+
+
 v1.3.0
 ----------
 Release Date : 9 Feb 2015

@@ -420,7 +420,7 @@
     {
         "class": "scroll_bar_control",
         "layer0.texture":"Theme - DC/assets/scrollbar_bg_v.png",
-        "layer0.inner_margin":[1,10],
+        "layer0.inner_margin":[0,10],
         "layer0.tint" : [255,255,255],
         "layer0.opacity": 1.0,
         "blur": false
@@ -429,7 +429,7 @@
         "class": "scroll_bar_control",
         "attributes" : ["horizontal"],
         "layer0.texture":"Theme - DC/assets/scrollbar_bg_h.png",
-        "layer0.inner_margin":[10,1],
+        "layer0.inner_margin":[10,0],
         "layer0.tint" : [255,255,255],
         "layer0.opacity": 1.0,
         "blur": false
@@ -437,22 +437,8 @@
     {
         "class": "scroll_bar_control",
         "settings":[ "dc_autohide_scrollbars" ],
-        "layer0.opacity": 0.0,
+        "layer0.opacity": 0.0
     },
-
-
-    //
-    // CONSOLE SCROLLBAR
-    // 
-    {
-        "class": "scroll_bar_control",
-        "parents": [{"class": "panel_control"}],
-        "layer0.tint" : [25, 25, 25],
-        "layer0.opacity": 1.0,
-        "blur": false
-    },
-
-
 
 
     //
@@ -474,7 +460,7 @@
         "layer0.inner_margin":[5,10],
         "layer0.tint": [255,255,255],
         "layer0.opacity": 1.0,
-        "content_margin": [8,0],
+        "content_margin": [8,20],
         "blur": false
     },
     //          ATTRIBUTE HORIZONTAL
@@ -483,7 +469,7 @@
         "attributes": ["horizontal"],
         "layer0.texture":"Theme - DC/assets/scrollbar_h.png",
         "layer0.inner_margin":[10,5],
-        "content_margin": [0, 8],
+        "content_margin": [20, 8],
         "blur": false
     },
 
@@ -605,7 +591,7 @@
     {
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [0,0,0]
+        "border_color": [25,25,25]
     },
 
 
@@ -887,6 +873,12 @@
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         "color": [235, 235, 235]
     },
+    //      STATE SELECTED
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
+        "color": [235, 235, 235]
+    },
     //      SETTING BOLD
     {
         "class": "sidebar_label",
@@ -1113,13 +1105,6 @@
         // layer0.texture is filled in by code with the relevant icon name
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
-    },
-    //          SETTING HIDE FOLDER-ICONS
-    {
-        "class": "icon_file_type",
-        "settings" : ["dc_hide_folders"],
-        "content_margin" : 0,
-        "layer0.opacity" : 0.0
     },
     //          SETTING HIDE FILE-ICONS
     {
