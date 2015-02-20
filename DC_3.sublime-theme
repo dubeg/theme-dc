@@ -456,20 +456,20 @@
     //
     {
         "class": "puck_control",
-        "layer0.texture":"Theme - DC/assets/scrollbar_v.png",
-        "layer0.inner_margin":[5,10],
+        "layer0.texture":"Theme - DC/assets/scrollbar_v_m.png",
+        "layer0.inner_margin":[5,15],
         "layer0.tint": [255,255,255],
         "layer0.opacity": 1.0,
-        "content_margin": [8,20],
+        "content_margin": [8,26],
         "blur": false
     },
     //          ATTRIBUTE HORIZONTAL
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.texture":"Theme - DC/assets/scrollbar_h.png",
-        "layer0.inner_margin":[10,5],
-        "content_margin": [20, 8],
+        "layer0.texture":"Theme - DC/assets/scrollbar_h_m.png",
+        "layer0.inner_margin":[15,5],
+        "content_margin": [26, 8],
         "blur": false
     },
 
