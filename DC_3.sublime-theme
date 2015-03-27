@@ -443,7 +443,7 @@
     // 
     {
         "class": "scroll_bar_control",
-        "layer0.texture":"Theme - DC/assets/scrollbar_bg_v.png",
+        "layer0.texture":"Theme - DC/assets/scrollbar_bg_v_dark.png",
         "layer0.inner_margin":[0,10],
         "layer0.tint" : [255,255,255],
         "layer0.opacity": 1.0,
@@ -452,12 +452,21 @@
     {
         "class": "scroll_bar_control",
         "attributes" : ["horizontal"],
-        "layer0.texture":"Theme - DC/assets/scrollbar_bg_h.png",
+        "layer0.texture":"Theme - DC/assets/scrollbar_bg_h_dark.png",
         "layer0.inner_margin":[10,0],
         "layer0.tint" : [255,255,255],
         "layer0.opacity": 1.0,
         "blur": false
     },
+
+    {
+        "class": "scroll_bar_control",
+        "attributes" : ["horizontal"],    
+        "parents": [{"class":"sidebar_container"}],
+        "layer0.texture":"Theme - DC/assets/scrollbar_bg_h_dark_sidebar.png",
+        },
+
+
     {
         "class": "scroll_bar_control",
         "settings":[ "dc_autohide_scrollbars" ],
@@ -480,7 +489,7 @@
     //
     {
         "class": "puck_control",
-        "layer0.texture":"Theme - DC/assets/scrollbar_v_m.png",
+        "layer0.texture":"Theme - DC/assets/scrollbar_v_m_dark.png",
         "layer0.inner_margin":[5,15],
         "layer0.tint": [255,255,255],
         "layer0.opacity": 1.0,
@@ -491,7 +500,7 @@
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.texture":"Theme - DC/assets/scrollbar_h_m.png",
+        "layer0.texture":"Theme - DC/assets/scrollbar_h_m_dark.png",
         "layer0.inner_margin":[15,5],
         "content_margin": [26, 8],
         "blur": false
@@ -1190,11 +1199,20 @@
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
         //"layer0.tint" : [37,37,37],
-        "layer0.texture" : "Theme - DC/assets/pnl_input3.png",
-        "layer0.inner_margin" : [2,2],
+        "layer0.texture" : "Theme - DC/assets/pnl_input4.png",
+        "layer0.inner_margin" : [5,5],
         "layer0.tint" : [255,255,255],
-        //"content_margin": [5,6,5,5]
+        "layer0.repeat":false,
         "content_margin": [5,7,5,5]
+    },
+    // SETTING :: PANEL INPUT STYLE 1
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "panel_control"}],
+        "settings" : ["dc_use_pnl_input_style1"],
+        "layer0.texture" : "Theme - DC/assets/pnl_input1.png",
+        "layer0.repeat":true,
+        "layer0.inner_margin" : [0,0,0,20],
     },
 
 
@@ -1250,10 +1268,10 @@
     //
     {
         "class": "overlay_control",
-        "layer0.texture" : "Theme - DC/assets/overlay_bg.png",
+        "layer0.texture" : "Theme - DC/assets/overlay_bg4.png",
         "layer0.tint" : [255,255,255],
         //"layer0.tint" : [30,30,30],
-        "layer0.inner_margin":[1,1],
+        "layer0.inner_margin":[2,2],
         "layer0.opacity": 1.0,
         "content_margin": [5,5,5,5]
     },
