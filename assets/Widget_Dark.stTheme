@@ -3,18 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>Ian Hill, mod by dubeg</string>
-	<key>comment</key>
-	<string>A widget theme for the UI components of the Dark and Cyan theme.</string>
+	<string>dubeg</string>
 	<key>name</key>
-	<string>Dark Cyan - Widget Theme</string>
+	<string>DC - Widget Theme</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
+				
 				<key>background</key>
-				<string>#1e1e1e</string>
+				<string>#1E1E1E</string>
+				
+				<!-- background:OldValue = #1e1e1e -->
 				<key>caret</key>
 				<string>#DCDCDC</string>
 				<key>foreground</key>

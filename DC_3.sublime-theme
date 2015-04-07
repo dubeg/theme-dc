@@ -1199,21 +1199,31 @@
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
         //"layer0.tint" : [37,37,37],
-        "layer0.texture" : "Theme - DC/assets/pnl_input4.png",
+        "layer0.texture" : "Theme - DC/assets/pnl_input.png",
         "layer0.inner_margin" : [5,5],
         "layer0.tint" : [255,255,255],
         "layer0.repeat":false,
-        "content_margin": [5,7,5,5]
+        "content_margin": [5,6,5,5],
+         "layer1.opacity" : 0,
     },
     // SETTING :: PANEL INPUT STYLE 1
+    /*
     {
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
         "settings" : ["dc_use_pnl_input_style1"],
         "layer0.texture" : "Theme - DC/assets/pnl_input1.png",
         "layer0.repeat":true,
-        "layer0.inner_margin" : [0,0,0,20],
+        "layer0.inner_margin" : [0,10,0,10],
+
+        "layer1.texture" : "Theme - DC/assets/pnl_input4_s.png",
+        "layer1.inner_margin" : [5,5],
+        "layer1.tint" : [255,255,255],
+        "layer1.repeat":false,
+        "layer1.opacity" : 1,
+        
     },
+    */
 
 
     //
@@ -1375,7 +1385,9 @@
     {
         "class": "popup_control",
         "content_margin": [2, 2],
-        "layer0.tint": [30, 30, 30],
+        "layer0.tint": [255,255,255],
+        "layer0.texture" : "Theme - DC/assets/overlay_bg4.png", 
+        "layer0.inner_margin" : [5,5],
         "layer0.opacity": 1.0
     },
 
