@@ -1198,10 +1198,11 @@
     {
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
-        //"layer0.tint" : [37,37,37],
-        "layer0.texture" : "Theme - DC/assets/pnl_input.png",
+        "layer0.tint" : [25,25,25],
+        "layer0.texture" : "",
+        //"layer0.texture" : "Theme - DC/assets/pnl_input.png",
+        //"layer0.tint" : [255,255,255],
         "layer0.inner_margin" : [5,5],
-        "layer0.tint" : [255,255,255],
         "layer0.repeat":false,
         "content_margin": [5,6,5,5],
          "layer1.opacity" : 0,
@@ -1232,10 +1233,14 @@
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
-        //"layer0.tint" : [37,37,37],
-        "layer0.texture" : "Theme - DC/assets/overlay_input.png",
+
+        "layer0.tint" : [25,25,25],
+        "layer0.texture" : "",
+
+        //"layer0.texture" : "Theme - DC/assets/overlay_input.png",
+        //"layer0.tint" : [255,255,255],
+
         "layer0.inner_margin" : [2,2],
-        "layer0.tint" : [255,255,255],
         "content_margin": [5,6,5,7]
         },
 
@@ -1283,12 +1288,12 @@
         //"layer0.tint" : [30,30,30],
         "layer0.inner_margin":[2,2],
         "layer0.opacity": 1.0,
-        "content_margin": [5,5,5,5]
+        "content_margin": [6,4,6,6]
     },
 
 
 //
-// QUICK PANEL
+// QUICK PANEL PROPERTIES
 //
     //
     // QUICK PANEL (Goto Anything)
@@ -1298,7 +1303,7 @@
         "row_padding": [5,2],
         "layer0.tint": [33, 33, 33],
         "layer0.opacity": 1.0,
-        "dark_content": true
+        "dark_content": true 
     },
 
 

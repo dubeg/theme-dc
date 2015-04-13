@@ -14,7 +14,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#141414</string>
+				<string>#191919</string>
 				<key>caret</key>
 				<string>#dcdcdc</string>
 				<key>foreground</key>
@@ -24,11 +24,11 @@
 				<key>lineHighlight</key>
 				<string>#666666</string>
 				<key>selection</key>
-				<string>#444444</string>
-				<key>selectionBorder</key>
-				<string>#444444</string>
-				<key>inactiveSelection</key>
 				<string>#2c2c2c</string>
+				<key>selectionBorder</key>
+				<string>#2c2c2c</string>
+				<key>inactiveSelection</key>
+				<string>#202020</string>
 			</dict>
 		</dict>
 	</array>
