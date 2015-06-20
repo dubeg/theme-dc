@@ -415,6 +415,20 @@
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0
     },
+    //          Fold Button Style 2
+    {
+        "class": "fold_button_control",
+        "settings" : ["dc_folding_style2"],
+        "layer0.texture": "Theme - DC/assets/folding_plus2.png",
+        "layer1.texture": "Theme - DC/assets/folding_minus2.png",
+    },
+    //          Fold Button Style 3
+    {
+        "class": "fold_button_control",
+        "settings" : ["dc_folding_style3"],
+        "layer0.texture": "Theme - DC/assets/folding_plus.png",
+        "layer1.texture": "Theme - DC/assets/folding_minus.png",
+    },        
     //          STATE HOVER
     {
         "class": "fold_button_control",
