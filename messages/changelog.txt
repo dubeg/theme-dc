@@ -1,10 +1,11 @@
 v1.4.0
 ----------
-Release Date : XX Feb 2015
+Release Date : XX XXX 2015
 
 * Changed scrollbars' appearance
 * Changed grid separator color
 * Added darker tab style 6
+* Added setting to customize fold/unfold icons.
 
 
 v1.3.0
