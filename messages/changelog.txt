@@ -6,7 +6,8 @@ Release Date : XX XXX 2015
 * Changed grid separator color
 * Added darker tab style 6
 * Added setting to customize fold/unfold icons.
-
+* Fixed tabset height when small tabs are used and tab scrolling is enabled.  
+* Reduce size of search panel buttons.
 
 v1.3.0
 ----------
