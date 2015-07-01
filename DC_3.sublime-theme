@@ -1458,6 +1458,18 @@
 //
 // SEARCH PANEL
 //
+
+    // ACTION BUTTONS
+    {
+        "class": "button_control",
+        "parents" : [{ 
+            "class" : "panel_control", 
+            }],
+        "content_margin": [6, 7, 6, 6],
+        "min_size": [60, 0],
+    },
+
+
     //
     // ICON BUTTON
     //
