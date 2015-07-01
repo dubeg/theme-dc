@@ -2,28 +2,16 @@ Todo
 ====
 
 
-Wants
-`````
-	Hide completely tab's close button (close only with ctrl+w).
-	Small search panel (for small screens i.e. laptops).
+Must
+````
+	[ ] Hide tab's close button completely with a setting (close only with ctrl+w).
+	[ ] Smaller search panel (for small screens i.e. laptops).
+	[ ] Update Readme with fewer images.
 
 
 Ideas
 `````
-
-	[ ] Play with color schemes
-	[ ] Assets@2x
-
-	Note: 
-	.h  (possible?)
-	.c  (possible?)
-
-	I tried playing with the syntax package, 
-	but its still very obscure. It looks like
-	subl assigns only one icon for each scopename, 
-	and not for every file extension.
-
-	The C++ tmLanguage file includes the .c and .h
-	extensions, so cpp, c and h files all share the same scopename,
-	and therefore the same icon, and theres nothing we can do about it. 
-	I hope jps will change that behavior sometime in the future. 
+	[ ] Add VisualStudioDark color scheme (?)
+	[ ] Assets @ 2x
+	[ ] An icon different for each filetype: .cpp, .c, .h
+	

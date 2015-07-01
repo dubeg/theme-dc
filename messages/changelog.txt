@@ -1,5 +1,5 @@
 v1.4.0
-----------
+------
 Release Date : XX XXX 2015
 
 * Changed scrollbars' appearance
@@ -10,7 +10,7 @@ Release Date : XX XXX 2015
 * Reduce size of search panel buttons.
 
 v1.3.0
-----------
+------
 Release Date : 9 Feb 2015
 
 * Removed setting "dc_use_white_puck"
@@ -22,7 +22,7 @@ Release Date : 9 Feb 2015
 
 
 v1.2.8
-----------
+------
 Release Date : 5 Feb 2015
 
 * Changed visuals affected by the setting dc_use_darker_tab_colors.
@@ -31,7 +31,7 @@ Release Date : 5 Feb 2015
 
 
 v1.2.7
-----------
+------
 Release Date : 4 Feb 2015
 
 * DC_3 Command palette now looks more like DC_3_GW
@@ -47,7 +47,7 @@ Release Date : 4 Feb 2015
 
 
 v1.2.6
-----------
+------
 Release Date: 3 Feb 2015
 
 * Added 2 themes files, attached to different widget colors:
@@ -63,7 +63,7 @@ Release Date: 3 Feb 2015
 
 
 v1.2.5
-----------
+------
 
 * Added support for default setting overlay_scroll_bars
 * Added setting "dc_highlight_active_sidebar_row"
