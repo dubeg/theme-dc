@@ -334,6 +334,13 @@
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
+    //          SETTING SMALL TABS
+    {
+
+        "class" : "show_tabs_dropdown_button",
+        "settings":"dc_use_small_tabs",
+        "content_margin": [10, 10 , 10, 10],
+    },    
     //          STATE HOVER
     {
         "class": "show_tabs_dropdown_button",
