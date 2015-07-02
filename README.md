@@ -8,39 +8,17 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 ### Default theme
 
-#### DC_3
+![Main window](http://i.imgur.com/F63i6xg.png)
 
-![Main window](http://i.imgur.com/M1UmrCj.png)
+### Folder icons
 
-### Alternate widget colors
+![Folder icons](http://i.imgur.com/hDyHPUd.png)
 
-#### DC_3
+### Group icons
 
-![DC_3](http://i.imgur.com/xO2Hfc1.png)
+![Compare](http://i.imgur.com/NxhFyB4.png)
 
-
-#### DC_3_GW
-
-![DC_3_GW](http://i.imgur.com/USdbckr.png)
-
-#### DC_3_DD
-
-![DC_3_DD](http://i.imgur.com/H3dIAyc.png)
-
-#### DC_3_LW
-
-![DC_3_LW](http://i.imgur.com/zg6wRdT.png)
-
-
-### Alternate folder icons
-
-![Compare](http://i.imgur.com/pMJkIs5.png)
-
-### Alternate group icons
-
-![Compare](http://i.imgur.com/0Si2xIC.png)
-
-### Alternate search icons
+### Search icons
 
 ![CTRL + F](http://i.imgur.com/URLemr8.png)
 
