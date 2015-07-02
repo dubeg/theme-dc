@@ -1,8 +1,6 @@
 # Theme - DC
 
-Dark and Cyan (DC) theme for Sublime Text 2/3.
-Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
-
+Dark and Cyan (DC) theme for SublimeText.
 
 ## Screenshots
 
@@ -53,20 +51,14 @@ To configure Sublime Text to use the theme, follow the instructions below.
 
 **ST3**
 
+```
     "theme": "DC_3.sublime-theme"
-
-    // OR
-    // for different widget colors, 
-    // you can try the following..
-    "theme": "DC_3_LW.sublime-theme"
-    "theme": "DC_3_GW.sublime-theme"
-    "theme": "DC_3_DD.sublime-theme"
-
-
+```
 **ST2**
 
+```
     "theme": "DC_2.sublime-theme"
-
+```
 
 ## Configuration
 
@@ -124,17 +116,12 @@ You can use the settings below to customize the theme to your liking.
 Unfortunately, I've been too lazy to test the DC Theme on high DPI displays.
 However, I'll probably add the support if requested, or when I start using devices with such displays.
 
-## Bonus
+## Misc
 
 ### Color Scheme
 
-The color scheme seen in the screenshot is a modified version of Monokai, called `Monokai Soda`.
-
-It is made available by buymeasoda. Here's how to get it:
-
-* Download [colour-schemes.zip](http://buymeasoda.github.com/soda-theme/extras/colour-schemes.zip)
-* Unzip and place the extracted `tmtheme` files in the Sublime Text `Packages/User` folder
-* Enable the colour scheme via `Preferences -> Color Scheme -> User`
+    * MonokaiSoda
+    * VisualStudioDark
 
 ### Filetype icons
 
