@@ -10,6 +10,10 @@ Project site - [github.com/dubeg/theme-dc](https://github.com/dubeg/theme-dc)
 
 ![Main window](http://i.imgur.com/F63i6xg.png)
 
+### Tab styles
+
+![Tab styles](http://i.imgur.com/ll64fit.png)
+
 ### Folder icons
 
 ![Folder icons](http://i.imgur.com/hDyHPUd.png)
