@@ -1102,8 +1102,7 @@
         "class": "icon_folder",
         "settings" : ["dc_use_folder_icon4"],
         "layer0.texture": "Theme - DC/icons/sb/dir_closed4.png",
-        "layer1.texture": "Theme - DC/icons/sb/dir_closed4.png",
-        "layer1.tint": [150,150,150],
+        "layer1.texture": "Theme - DC/icons/sb/dir_opened4.png"
     },
     //          ALTERNATE ICON 5
     {
