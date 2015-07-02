@@ -4,66 +4,8 @@ Release Date : XX XXX 2015
 
 * Changed scrollbars' appearance
 * Changed grid separator color
-* Added darker tab style 6
+* Added another tab style (#6)
 * Added setting to customize fold/unfold icons.
 * Fixed tabset height when small tabs are used and tab scrolling is enabled.  
-* Reduce size of search panel buttons.
-
-v1.3.0
-------
-Release Date : 9 Feb 2015
-
-* Removed setting "dc_use_white_puck"
-* Renamed setting "dc_autohide_scrollbar" to "dc_autohide_scrollbars"
-* Set input/widget to a slightly darker color ( DC_3 )
-* Set minimap color slightly darker.
-* Always hide vertical scrollbar (in view) when "always_show_minimap_viewport" and "overlay_scroll_bars" are enabled
-* Added small tabs setting "dc_use_small_tabs"
-
-
-v1.2.8
-------
-Release Date : 5 Feb 2015
-
-* Changed visuals affected by the setting dc_use_darker_tab_colors.
-* Changed colors in CommandPalette and QuickPanel (better IMO)
-* Changed colors in Code Completion Popup (also slightly better IMO)
-
-
-v1.2.7
-------
-Release Date : 4 Feb 2015
-
-* DC_3 Command palette now looks more like DC_3_GW
-* Fixed different button height between theme files 
-* Added 2 alternate sidebar_row_active styles
-    - dc_use_sidebar_active_row_style2
-    - dc_use_sidebar_active_row_style3
-* Added darker tab style activated with the following setting 
-    - dc_use_darker_tab_colors
-* Removed unused assets
-* Added files GW and LW from which DC_3_GW and DC_3_LW are created.
-* Added yet another Widget Style called DC_3_DD (the last one I swear)
-
-
-v1.2.6
-------
-Release Date: 3 Feb 2015
-
-* Added 2 themes files, attached to different widget colors:
-    - DC_3_LW.sublime-theme, Light Widget colors (white input fields)
-    - DC_3_GW.sublime-theme, Gray Widget colors (gray background panels)
-    - DC_3.sublime-theme, Dark Widget colors (black background, gray in. fields)
-
-* DC_2.sublime-theme is attached to dark widget colors.
-
-* Added icon support for...
-    - reStructuredText files (.rst, .rest)
-    - fsharp files (.fs, .fsi)
-
-
-v1.2.5
-------
-
-* Added support for default setting overlay_scroll_bars
-* Added setting "dc_highlight_active_sidebar_row"
+* Reduced size of search panel buttons.
+* Added a better opened folder icon to ~folder_icon4
