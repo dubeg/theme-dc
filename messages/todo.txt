@@ -1,17 +1,18 @@
-Todo
-====
+dev_dc3
+=======
 
 
 Must
 ````
 	[ ] Hide tab's close button completely with a setting (close only with ctrl+w).
 	[ ] Smaller search panel (for small screens i.e. laptops).
-	[ ] Update Readme with fewer images.
-
+	[ ] Update Readme with fewer images..
+		[ ] One assets sheet/image 
+		[ ] One main window (default, without settings)
 
 Ideas
 `````
 	[ ] Add VisualStudioDark color scheme (?)
 	[ ] Assets @ 2x
 	[ ] An icon different for each filetype: .cpp, .c, .h
-	
+	[ ] Simplify alternate widget styles (files).
