@@ -413,10 +413,10 @@
         "class": "fold_button_control",
         "content_margin": [8, 8],
 
-        "layer0.texture": "Theme - DC/assets/folding_plus3.png",
+        "layer0.texture": "Theme - DC/assets/folding_plus.png",
         "layer0.inner_margin": 0,
 
-        "layer1.texture": "Theme - DC/assets/folding_minus3.png",
+        "layer1.texture": "Theme - DC/assets/folding_minus.png",
         "layer1.inner_margin": 0,
 
         "layer0.opacity": 1.0,
@@ -433,9 +433,16 @@
     {
         "class": "fold_button_control",
         "settings" : ["dc_folding_style3"],
-        "layer0.texture": "Theme - DC/assets/folding_plus.png",
-        "layer1.texture": "Theme - DC/assets/folding_minus.png",
-    },        
+        "layer0.texture": "Theme - DC/assets/folding_plus3.png",
+        "layer1.texture": "Theme - DC/assets/folding_minus3.png",
+    },
+    //          Fold Button Style 4
+    {
+        "class": "fold_button_control",
+        "settings" : ["dc_folding_style4"],
+        "layer0.texture": "Theme - DC/assets/folding_plus4.png",
+        "layer1.texture": "Theme - DC/assets/folding_minus4.png",
+    },             
     //          STATE HOVER
     {
         "class": "fold_button_control",
