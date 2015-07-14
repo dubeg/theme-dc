@@ -314,7 +314,7 @@
 
 //
 // TAB SCROLLING
-//
+// 
     //
     // TAB DROPDOWN BUTTON
     //
@@ -329,7 +329,7 @@
     {
 
         "class" : "show_tabs_dropdown_button",
-        "settings":"dc_use_small_tabs",
+        "settings": ["dc_use_small_tabs"],
         "content_margin": [10, 10 , 10, 10],
     },    
     //          STATE HOVER
