@@ -812,7 +812,8 @@
         "parents": [{"class": "status_bar"}],
         "color": [32, 255, 237],
         "shadow_color": [0, 0, 0],
-        "shadow_offset": [0, 0]
+        "shadow_offset": [0, 0],
+        "font.size" : 11
     },
     //      SETTING SMALL STATUSBAR
     {
