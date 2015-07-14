@@ -1,6 +1,6 @@
 [
     {
-        "caption": "Preferences: Theme DC Widget Settings - Default",
+        "caption": "Theme DC: Open Widget - Default",
         "command": "open_file", 
         "args": 
         {
@@ -8,7 +8,7 @@
         }
     },
     {
-        "caption": "Preferences: Theme DC Widget Settings – User",
+        "caption": "Theme DC: Open Widget - User",
         "command": "open_file", "args":
         {
             "file": "${packages}/User/Widget - DC_3.sublime-settings"
