@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Ian Hill, mod by dubeg</string>
+	<key>comment</key>
+	<string>A widget theme for the UI components of the Dark and Cyan theme.</string>
+	<key>name</key>
+	<string>Dark Cyan - Widget Theme</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#dcdcdc</string>
+				<key>caret</key>
+				<string>#141414</string>
+				<key>foreground</key>
+				<string>#141414</string>
+				<key>invisibles</key>
+				<string>#0a0a0a</string>
+				<key>lineHighlight</key>
+				<string>#666666</string>
+				<key>selection</key>
+				<string>#666666</string>
+				<key>selectionBorder</key>
+				<string>#66666600</string>
+				<key>inactiveSelection</key>
+				<string>#949494</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
