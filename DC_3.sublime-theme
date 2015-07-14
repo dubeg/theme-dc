@@ -31,14 +31,14 @@
     //          SETTING DARK_TAB_STYLE1
     {
         "class": "tabset_control",
-        "settings" : ["dc_use_dark_tab_style1"],
+        "settings" : ["dc_use_tab_style1"],
         "layer0.texture": "Theme - DC/assets/tabset_background2.png",
         "layer0.inner_margin": [1,1,1,4]
     },
     //          SETTING DARK_TAB_STYLE2
     {
         "class": "tabset_control",
-        "settings" : ["dc_use_dark_tab_style2"],
+        "settings" : ["dc_use_tab_style2"],
         "layer0.texture": "Theme - DC/assets/tabset_background3.png",
         "layer0.inner_margin": [1,1,1,4],
         "tab_width": 140,
@@ -47,7 +47,7 @@
     //          SETTING DARK_TAB_STYLE2:noscroll
     {
         "class": "tabset_control",
-        "settings" : ["dc_use_dark_tab_style2", "!enable_tab_scrolling"],
+        "settings" : ["dc_use_tab_style2", "!enable_tab_scrolling"],
         "layer0.texture": "Theme - DC/assets/tabset_background3.png",
         "layer0.inner_margin": [1,1,1,4],
         "tab_width": 140,
@@ -57,21 +57,21 @@
     //          SETTING DARK_TAB_STYLE3
     {
         "class": "tabset_control",
-        "settings" : ["dc_use_dark_tab_style3"],
+        "settings" : ["dc_use_tab_style3"],
         "layer0.texture": "Theme - DC/assets/tabset_background4.png",
         "layer0.inner_margin": [1,1,1,4]
-    },
+    }, 
     //          SETTING DARK_TAB_STYLE4
     {
         "class": "tabset_control",
-        "settings" : ["dc_use_dark_tab_style4"],
+        "settings" : ["dc_use_tab_style4"],
         "layer0.texture": "Theme - DC/assets/tabset_background5.png",
         "layer0.inner_margin": [1,1,1,4]
     },
     //          SETTING DARK_TAB_STYLE4
     {
         "class": "tabset_control",
-        "settings" : ["dc_use_dark_tab_style5"],
+        "settings" : ["dc_use_tab_style5"],
         "layer0.texture": "Theme - DC/assets/tabset_background6.png",
         "layer0.inner_margin": [1,1,1,4],
         "tab_width": 0,
@@ -106,27 +106,27 @@
     //          SETTING DARK_TAB_STYLE1
     {
         "class": "tab_control",
-        "settings" : ["dc_use_dark_tab_style1"],
+        "settings" : ["dc_use_tab_style1"],
         "layer0.texture": "Theme - DC/assets/tab_inactive2.png",
         "layer0.inner_margin": [1,1,1,4]
     },
     //          SETTING DARK_TAB_STYLE2
     {
         "class": "tab_control",
-        "settings" : ["dc_use_dark_tab_style2"],
+        "settings" : ["dc_use_tab_style2"],
         "layer0.texture": "Theme - DC/assets/tab_inactive3.png",
         "layer0.inner_margin": [1,1,1,4]
     },
     //          SETTING DARK_TAB_STYLE2:noscroll
     {
         "class": "tab_control",
-        "settings" : ["dc_use_dark_tab_style2", "!enable_tab_scrolling"],
+        "settings" : ["dc_use_tab_style2", "!enable_tab_scrolling"],
         "layer0.texture": "Theme - DC/assets/tab_inactive3_noscroll.png",
     },
     //          SETTING DARK_TAB_STYLE3
     {
         "class": "tab_control",
-        "settings" : ["dc_use_dark_tab_style3"],
+        "settings" : ["dc_use_tab_style3"],
         "layer0.texture": "Theme - DC/assets/tab_inactive4.png",
         "layer0.inner_margin": [1,1,1,4],
         "content_margin": [12, 5, 7, 5],
@@ -134,7 +134,7 @@
     //          SETTING DARK_TAB_STYLE4
     {
         "class": "tab_control",
-        "settings" : ["dc_use_dark_tab_style4"],
+        "settings" : ["dc_use_tab_style4"],
         "layer0.texture": "Theme - DC/assets/tab_inactive5.png",
         "layer0.inner_margin": [1,1,1,4],
         "content_margin": [12, 5, 7, 5],
@@ -142,7 +142,7 @@
     //          SETTING DARK_TAB_STYLE5
     {
         "class": "tab_control",
-        "settings" : ["dc_use_dark_tab_style5"],
+        "settings" : ["dc_use_tab_style5"],
         "layer0.texture": "Theme - DC/assets/tab_inactive6.png",
         "layer0.inner_margin": [1,1,1,4],
         "content_margin": [12, 5, 7, 5],
@@ -163,7 +163,7 @@
         "class": "tab_control",
         "attributes": ["selected"],
         "content_margin": [12, 5, 7, 5],
-        "settings" : ["dc_use_dark_tab_style1"],
+        "settings" : ["dc_use_tab_style1"],
         "layer0.texture": "Theme - DC/assets/tab_active2.png",
     },
     //          SETTING DARK_TAB_STYLE2
@@ -171,7 +171,7 @@
         "class": "tab_control",
         "attributes": ["selected"],
         "content_margin": [12, 5, 7, 5],
-        "settings" : ["dc_use_dark_tab_style2"],
+        "settings" : ["dc_use_tab_style2"],
         "layer0.texture": "Theme - DC/assets/tab_active3.png",
     },
     //          SETTING DARK_TAB_STYLE2:noscroll
@@ -179,7 +179,7 @@
         "class": "tab_control",
         "attributes": ["selected"],
         "content_margin": [12, 5, 7, 5],
-        "settings" : ["dc_use_dark_tab_style2", "!enable_tab_scrolling"],
+        "settings" : ["dc_use_tab_style2", "!enable_tab_scrolling"],
         "layer0.texture": "Theme - DC/assets/tab_active3_noscroll.png",
     },
     //          SETTING DARK_TAB_STYLE3
@@ -187,7 +187,7 @@
         "class": "tab_control",
         "attributes": ["selected"],
         "content_margin": [12, 5, 7, 5],
-        "settings" : ["dc_use_dark_tab_style3"],
+        "settings" : ["dc_use_tab_style3"],
         "layer0.texture": "Theme - DC/assets/tab_active4.png",
     },
     //          SETTING DARK_TAB_STYLE4
@@ -195,7 +195,7 @@
         "class": "tab_control",
         "attributes": ["selected"],
         "content_margin": [12, 5, 7, 5],
-        "settings" : ["dc_use_dark_tab_style4"],
+        "settings" : ["dc_use_tab_style4"],
         "layer0.texture": "Theme - DC/assets/tab_active5.png",
     },
     //          SETTING DARK_TAB_STYLE5
@@ -203,7 +203,7 @@
         "class": "tab_control",
         "attributes": ["selected"],
         "content_margin": [12, 5, 7, 5],
-        "settings" : ["dc_use_dark_tab_style5"],
+        "settings" : ["dc_use_tab_style5"],
         "layer0.texture": "Theme - DC/assets/tab_active6.png",
     },
  
@@ -303,16 +303,7 @@
         "shadow_color": [0,0,0],
         "shadow_offset": [1,1],
         "font.bold": false
-    }, 
-    //          SETTING DARK TAB, TAB SELECTED
-    {
-        "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "settings" : ["dc_use_darker_tab_colors"],
-        "fg": [0,255,226],
-        "shadow_offset": [0,0],
-        "font.bold": false
-    }, 
+    },  
     //          STATE TRANSIENT
     {
         "class": "tab_label",
