@@ -1236,13 +1236,8 @@
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
-
         "layer0.tint" : [25,25,25],
         "layer0.texture" : "",
-
-        //"layer0.texture" : "Theme - DC/assets/overlay_input.png",
-        //"layer0.tint" : [255,255,255],
-
         "layer0.inner_margin" : [2,2],
         "content_margin": [5,6,5,7]
         },
@@ -1796,6 +1791,251 @@
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0,
-    }
+    },
 
+
+// ----------------------------------------------
+// Widget Style (2): Dark Background, Light Input
+// ----------------------------------------------
+
+    //
+    // CONSOLE SCROLLBAR
+    // 
+    {
+        "class": "scroll_bar_control",
+        "settings" : ["dc_use_widget_light"],
+        "parents": [{"class": "panel_control"}],
+        "layer0.tint" : [30,30,30],
+    },
+
+
+    //
+    // BUTTON LABEL
+    //
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control"}],
+        "settings" : ["dc_use_widget_light"],
+        "shadow_offset": [0, -1]
+    },
+
+
+    //
+    // GENERAL INPUT
+    //
+    {
+        "class": "text_line_control",
+        "settings" : ["dc_use_widget_light"],
+        "layer0.tint" : [220,220,220],
+    },
+
+
+    //
+    // PANEL TEXT INPUT
+    //
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "panel_control"}],
+        "settings" : ["dc_use_widget_light"],
+        "layer0.tint" : [220,220,220],
+    },
+
+
+    //
+    // OVERLAY TEXT INPUT
+    //
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "overlay_control"}],
+        "settings" : ["dc_use_widget_light"],
+        "layer0.tint" : [220,220,220],
+    },
+
+
+    //
+    // OVERLAY CONTROL (Quick panel background, ...)
+    //
+    {
+        "class": "overlay_control",
+        "settings" : ["dc_use_widget_light"],
+        "layer0.tint": [20, 20, 20 ],
+    },
+
+
+// ----------------------------------------------
+// Widget Style (3): Gray Background, Dark Input
+// ----------------------------------------------
+
+    //
+    // BUTTON LABEL
+    //
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control"}],
+        "settings" : ["dc_use_widget_gray"],
+        "font.size" : 12,
+        "shadow_color": [20,20,20],
+        "shadow_offset": [1,1]
+    },
+
+
+    //
+    // GENERAL BUTTON
+    //
+    {
+        "class": "button_control",
+        "settings" : ["dc_use_widget_gray"],
+        "layer0.tint" : [50,50,50],
+    },
+    //          STATE HOVER
+    {
+        "class": "button_control",
+        "settings" : ["dc_use_widget_gray"],
+        "attributes": ["hover"],
+        "layer0.tint" : [30,30,30]
+    },
+    //          STATE PRESSED
+    {
+        "class": "button_control",
+        "settings" : ["dc_use_widget_gray"],
+        "attributes": ["pressed"],
+        "layer0.tint" : [20,20,20]
+    },
+
+
+    //
+    // GENERAL TEXT INPUT
+    //
+    {
+        "class": "text_line_control",
+        "settings" : ["dc_use_widget_gray"],
+        "layer0.tint" : [30,30,30],
+    },
+
+
+    //
+    // PANEL TEXT INPUT
+    //
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "panel_control"}],
+        "settings" : ["dc_use_widget_gray"],
+        "layer0.tint" : [30,30,30]
+    },
+
+
+
+    //
+    // OVERLAY TEXT INPUT
+    //
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "overlay_control"}],
+        "settings" : ["dc_use_widget_gray"],
+        "layer0.tint" : [30,30,30],
+    },
+
+
+    //
+    // PANEL CONTROL (Search panel background, Console panel BG, ...)
+    //
+    {
+        "class": "panel_control",
+        "settings" : ["dc_use_widget_gray"],
+        "layer0.texture": "Theme - DC/assets/statusbar_bg2.png",
+        "layer0.tint" : [255,255,255],
+        "layer0.inner_margin": [1,1],
+        "layer0.opacity": 1.0,
+        "content_margin": [5, 2, 5, 1]
+    },
+
+
+    //
+    // OVERLAY CONTROL (Quick panel background, ...)
+    //
+    {
+        "class": "overlay_control",
+        "settings" : ["dc_use_widget_gray"],
+        "layer0.texture": "Theme - DC/assets/quick_panel_bg.png",
+        "layer0.tint" : [255,255,255],
+        "layer0.inner_margin": [5, 2, 5, 13],
+        "layer0.opacity": 1.0,
+        "content_margin": [8,8]
+    },
+
+    //
+    // ENTRY ROW 
+    //
+    {
+        "class": "mini_quick_panel_row",
+        "settings" : ["dc_use_widget_gray"],
+        "layer0.texture": "Theme - DC/assets/quick-panel-row.png",
+        "layer0.tint" : [255,255,255],
+        "layer0.inner_margin": [2, 2, 2, 2],
+    },
+    //          STATE SELECTED
+    {
+        "class": "mini_quick_panel_row",
+        "settings" : ["dc_use_widget_gray"],
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - DC/assets/quick-panel-row-selected3.png",
+        "layer0.tint" : [255,255,255]
+    },
+
+
+    //
+    // ICON BUTTON
+    //
+    {
+        "class": "icon_button_control",
+        "settings" : ["dc_use_widget_gray"],
+        "content_margin": [4,5,4,5],
+        "layer0.opacity": 0
+    },
+    {
+        "class": "icon_button_control",
+        "settings" : ["dc_use_widget_gray", "!dc_use_soda_search_icons"],
+        "content_margin": [6,6,6,6],
+        "layer0.tint" : [30,30,30],
+        "layer0.opacity": 1
+    },
+
+
+// ----------------------------------------------
+// Widget Style (4): Dark Background, Gray Input
+// ----------------------------------------------
+
+    //
+    // PANEL TEXT INPUT
+    //
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "panel_control"}],
+        "settings" : ["dc_use_widget_darkgray"],
+        "layer0.tint" : [37,37,37]
+    },
+
+    //
+    // OVERLAY TEXT INPUT
+    //
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "overlay_control"}],
+        "settings" : ["dc_use_widget_darkgray"],
+        "layer0.tint" : [37,37,37]
+    },
+ 
+
+    //
+    // OVERLAY CONTROL (Quick panel background, ...)
+    //
+    {
+        "class": "overlay_control",
+        "settings" : ["dc_use_widget_darkgray"],
+        "layer0.texture": "Theme - DC/assets/overlay_bg.png",
+        "layer0.tint" : [255,255,255],
+        "layer0.inner_margin": [5, 2, 5, 13],
+        "layer0.opacity": 1.0,
+        "content_margin": [8,8]
+    },
 ]
