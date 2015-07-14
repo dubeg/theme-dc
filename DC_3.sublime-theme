@@ -1230,41 +1230,6 @@
 
 
     //
-    // PANEL INPUT
-    //
-    {
-        "class": "text_line_control",
-        "parents": [{"class": "panel_control"}],
-        "layer0.tint" : [25,25,25],
-        "layer0.texture" : "",
-        //"layer0.texture" : "Theme - DC/assets/pnl_input.png",
-        //"layer0.tint" : [255,255,255],
-        "layer0.inner_margin" : [5,5],
-        "layer0.repeat":false,
-        "content_margin": [5,6,5,5],
-         "layer1.opacity" : 0,
-    },
-    // SETTING :: PANEL INPUT STYLE 1
-    /*
-    {
-        "class": "text_line_control",
-        "parents": [{"class": "panel_control"}],
-        "settings" : ["dc_use_pnl_input_style1"],
-        "layer0.texture" : "Theme - DC/assets/pnl_input1.png",
-        "layer0.repeat":true,
-        "layer0.inner_margin" : [0,10,0,10],
-
-        "layer1.texture" : "Theme - DC/assets/pnl_input4_s.png",
-        "layer1.inner_margin" : [5,5],
-        "layer1.tint" : [255,255,255],
-        "layer1.repeat":false,
-        "layer1.opacity" : 1,
-        
-    },
-    */
-
-
-    //
     // OVERLAY INPUT
     //
     {
@@ -1478,26 +1443,40 @@
     // ACTION BUTTONS
     {
         "class": "button_control",
-        "parents" : [{ 
-            "class" : "panel_control", 
-            }],
+        "parents" : [{ "class" : "panel_control" }],
         "content_margin": [6, 7, 6, 6],
         "min_size": [60, 0],
     },
-
 
     //
     // ICON BUTTON
     //
     {
         "class": "icon_button_control",
+        "parents" : [{ "class" : "panel_control" }],
         "content_margin": [5,5,5,5]
-    },
+    },    
     //          STATE SELECTED
     {
         "class": "icon_button_control",
+        "parents" : [{ "class" : "panel_control" }],
         "attributes": ["selected"]
     },
+
+
+    //
+    // PANEL INPUT
+    //
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "panel_control"}],
+        "layer0.tint" : [25,25,25],
+        "layer0.texture" : "",
+        "layer0.inner_margin" : [5,5],
+        "layer0.repeat":false,
+        "content_margin": [5,6,5,5],
+        "layer1.opacity" : 0,
+    },    
 
 
     //
@@ -1509,7 +1488,7 @@
         "layer0.tint" : [255,255,255],
         "layer0.opacity": 0.4,
         "content_margin": [12,14]
-    },
+    },    
     //          STATE HOVER
     {
         "class": "panel_close_button",
