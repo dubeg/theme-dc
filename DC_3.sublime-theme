@@ -778,8 +778,15 @@
         "layer0.inner_margin" : [2,2],
         "layer0.tint": [255,255,255],
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8, 8, 8]
+        "content_margin": [8, 8]
     },
+    //      SETTING SMALL STATUSBAR
+    {
+        "class": "status_bar",
+        "settings" : ["dc_use_small_statusbar"],
+        "content_margin": [8, 6]
+    },
+
 
 
     //
@@ -789,6 +796,12 @@
         "class": "status_button",
         "min_size": [100, 0]
     },
+    //      SETTING SMALL STATUSBAR
+    {
+        "class": "status_button",
+        "settings" : ["dc_use_small_statusbar"],
+        "min_size": [70, 0]
+    },    
 
 
     //
@@ -800,6 +813,12 @@
         "color": [32, 255, 237],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
+    },
+    //      SETTING SMALL STATUSBAR
+    {
+        "class": "label_control",
+        "settings" : ["dc_use_small_statusbar"],
+        "font.size" : 10,
     },
 
 
