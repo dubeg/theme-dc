@@ -628,11 +628,11 @@
 
 
 //
-// EMPTY WINDOW BACKGROUND
+// EMPTY WINDOW BACKGROUND (Ex: use 2 cols layout, empty column #2, restart ST)
 //
     {
         "class": "sheet_container_control",
-        "layer0.tint": [25, 25, 25],
+        "layer0.tint": [30,30,30],
         "layer0.opacity": 1.0
     },
 
@@ -678,12 +678,11 @@
 
 
 //
-// DIALOG
+// DIALOG (Ex: Check for updates)
 //
-    // (???)
     {
         "class": "dialog",
-        "layer0.tint": [68, 68, 68],
+        "layer0.tint": [30,30,30],
         "layer0.opacity": 1.0
     },
 
