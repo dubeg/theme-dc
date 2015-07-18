@@ -1,6 +1,20 @@
 # Theme - DC
 
-Dark and Cyan (DC) theme for SublimeText.
+Dark and Cyan (DC) UI theme for SublimeText.
+
+## TODO
+
+- Fix panel_close_button
+- Consider reducing size of search icons with dc_use_small_panel
+- Add commands to switch to different widget colors automatically
+    + Change user settings file
+    + Change widget settings file
+- Update readme
+    + New images
+    + New settings
+    + Link to VSDC
+- Update messages
+- Anything else?
 
 ## Screenshots
 
