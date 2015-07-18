@@ -801,8 +801,8 @@
     {
         "class": "status_button",
         "settings" : ["dc_use_small_statusbar"],
+        "min_size": [0, 0],
         "content_margin": [0,0,20,0],
-        "min_size": [0, 0]
     },    
 
 
@@ -1199,20 +1199,28 @@
         "content_margin": [6, 7, 6, 6],
         "min_size": [75, 0],
         "layer0.tint" : [30,30,30],
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": [6, 6]
+        "layer1.tint" : [50,50,50],
+        "layer2.tint" : [40,40,40],
+
+        "layer0.opacity" : 1,
+        "layer1.opacity" : 0,
+        "layer2.opacity" : 0,
     },
     //          STATE HOVER
     {
         "class": "button_control",
         "attributes": ["hover"],
-        "layer0.tint" : [50,50,50]
+        "layer0.opacity" : 0,
+        "layer1.opacity" : 1,
+        "layer2.opacity" : 0,
     },
     //          STATE PRESSED
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "layer0.tint" : [40,40,40]
+        "layer0.opacity" : 0,
+        "layer1.opacity" : 0,
+        "layer2.opacity" : 1,
     },
 
 
@@ -1253,7 +1261,10 @@
         "content_margin": [8, 8],
         "layer0.texture": "Theme - DC/assets/text-field-list.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [4, 4]
+        "layer0.inner_margin": [4, 4],
+
+        // TODO:remove 
+        "content_margin": [8,2],
     },
     //          STATE HOVER
     {
@@ -1274,9 +1285,14 @@
         "layer0.texture": "Theme - DC/assets/statusbar_bg.png",
         "layer0.inner_margin": [2,2],
         "layer0.opacity": 1.0,
-        "content_margin": [5, 2, 5, 1]
+        "content_margin": [5, 2, 5, 1],
     },
-
+    //      SETTING SMALL PANEL
+    {
+        "class": "panel_control",
+        "settings" : ["dc_use_small_panel"],
+        "content_margin": [0,0]  
+    },
 
     //
     // OVERLAY CONTROL (Quick panel background, ...)
@@ -1285,7 +1301,6 @@
         "class": "overlay_control",
         "layer0.texture" : "Theme - DC/assets/overlay_bg4.png",
         "layer0.tint" : [255,255,255],
-        //"layer0.tint" : [30,30,30],
         "layer0.inner_margin":[2,2],
         "layer0.opacity": 1.0,
         "content_margin": [6,4,6,6]
@@ -1437,13 +1452,21 @@
 //
 // SEARCH PANEL
 //
-
-    // ACTION BUTTONS
+    //
+    // ACTION BUTTON
+    //
     {
         "class": "button_control",
         "parents" : [{ "class" : "panel_control" }],
         "content_margin": [6, 7, 6, 6],
-        "min_size": [60, 0],
+        "min_size": [40, 0],
+    },
+    //          SETTING SMALL PANEL
+    {
+        "class": "button_control",
+        "parents" : [{ "class" : "panel_control" }],
+        "settings": ["dc_use_small_panel"],
+        "content_margin": [5,4],
     },
 
     //
@@ -1452,8 +1475,16 @@
     {
         "class": "icon_button_control",
         "parents" : [{ "class" : "panel_control" }],
-        "content_margin": [5,5,5,5]
-    },    
+        "content_margin": [5,5,5,5],
+        "layer0.opacity": 0,
+    },
+    //          SETTING SMALL PANEL
+    {
+        "class": "icon_button_control",
+        "parents" : [{ "class" : "panel_control" }],
+        "settings": ["dc_use_small_panel"],
+        "content_margin": [2,2]
+    },
     //          STATE SELECTED
     {
         "class": "icon_button_control",
@@ -1461,32 +1492,49 @@
         "attributes": ["selected"]
     },
 
-
     //
-    // PANEL INPUT
+    // INPUT
     //
     {
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
-        "layer0.tint" : [25,25,25],
-        "layer0.texture" : "",
-        "layer0.inner_margin" : [5,5],
-        "layer0.repeat":false,
         "content_margin": [5,6,5,5],
+        "layer0.tint" : [25,25,25],
+        "layer0.texture" : "", 
+        "layer0.inner_margin" : [0,0],
+        "layer0.repeat" : false,
         "layer1.opacity" : 0,
-    },    
-
+    }, 
+    //          SETTING SMALL PANEL
+    {
+        "class": "text_line_control",
+        "parents" : [{ "class" : "panel_control" }],
+        "settings": ["dc_use_small_panel"],
+        "content_margin": [4,4],
+    },       
 
     //
     // CLOSE BUTTON
     //
     {
         "class": "panel_close_button",
+        "content_margin": [12,14],
         "layer0.texture": "Theme - DC/assets/btn_close_panel.png",
         "layer0.tint" : [255,255,255],
-        "layer0.opacity": 0.4,
-        "content_margin": [12,14]
-    },    
+        "layer0.opacity": 1,
+        "layer0.draw_centered" : true,
+        "layer0.inner_margin" : [0,0,0,0],
+    },  
+    //          SETTING SMALL PANEL
+    {
+        "class": "panel_close_button",
+        "parents" : [{ "class" : "panel_control" }],
+        "settings": ["dc_use_small_panel"],
+        "layer1.tint":[0,0,0],
+        "layer1.opacity" : 0.3, 
+        "content_margin": [10,10],
+        // TODO: create texture that fits small
+    },       
     //          STATE HOVER
     {
         "class": "panel_close_button",
@@ -1869,54 +1917,29 @@
 // ----------------------------------------------
 
     //
+    // BUTTON
+    //
+    {
+        "class": "button_control",
+        "settings" : ["dc_use_widget_gray"],
+        "layer0.tint" : [50,50,50],
+        "layer1.tint" : [30,30,30],
+        "layer2.tint" : [20,20,20],
+    },
+
+    //
     // BUTTON LABEL
     //
     {
         "class": "label_control",
         "parents": [{"class": "button_control"}],
         "settings" : ["dc_use_widget_gray"],
-        "font.size" : 12,
         "shadow_color": [20,20,20],
         "shadow_offset": [1,1]
     },
 
-
     //
-    // GENERAL BUTTON
-    //
-    {
-        "class": "button_control",
-        "settings" : ["dc_use_widget_gray"],
-        "layer0.tint" : [50,50,50],
-    },
-    //          STATE HOVER
-    {
-        "class": "button_control",
-        "settings" : ["dc_use_widget_gray"],
-        "attributes": ["hover"],
-        "layer0.tint" : [30,30,30]
-    },
-    //          STATE PRESSED
-    {
-        "class": "button_control",
-        "settings" : ["dc_use_widget_gray"],
-        "attributes": ["pressed"],
-        "layer0.tint" : [20,20,20]
-    },
-
-
-    //
-    // GENERAL TEXT INPUT
-    //
-    {
-        "class": "text_line_control",
-        "settings" : ["dc_use_widget_gray"],
-        "layer0.tint" : [30,30,30],
-    },
-
-
-    //
-    // PANEL TEXT INPUT
+    // PANEL TEXT_INPUT
     //
     {
         "class": "text_line_control",
@@ -1925,10 +1948,8 @@
         "layer0.tint" : [30,30,30]
     },
 
-
-
     //
-    // OVERLAY TEXT INPUT
+    // OVERLAY TEXT_INPUT
     //
     {
         "class": "text_line_control",
@@ -1937,9 +1958,8 @@
         "layer0.tint" : [30,30,30],
     },
 
-
     //
-    // PANEL CONTROL (Search panel background, Console panel BG, ...)
+    // PANEL CONTROL
     //
     {
         "class": "panel_control",
@@ -1948,12 +1968,10 @@
         "layer0.tint" : [255,255,255],
         "layer0.inner_margin": [1,1],
         "layer0.opacity": 1.0,
-        "content_margin": [5, 2, 5, 1]
     },
 
-
     //
-    // OVERLAY CONTROL (Quick panel background, ...)
+    // OVERLAY CONTROL
     //
     {
         "class": "overlay_control",
@@ -1962,7 +1980,6 @@
         "layer0.tint" : [255,255,255],
         "layer0.inner_margin": [5, 2, 5, 13],
         "layer0.opacity": 1.0,
-        "content_margin": [8,8]
     },
 
     //
@@ -1984,20 +2001,12 @@
         "layer0.tint" : [255,255,255]
     },
 
-
     //
     // ICON BUTTON
     //
     {
         "class": "icon_button_control",
-        "settings" : ["dc_use_widget_gray"],
-        "content_margin": [4,5,4,5],
-        "layer0.opacity": 0
-    },
-    {
-        "class": "icon_button_control",
         "settings" : ["dc_use_widget_gray", "!dc_use_soda_search_icons"],
-        "content_margin": [6,6,6,6],
         "layer0.tint" : [30,30,30],
         "layer0.opacity": 1
     },
