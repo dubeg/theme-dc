@@ -784,7 +784,7 @@
     {
         "class": "status_bar",
         "settings" : ["dc_use_small_statusbar"],
-        "content_margin": [8, 6]
+        "content_margin": [8, 4]
     },
 
 
@@ -794,13 +794,15 @@
     //
     {
         "class": "status_button",
-        "min_size": [100, 0]
+        "min_size": [0, 0],
+        "content_margin": [20,4],
     },
     //      SETTING SMALL STATUSBAR
     {
         "class": "status_button",
         "settings" : ["dc_use_small_statusbar"],
-        "min_size": [70, 0]
+        "content_margin": [0,0,20,0],
+        "min_size": [0, 0]
     },    
 
 
@@ -819,7 +821,7 @@
     {
         "class": "label_control",
         "settings" : ["dc_use_small_statusbar"],
-        "font.size" : 10,
+        "font.size" : 11,
     },
 
 
