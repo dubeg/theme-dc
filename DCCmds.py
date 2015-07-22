@@ -22,6 +22,7 @@ WIDGET_DG_NAME = 'DarkGray'
 WIDGET_DL_NAME = 'DarkLight'
 WIDGET_GD_NAME = 'GrayDark'
 
+
 class WidgetType(object):
     # Shared variables here.
     def __init__(self, name, settingKey, settingFilename):
@@ -29,7 +30,6 @@ class WidgetType(object):
         self.Name = name
         self.SettingKey = settingKey
         self.SettingFilename = settingFilename
-
 
 
 class SetWidget(sublime_plugin.WindowCommand):
@@ -56,13 +56,10 @@ class SetWidget(sublime_plugin.WindowCommand):
         
         # Set Widget key
         pref.set(widget.SettingKey, True)
-        #sublime.save_settings(USER_PREFERENCES)
 
-        # /////////////////////////////////////////////
         # Change setting in Widget - DC.sublime-settings
         widgetSettings = sublime.load_settings(USER_WIDGET_SETTINGS)
         widgetSettings.set(COLOR_SCHEME_KEY, COLOR_SCHEME_VALUE.format(widget.SettingFilename))
-        #sublime.save_settings(USER_WIDGET_SETTINGS)
 
 
 class SaveWidgetSettings(sublime_plugin.WindowCommand):
