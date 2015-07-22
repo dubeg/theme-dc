@@ -42,7 +42,7 @@ class SetWidget(sublime_plugin.WindowCommand):
 
     def run(self, widgetName): 
         # Retrieve widgetType
-        widget = WidgetTypes.get(widgetName)
+        widget = self.WidgetTypes.get(widgetName)
         if widget == None:
             print('[SetDCWidget] Unknown widgetName: ' + widgetName) 
             return
@@ -51,7 +51,7 @@ class SetWidget(sublime_plugin.WindowCommand):
         pref = sublime.load_settings(USER_PREFERENCES)
         
         # Remove existing widget keys
-        for key, value in WidgetTypes.items():
+        for key, value in self.WidgetTypes.items():
             pref.erase(value.SettingKey)
         
         # Set Widget key
