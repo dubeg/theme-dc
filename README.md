@@ -1,20 +1,6 @@
 # Theme - DC
 
-Dark and Cyan (DC) UI theme for SublimeText.
-
-## TODO
-
-- Fix panel_close_button
-- Consider reducing size of search icons with dc_use_small_panel
-- Add commands to switch to different widget colors automatically
-    + Change user settings file
-    + Change widget settings file
-- Update readme
-    + New images
-    + New settings
-    + Link to VSDC
-- Update messages
-- Anything else?
+Dark and Cyan - User Interface theme for SublimeText.
 
 ## Screenshots
 
@@ -75,7 +61,6 @@ To configure Sublime Text to use the theme, follow the instructions below.
 ```
 
 ## Configuration
-
 You can use the settings below to customize the theme to your liking.
 
 **All possible User Settings**
@@ -124,34 +109,22 @@ You can use the settings below to customize the theme to your liking.
 
     "dc_use_small_tabs": true
 
-
-## Resolution Support
-
-Unfortunately, I've been too lazy to test the DC Theme on high DPI displays.
-However, I'll probably add the support if requested, or when I start using devices with such displays.
-
 ## Misc
-
-### Color Scheme
-
-    * MonokaiSoda
-    * VisualStudioDark
+### Issues
+- There might be problems with the theme on high-dpi displays.
+- ...
 
 ### Filetype icons
-
 The file icons seen in the screenshot are assets collected from the [Seti_ST3 repository](https://github.com/ctf0/Seti_ST3).
 
 I modified and added a few of my own as well.
 
-
 ### Similar themes
-
 - [Seti_ST3](https://github.com/ctf0/Seti_ST3)
 - [Cobalt2](https://github.com/wesbos/cobalt2)
 - ...
 
 ## Credits
-
 Based on Soda Theme by Ian Hill [(buymeasoda.com)](http://buymeasoda.com/), and inspired by many others.
 
 Some assets used in this theme are from (or modified from):
@@ -161,14 +134,5 @@ Some assets used in this theme are from (or modified from):
 - Visual Studio 2013 (alternate folder icons, and a few filetype icons)
 - the Seti_UI project (most of the filetype icons)
 
-
-
 ## License
-
-DC Theme is licensed under the [Creative Commons Attribution-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/). You are free to share and remix the theme, however please abide by the license terms when doing so.
-
-The following details apply to the Creative Commons license "author specified" components:
-
-* Attribution example: Based on DC Theme.
-
-* Naming guidelines: If you create and distribute a derivative theme, please give your theme a unique and original name that does not directly include "DC Theme" (or a close variant) in the main project title, repo name or Package Control name.
+DC Theme is licensed under the [Creative Commons Attribution-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/). Same as `Theme - Soda`.
