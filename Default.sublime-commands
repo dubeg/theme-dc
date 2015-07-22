@@ -1,17 +1,52 @@
 [
+    // Open Widget Settings
     {
-        "caption": "Theme DC: Open Widget - Default",
+        "caption": "DC: Open Widget User",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/User/Widget - DC_3.sublime-settings"
+        }
+    },
+    {
+        "caption": "DC: Open Widget Default",
         "command": "open_file", 
         "args": 
         {
             "file": "${packages}/Theme - DC/Widget - DC_3.sublime-settings"
         }
     },
+    // Set Widget Styles
     {
-        "caption": "Theme DC: Open Widget - User",
-        "command": "open_file", "args":
+        "caption": "DC: Set Widget DarkDark",
+        "command": "set_widget", 
+        "args": 
         {
-            "file": "${packages}/User/Widget - DC_3.sublime-settings"
+            "widgetName": "DarkDark"
         }
     },
+    {
+        "caption": "DC: Set Widget GrayDark",
+        "command": "set_widget", 
+        "args": 
+        {
+            "widgetName": "GrayDark"
+        }
+    },
+    {
+        "caption": "DC: Set Widget DarkLight",
+        "command": "set_widget", 
+        "args": 
+        {
+            "widgetName": "DarkLight"
+        }
+    },
+    {
+        "caption": "DC: Set Widget DarkGray",
+        "command": "set_widget", 
+        "args": 
+        {
+            "widgetName": "DarkGray"
+        }
+    } 
+
 ]
