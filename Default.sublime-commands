@@ -47,6 +47,10 @@
         {
             "widgetName": "DarkGray"
         }
+    },
+    // Save Widget Style
+    {
+        "caption": "DC: Save Widget Settings",
+        "command": "save_widget_settings", 
     } 
-
 ]
