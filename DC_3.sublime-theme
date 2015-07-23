@@ -457,97 +457,88 @@
 //
 
     //
-    // STANDARD SCROLLBAR
+    // SCROLL_AREA CONTROL
+    //
+    {
+        "class": "scroll_area_control",
+        "overlay": false
+    },
+    //  [ overlay_scroll_bars ]
+    {
+        "class": "scroll_area_control",
+        "settings": ["overlay_scroll_bars"],
+        "overlay": true
+    },
+    //  [ hide_scrollbars ]
+    {
+        "class": "scroll_area_control",
+        "settings": ["dc_hide_scrollbars"],
+        "overlay": true
+    },
+
+    //
+    // SCROLL_BAR CONTROL
     // 
     {
         "class": "scroll_bar_control",
-        "layer0.texture":"Theme - DC/assets/scrollbar_bg_v_dark.png",
-        "layer0.inner_margin":[0,10],
-        "layer0.tint" : [255,255,255],
+        "blur": false,
+
+        "layer0.texture":"",
+        // TODO:set to 30,30,30
+        "layer0.tint" : [29,29,29],
         "layer0.opacity": 1.0,
-        "blur": false
     },
+    //  [ hide_scrollbars ]
     {
         "class": "scroll_bar_control",
-        "attributes" : ["horizontal"],
-        "layer0.texture":"Theme - DC/assets/scrollbar_bg_h_dark.png",
-        "layer0.inner_margin":[10,0],
-        "layer0.tint" : [255,255,255],
-        "layer0.opacity": 1.0,
-        "blur": false
-    },
-
-    {
-        "class": "scroll_bar_control",
-        "attributes" : ["horizontal"],    
-        "parents": [{"class":"sidebar_container"}],
-        "layer0.texture":"Theme - DC/assets/scrollbar_bg_h_dark_sidebar.png",
-        },
-
-
-    {
-        "class": "scroll_bar_control",
-        "settings":[ "dc_autohide_scrollbars" ],
+        "settings": ["dc_hide_scrollbars"],
         "layer0.opacity": 0.0
     },
-
+    //  [ overlay_scroll_bars ]
+    //  Hide scrollbar background on mouse hover
+    //  when overlay_scroll_bars are active.
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.opacity": 0.0
+    },    
 
     //
-    // STANDARD SCROLLBAR CORNER
+    // SCROLLBAR CORNER
     //
     {
         "class": "scroll_corner_control",
-        "layer0.tint" : [31,31,31],
-        "layer0.opacity": 1.0
+        "blur": false,
+
+        "layer0.texture":"",
+        "layer0.inner_margin":[0,0],
+        "layer0.tint" : [29,29,29],
+        "layer0.opacity": 1.0,
     },
 
-
     //
-    // STANDARD PUCK
+    // PUCK
     //
     {
         "class": "puck_control",
-        "layer0.texture":"Theme - DC/assets/scrollbar_v_m_dark.png",
-        "layer0.inner_margin":[5,15],
-        "layer0.tint": [255,255,255],
+        "content_margin": [6,0],
+        "blur": false,
+        
+        "layer0.texture":"",
+        "layer0.inner_margin":[1,1],
+        "layer0.tint": [50,50,50],
         "layer0.opacity": 1.0,
-        "content_margin": [8,26],
-        "blur": false
+        "layer0.draw_center":false
     },
-    //          ATTRIBUTE HORIZONTAL
+    //  :horizontal
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.texture":"Theme - DC/assets/scrollbar_h_m_dark.png",
-        "layer0.inner_margin":[15,5],
-        "content_margin": [26, 8],
-        "blur": false
+
+        "content_margin": [0,6],
     },
 
-
-    //
-    // STANDARD OVERLAY PUCK
-    //
-    {
-        "class": "puck_control",
-        "settings": ["dc_autohide_scrollbars"],
-        "layer0.opacity" : 0.5,
-        "content_margin":[6,6]
-    },
-    {
-        "class": "puck_control",
-        "settings": ["overlay_scroll_bars"],
-        "layer0.opacity" : 0.5,
-        "content_margin":[6,6]
-    },
-    //          ATTRIBUTE HORIZONTAL
-    {
-        "class": "puck_control",
-        "attributes" : ["horizontal"],
-        "settings": ["overlay_scroll_bars"],
-        "content_margin": [0,6]
-    },
-    //          SETTING HIDE SCROLLBARS
+    //  [ hide_scrollbars ]
     {
         "class": "puck_control",
         "settings": ["dc_hide_scrollbars"],
@@ -555,28 +546,12 @@
         "content_margin":[0,0]
     },
 
-
     //
     // SHEET OVERLAY PUCK
     //
     {
         "class": "puck_control",
         "parents": [{  "class": "sheet_container_control" }],
-        "settings": ["dc_always_show_minimap_viewport", "dc_autohide_scrollbars"],
-        "layer0.opacity" : 0,
-        "content_margin": [0,6]
-    },
-    {
-        "class": "puck_control",
-        "attributes" : ["horizontal"],
-        "parents": [{  "class": "sheet_container_control" }],
-        "settings": ["dc_always_show_minimap_viewport", "dc_autohide_scrollbars"],
-        "layer0.opacity" : 0.5
-    },
-    //          SETTINGS 
-    {
-        "class": "puck_control",
-        "parents": [{  "class": "sheet_container_control" }],
         "settings": ["always_show_minimap_viewport", "overlay_scroll_bars"],
         "layer0.opacity" : 0,
         "content_margin": [0,6]
@@ -586,43 +561,7 @@
         "attributes" : ["horizontal"],
         "parents": [{  "class": "sheet_container_control" }],
         "settings": ["always_show_minimap_viewport", "overlay_scroll_bars"],
-        "layer0.opacity" : 0.5
-    },
-
-
-
-//
-// OVERLAY SCROLLBARS
-//
-
-    //
-    // SCROLL AREA CONTROL
-    //
-    {
-        "class": "scroll_area_control",
-        "overlay": false
-    },
-    //          SETTING AUTO-HIDE SCROLLBAR
-    {
-        "class": "scroll_area_control",
-        "settings": ["dc_autohide_scrollbars"],
-        "overlay": true
-    },
-    {
-        "class": "scroll_area_control",
-        "settings": ["overlay_scroll_bars"],
-        "overlay": true
-    },
-    //          SETTING HIDE SCROLLBARS
-    {
-        "class": "scroll_bar_control",
-        "settings": ["dc_hide_scrollbars"],
-        "layer0.opacity": 0.0
-    },
-    {
-        "class": "scroll_area_control",
-        "settings": ["dc_hide_scrollbars"],
-        "overlay": true
+        "layer0.opacity" : 1
     },
 
 
@@ -657,18 +596,13 @@
         "viewport_color": [68, 68, 68, 96],
         "viewport_opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" }
     },
-    //          SETTING VIEWPORT ALWAYS VISIBLE
-    {
-        "class": "minimap_control",
-        "settings": ["dc_always_show_minimap_viewport"],
-        "viewport_opacity": 0.7
-    },
+    // [ always_show_minimap_viewport ]
     {
         "class": "minimap_control",
         "settings": ["always_show_minimap_viewport"],
         "viewport_opacity": 0.7
     },
-    //          STATE HOVER
+    //  :hover
     {
         "class": "minimap_control",
         "attributes": ["hover"],
@@ -708,16 +642,15 @@
 // LABELS
 //
     //
-    // GENERAL LABEL
+    // LABEL CONTROL
     //
     {
         "class": "label_control",
         "color": [204, 204, 204]
     },
 
-
     //
-    // TEXT FIELD LABEL
+    // PANEL LABEL CONTROL
     //
     {
         "class": "label_control",
@@ -727,9 +660,8 @@
         "shadow_offset": [0, -1]
     },
 
-
     //
-    // BUTTON LABEL
+    // BUTTON LABEL CONTROL
     //
     {
         "class": "label_control",
@@ -1429,7 +1361,7 @@
 
 
     //
-    // ENTRY LABEL / QUICK PANEL LABEL
+    // QUICK PANEL LABEL
     //
     {
         "class": "quick_panel_label",
@@ -1660,7 +1592,7 @@
 
 
 //
-//  SEARCH PANEL ICONS
+// SEARCH PANEL ICONS
 //
     //
     // REGEX
@@ -2029,18 +1961,6 @@
 // ----------------------------------------------------
 // Widget Style DarkLight: Dark Background, Light Input
 // ----------------------------------------------------
-
-    //
-    // CONSOLE SCROLLBAR
-    // 
-    {
-        "class": "scroll_bar_control",
-        "settings" : ["dc_use_widget_darklight"],
-        "parents": [{"class": "panel_control"}],
-
-        "layer0.tint" : [30,30,30],
-    },
-
 
     //
     // BUTTON LABEL
