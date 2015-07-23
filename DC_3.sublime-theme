@@ -1102,6 +1102,12 @@
         "layer0.tint": [255,255,255],
         "layer1.tint": [255,255,255],
     },
+    {
+        "class": "icon_folder_dup",
+        "layer0.texture": "Theme - DC/icons/sb/dir_dup.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },    
     //          ALTERNATE ICON 2
     {
         "class": "icon_folder",
@@ -1109,6 +1115,13 @@
         "layer0.texture": "Theme - DC/icons/sb/dir_closed2.png",
         "layer1.texture": "Theme - DC/icons/sb/dir_opened2.png"
     },
+    {
+        "class": "icon_folder_dup",
+        "settings" : ["dc_use_folder_icon2"],
+        "layer0.texture": "Theme - DC/icons/sb/dir_dup2.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },      
     //          ALTERNATE ICON 3
     {
         "class": "icon_folder",
@@ -1116,6 +1129,13 @@
         "layer0.texture": "Theme - DC/icons/sb/dir_closed3.png",
         "layer1.texture": "Theme - DC/icons/sb/dir_opened3.png"
     },
+    {
+        "class": "icon_folder_dup",
+        "settings" : ["dc_use_folder_icon3"],
+        "layer0.texture": "Theme - DC/icons/sb/dir_dup3.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },      
     //          ALTERNATE ICON 4
     {
         "class": "icon_folder",
@@ -1123,6 +1143,13 @@
         "layer0.texture": "Theme - DC/icons/sb/dir_closed4.png",
         "layer1.texture": "Theme - DC/icons/sb/dir_opened4.png"
     },
+    {
+        "class": "icon_folder_dup",
+        "settings" : ["dc_use_folder_icon4"],
+        "layer0.texture": "Theme - DC/icons/sb/dir_dup4.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },     
     //          ALTERNATE ICON 5
     {
         "class": "icon_folder",
@@ -1130,6 +1157,13 @@
         "layer0.texture": "Theme - DC/icons/sb/dir_closed5.png",
         "layer1.texture": "Theme - DC/icons/sb/dir_opened5.png"
     },
+    {
+        "class": "icon_folder_dup",
+        "settings" : ["dc_use_folder_icon5"],
+        "layer0.texture": "Theme - DC/icons/sb/dir_dup5.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },     
     //          STATE OPENED
     {
         "class": "icon_folder",
@@ -1167,7 +1201,6 @@
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
-
 
     //
     // FILE ICON
