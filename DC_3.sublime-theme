@@ -1329,10 +1329,10 @@
 
 
 //
-// QUICK PANEL PROPERTIES
+// QUICK PANEL (Goto)
 //
     //
-    // QUICK PANEL (Goto)
+    // QUICK PANEL
     //
     {
         "class": "quick_panel",
@@ -1341,7 +1341,6 @@
         "layer0.opacity": 1.0,
         "dark_content": true 
     },
-
 
     //
     // QUICK PANEL ROW
@@ -1365,10 +1364,9 @@
         "class": "quick_panel_row",
         "attributes": ["selected"],
 
-        "layer0.tint": [50,50,50],
+        "layer0.tint": [40,40,40],
         "layer1.opacity": 1.0 
     },
-
 
     //
     // QUICK PANEL LABEL
@@ -1382,7 +1380,6 @@
         "selected_match_fg": [30,204,185]
     },
 
-
     //
     // PATH LABEL
     //
@@ -1395,7 +1392,6 @@
         "selected_match_fg":[130, 130, 130, 255]
     },
 
-
     //
     // SCORE LABEL
     //
@@ -1407,7 +1403,7 @@
 
 
 //
-// MINI QUICK PANEL (commands)
+// MINI QUICK PANEL (Commands)
 //
     //
     // MINI_QUICK_PANEL ROW
@@ -1431,7 +1427,7 @@
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
 
-        "layer0.tint": [50,50,50],
+        "layer0.tint": [40,40,40],
         "layer1.opacity": 1.0
     },
 
@@ -2110,7 +2106,48 @@
         "settings" : ["dc_use_widget_graydark"],
 
         "layer0.tint" : [30,30,30],
+    },   
+
+
+    //
+    // Command items
+    //
+    {
+        "class": "mini_quick_panel_row",
+        "settings" : ["dc_use_widget_graydark"],
+
+        "layer0.tint": [30,30,30],
+        "layer1.tint": [25,25,25],
+    },
+    //  :selected
+    {
+        "class": "mini_quick_panel_row",
+        "attributes": ["selected"],
+        "settings" : ["dc_use_widget_graydark"],
+
+        "layer0.tint": [50,50,50],
+        "layer1.opacity": 1.0
     },    
+
+    //
+    // Goto items
+    //
+    {
+        "class": "quick_panel_row",
+        "settings" : ["dc_use_widget_graydark"],
+
+        "layer0.tint": [30,30,30],
+        "layer1.tint": [25,25,25],
+    },
+    //  :selected
+    {
+        "class": "quick_panel_row",
+        "attributes": ["selected"],
+        "settings" : ["dc_use_widget_graydark"],
+
+        "layer0.tint": [50,50,50],
+        "layer1.opacity": 1.0
+    },  
 
 
 // --------------------------------------------------
@@ -2125,7 +2162,7 @@
         "parents": [{"class": "panel_control"}],
         "settings" : ["dc_use_widget_darkgray"],
 
-        "layer0.tint" : [37,37,37]
+        "layer0.tint" : [50,50,50]
     },
 
     //
@@ -2136,7 +2173,7 @@
         "parents": [{"class": "overlay_control"}],
         "settings" : ["dc_use_widget_darkgray"],
 
-        "layer0.tint" : [37,37,37]
+        "layer0.tint" : [50,50,50]
     },
  
     //
@@ -2148,5 +2185,5 @@
         
         "layer0.tint" : [30,30,30],
         "layer1.tint" : [25,25,25]
-    },
+    },   
 ]
