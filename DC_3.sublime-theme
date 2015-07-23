@@ -1293,11 +1293,13 @@
         "content_margin": [8, 8],
         "layer0.texture": "Theme - DC/assets/text-field-list.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [4, 4],
-
-        // TODO:remove 
-        "content_margin": [8,2],
+        "layer0.inner_margin": [4, 4]
     },
+    {
+        "class": "dropdown_button_control",
+        "settings":["dc_use_small_panel"],
+        "content_margin": [7,7],
+    },    
     //          STATE HOVER
     {
         "class": "dropdown_button_control",
