@@ -485,7 +485,7 @@
 
         "layer0.texture":"",
         // TODO:set to 30,30,30
-        "layer0.tint" : [29,29,29],
+        "layer0.tint" : [28,28,28],
         "layer0.opacity": 1.0,
     },
     //  [ hide_scrollbars ]
@@ -521,7 +521,7 @@
     //
     {
         "class": "puck_control",
-        "content_margin": [6,0],
+        "content_margin": [6,6],
         "blur": false,
         
         "layer0.texture":"",
@@ -530,31 +530,34 @@
         "layer0.opacity": 1.0,
         "layer0.draw_center":false
     },
-    //  :horizontal
+    //  [ scrollbars_style2 ]
+    {
+        "class": "puck_control",
+        "settings": ["dc_use_scrollbars_style2"],
+        "content_margin": [8,8],
+        
+        "layer0.texture":"Theme - DC/assets/scrollbar_puck.png",
+        "layer0.inner_margin":[6,1],
+        "layer0.tint": [255,255,255],
+        "layer0.opacity": 1.0,
+        "layer0.draw_center":true
+    },
+    //  [ scrollbars_style2 ]:horizontal
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
+        "settings": ["dc_use_scrollbars_style2"],
 
-        "content_margin": [0,6],
+        "layer0.texture":"Theme - DC/assets/scrollbar_puck_horizontal.png"
     },
 
-    //  [ hide_scrollbars ]
-    {
-        "class": "puck_control",
-        "settings": ["dc_hide_scrollbars"],
-        "layer0.opacity": 0.0,
-        "content_margin":[0,0]
-    },
-
-    //
-    // SHEET OVERLAY PUCK
-    //
+    //  Hide vertical scrollbar when overlay scrollbars are active, 
+    //  and minimap is visible.
     {
         "class": "puck_control",
         "parents": [{  "class": "sheet_container_control" }],
         "settings": ["always_show_minimap_viewport", "overlay_scroll_bars"],
         "layer0.opacity" : 0,
-        "content_margin": [0,6]
     },
     {
         "class": "puck_control",
@@ -562,6 +565,13 @@
         "parents": [{  "class": "sheet_container_control" }],
         "settings": ["always_show_minimap_viewport", "overlay_scroll_bars"],
         "layer0.opacity" : 1
+    },
+    //  [ hide_scrollbars ]
+    {
+        "class": "puck_control",
+        "settings": ["dc_hide_scrollbars"],
+        "layer0.opacity": 0.0,
+        "content_margin":[0,0]
     },
 
 
