@@ -1,0 +1,30 @@
+Colors
+------
+	Cyan       = 32, 255, 237
+	Background = 30, 30, 30
+
+
+	-> TabSet
+			Background
+			Bottom-border
+
+	-> Tabs
+		:Active
+			Background
+			Foreground
+		:Inactive
+			Background
+			Foreground
+
+
+	-> Sidebar
+			Background
+
+		-> Header
+				Foreground
+		-> Row
+				Foreground = 
+			:Selected
+				Foreground = 
+			:Hover
+				Foreground =
