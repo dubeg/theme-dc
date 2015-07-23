@@ -1515,7 +1515,7 @@
         "class": "icon_button_control",
         "parents" : [{ "class" : "panel_control" }],
         "settings": ["dc_use_small_panel"],
-        "content_margin": [2,2]
+        "content_margin": [3,4]
     },
     //          STATE SELECTED
     {
@@ -1600,10 +1600,15 @@
     {
         "class": "icon_regex",
         "settings" : ["dc_use_soda_search_icons"],
-        "content_margin": [9,9],
+        "content_margin": [8,8],
         "layer0.texture": "Theme - DC/icons/pnl/soda/icon_regex.png",
         "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_regex.png",
     },
+    {
+        "class": "icon_regex",
+        "settings" : ["dc_use_soda_search_icons", "dc_use_small_panel"],
+        "content_margin": [7,7],
+    },    
     //          STATE SELECTED
     {
         "class": "icon_regex",
@@ -1633,6 +1638,11 @@
         "layer0.texture": "Theme - DC/icons/pnl/soda/icon_case.png",
         "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_case.png",
     },
+    {
+        "class": "icon_case",
+        "settings" : ["dc_use_soda_search_icons", "dc_use_small_panel"],
+        "content_margin": [7,7],
+    },      
     //          STATE SELECTED
     {
         "class": "icon_case",
@@ -1662,6 +1672,11 @@
         "layer0.texture": "Theme - DC/icons/pnl/soda/icon_wholeword.png",
         "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_wholeword.png",
     },
+    {
+        "class": "icon_whole_word",
+        "settings" : ["dc_use_soda_search_icons", "dc_use_small_panel"],
+        "content_margin": [7,7],
+    },      
     //          STATE SELECTED
     {
         "class": "icon_whole_word",
@@ -1691,6 +1706,11 @@
         "layer0.texture": "Theme - DC/icons/pnl/soda/icon_context.png",
         "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_context.png",
     },
+    {
+        "class": "icon_context",
+        "settings" : ["dc_use_soda_search_icons", "dc_use_small_panel"],
+        "content_margin": [7,7],
+    },     
     //          STATE SELECTED
     {
         "class": "icon_context",
@@ -1720,6 +1740,11 @@
         "layer0.texture": "Theme - DC/icons/pnl/soda/icon_buffer.png",
         "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_buffer.png",
     },
+    {
+        "class": "icon_use_buffer",
+        "settings" : ["dc_use_soda_search_icons", "dc_use_small_panel"],
+        "content_margin": [7,7],
+    },     
     //          STATE SELECTED
     {
         "class": "icon_use_buffer",
@@ -1749,6 +1774,11 @@
         "layer0.texture": "Theme - DC/icons/pnl/soda/icon_reverse.png",
         "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_reverse.png",
     },
+    {
+        "class": "icon_reverse",
+        "settings" : ["dc_use_soda_search_icons", "dc_use_small_panel"],
+        "content_margin": [7,7],
+    },    
     //          STATE SELECTED
     {
         "class": "icon_reverse",
@@ -1778,6 +1808,11 @@
         "layer0.texture": "Theme - DC/icons/pnl/soda/icon_wrap.png",
         "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_wrap.png",
     },
+    {
+        "class": "icon_wrap",
+        "settings" : ["dc_use_soda_search_icons", "dc_use_small_panel"],
+        "content_margin": [7,7],
+    },      
     //          STATE SELECTED
     {
         "class": "icon_wrap",
@@ -1807,6 +1842,11 @@
         "layer0.texture": "Theme - DC/icons/pnl/soda/icon_inselection.png",
         "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_inselection.png",
     },
+    {
+        "class": "icon_in_selection",
+        "settings" : ["dc_use_soda_search_icons", "dc_use_small_panel"],
+        "content_margin": [7,7],
+    },      
     //          STATE SELECTED
     {
         "class": "icon_in_selection",
@@ -1836,6 +1876,11 @@
         "layer0.texture": "Theme - DC/icons/pnl/soda/icon_preservecase.png",
         "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_preservecase.png",
     },
+    {
+        "class": "icon_preserve_case",
+        "settings" : ["dc_use_soda_search_icons", "dc_use_small_panel"],
+        "content_margin": [7,7],
+    },     
     //          STATE SELECTED
     {
         "class": "icon_preserve_case",
@@ -1865,6 +1910,11 @@
         "layer0.texture": "Theme - DC/icons/pnl/soda/icon_highlight.png",
         "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_highlight.png",
     },
+    {
+        "class": "icon_highlight",
+        "settings" : ["dc_use_soda_search_icons", "dc_use_small_panel"],
+        "content_margin": [7,7],
+    },      
     //          STATE SELECTED
     {
         "class": "icon_highlight",
