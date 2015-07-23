@@ -1331,7 +1331,7 @@
     //
     {
         "class": "overlay_control",
-        "layer0.texture" : "Theme - DC/assets/overlay_bg4.png",
+        "layer0.texture" : "Theme - DC/assets/overlay_bg.png",
         "layer0.tint" : [255,255,255],
         "layer0.inner_margin":[2,2],
         "layer0.opacity": 1.0,
@@ -1438,7 +1438,7 @@
         "class": "popup_control",
         "content_margin": [2, 2],
         "layer0.tint": [255,255,255],
-        "layer0.texture" : "Theme - DC/assets/overlay_bg4.png", 
+        "layer0.texture" : "Theme - DC/assets/overlay_bg.png", 
         "layer0.inner_margin" : [5,5],
         "layer0.opacity": 1.0
     },
@@ -1988,7 +1988,9 @@
     {
         "class": "overlay_control",
         "settings" : ["dc_use_widget_darklight"],
-        "layer0.tint": [20, 20, 20 ],
+        "layer0.texture": "Theme - DC/assets/overlay_bg_darklight.png",
+        "layer0.tint": [255,255,255 ],
+        "content_margin": [1,0,1,1]
     },
 
 
@@ -2123,7 +2125,7 @@
     {
         "class": "overlay_control",
         "settings" : ["dc_use_widget_darkgray"],
-        "layer0.texture": "Theme - DC/assets/overlay_bg.png",
+        "layer0.texture": "Theme - DC/assets/overlay_bg_darkgray.png",
         "layer0.tint" : [255,255,255],
         "layer0.inner_margin": [5, 2, 5, 13],
         "layer0.opacity": 1.0,
