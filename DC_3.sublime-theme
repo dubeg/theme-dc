@@ -826,12 +826,11 @@
         "class": "tree_row",
         "settings" : ["dc_use_sidebar_active_row_style2"],
 
-        "layer0.tint" : [0,0,0,0],
-
         "layer1.texture" : "",
-        "layer1.tint" : [32, 255, 237],
-        "layer1.inner_margin" : [2, 0, 0, 0],
-    },
+        "layer1.tint" : [0,0,0],
+        "layer1.inner_margin" : [1, 1, 1, 1],
+
+    },     
     //          .style3
     {
         "class": "tree_row",
@@ -839,20 +838,10 @@
 
         "layer0.tint" : [0,0,0,0],
 
-        "layer1.texture" : "Theme - DC/assets/sidebar_row_border.png",
-        "layer1.tint" : [32, 255, 237],
-        "layer1.inner_margin" : [0, 0, 3, 0],
-    },
-    //          .style4
-    {
-        "class": "tree_row",
-        "settings" : ["dc_use_sidebar_active_row_style4"],
-
         "layer1.texture" : "",
-        "layer1.tint" : [0,0,0],
-        "layer1.inner_margin" : [1, 1, 1, 1],
-
-    },    
+        "layer1.tint" : [32, 255, 237],
+        "layer1.inner_margin" : [2, 0, 0, 0],
+    },   
     //          :selected
     {
         "class": "tree_row",
