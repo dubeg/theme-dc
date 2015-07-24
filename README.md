@@ -65,51 +65,17 @@ You can use the settings below to customize the theme to your liking.
 
 **All possible User Settings**
 
-    "dc_hide_btn_close_tab" : true,
-    "dc_always_show_minimap_viewport" : true,
-    "dc_autohide_scrollbars" : true,        // Renamed in v1.3.0 ('s' added)
-    "dc_bold_folder_labels" : true,
-    "dc_mouse_wheel_switches_tabs" : true,
-    "dc_highlight_active_sidebar_row" : true,
-    
-    "dc_hide_file_icons" : true,
-    "dc_hide_folders" : true,
-    "dc_hide_group_icons" : true,
-    "dc_hide_scrollbars" : true,
-
-    "dc_use_soda_search_icons" : true,
-    //"dc_use_white_puck" : true, // Removed in v1.3.0
-    "dc_use_folder_icon1" : true, // Default
-    "dc_use_folder_icon2" : true,
-    "dc_use_folder_icon3" : true,
-    "dc_use_folder_icon4" : true,
-
-    "dc_use_group_icon1" : true, // Default
-    "dc_use_group_icon2" : true,
-    "dc_use_group_icon3" : true,
-    "dc_use_group_icon4" : true,
-
-    //-------------------------------
-    // New with v1.2.7
-    //-------------------------------
-    "dc_use_darker_tab_colors": true, // Removed in v1.3.0
-
-    "dc_use_sidebar_active_row_style1": true, // Default
-    "dc_use_sidebar_active_row_style2": true,
-    "dc_use_sidebar_active_row_style3": true,
-    
-    //-------------------------------
-    // New with v1.2.9
-    //-------------------------------
-    "dc_use_dark_tab_style0" : true, // Default
-    "dc_use_dark_tab_style1" : true,
-    "dc_use_dark_tab_style2" : true,
-    "dc_use_dark_tab_style3" : true,
-    "dc_use_dark_tab_style4" : true,
-
-    "dc_use_small_tabs": true
+    todo: add settings
 
 ## Misc
+
+### Color Schemes
+This theme was built with these color schemes in mind:
+
+- Monokai Soda / Monokay Extended, [link]
+- Visual Studio Dark, [link]
+- VSDC. [link]
+
 ### Issues
 - There might be problems with the theme on high-dpi displays.
 - ...
