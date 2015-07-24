@@ -40,7 +40,7 @@
 
         // Background
         "layer1.texture": "",
-        "layer1.tint": [30,30,30],
+        "layer1.tint": [40,40,40],
         "layer1.inner_margin": [0,0],
         "layer1.opacity": 1.0,
 
@@ -133,7 +133,7 @@
         "settings" : ["dc_use_tab_style2"],
 
         // Background
-        "layer1.tint": [35,35,35],
+        "layer1.tint": [40,40,40],
 
         // Border-Bottom
         "layer3.inner_margin": [0,0,0,1],
