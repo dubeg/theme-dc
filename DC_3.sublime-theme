@@ -180,30 +180,12 @@
         // Background
         "layer1.tint": [42,42,42],
 
+        // Border Sides
+        "layer2.opacity":0,
+
         // Border-Bottom
         "layer3.texture": "Theme - DC/assets/border_bottom_3px.png",
-        "layer3.inner_margin": [0,0,0,4],
-    },
-    //  [ no_close_buttons ] 
-    {
-        "class": "tab_control",
-        "settings": ["!show_tab_close_buttons"],
-
-        "content_margin": [12, 3, 15, 5]
-    },
-    //   ------------
-    //  [ tab_style4 ]
-    //   ------------
-    {
-        "class": "tab_control",
-        "settings" : ["dc_use_tab_style4"],
-
-        // Background
-        "layer1.tint": [42,42,42],
-
-        // Border-Bottom
-        "layer3.texture": "",
-        "layer3.inner_margin": [0,0,0,1],
+        "layer3.inner_margin": [0,0,0,3],
     },
     //  [ no_close_buttons ] 
     {
@@ -277,6 +259,9 @@
 
         // Background
         "layer1.tint": [60,60,60],
+
+        // Border Sides
+        "layer2.opacity":1,
 
         // Border-Bottom
         // "layer3.texture": "Theme - DC/assets/border_bottom_3px_cyan.png",
@@ -899,6 +884,7 @@
         "layer1.draw_center": false
     },
 
+
     //
     // SIDEBAR TREE
     //
@@ -910,6 +896,12 @@
         "indent_top_level": false,
         "dark_content": true
     },
+    {
+        "settings":["dc_use_sidebar_style2"],
+        "class": "sidebar_tree",
+
+        "row_padding": [8,8],
+    },    
 
     //
     // SIDEBAR TREE ROW
@@ -918,44 +910,70 @@
         "class": "tree_row",
         "content_margin": [0, 1, 0, 0],
 
+        // Background
         "layer0.tint" : [50,50,50,255],
         "layer0.texture" : "",
         "layer0.opacity" : 0.0,
 
+        // Borders
         "layer1.opacity": 0.0,
         "layer1.inner_margin" : [0,0,0,0], 
         "layer1.tint" : [0,0,0,0],
         "layer1.texture" : "",        
-        "layer1.draw_center":false 
+        "layer1.draw_center":false,
+
+        // Selected Background
+        "layer2.opacity": 0.0,
+        "layer2.inner_margin" : [0,0,0,0], 
+        "layer2.tint" : [0,0,0,0],
+        "layer2.texture" : "",        
+        "layer2.draw_center":true,
+
+        // Selected Border
+        "layer3.opacity": 0.0,
+        "layer3.inner_margin" : [0,0,0,0], 
+        "layer3.tint" : [0,0,0,0],
+        "layer3.texture" : "",        
+        "layer3.draw_center":false,       
     },
+    {
+        "class": "tree_row",
+        "settings":["dc_use_sidebar_style2"],
+
+        "layer1.opacity": 1.0,
+        "layer1.inner_margin" : [0,0,0,1], 
+        "layer1.tint" : [40,40,40,255],
+        "layer1.texture" : "",        
+        "layer1.draw_center":false        
+    },
+
     //          .style2
     {
         "class": "tree_row",
         "settings" : ["dc_use_sidebar_active_row_style2"],
+        "attributes": ["selected"],
 
-        "layer1.texture" : "",
-        "layer1.tint" : [25,25,25],
-        "layer1.inner_margin" : [1, 1, 1, 1],
-
+        "layer2.tint" : [50,50,50],
     },     
     //          .style3
     {
         "class": "tree_row",
         "settings" : ["dc_use_sidebar_active_row_style3"],
+        "attributes": ["selected"],
 
         "layer0.tint" : [0,0,0,0],
 
-        "layer1.texture" : "",
-        "layer1.tint" : [32, 255, 237],
-        "layer1.inner_margin" : [2, 0, 0, 0],
+        "layer3.texture" : "",
+        "layer3.tint" : [32, 255, 237],
+        "layer3.inner_margin" : [2, 0, 0, 0],
     },   
     //          :selected
     {
         "class": "tree_row",
         "attributes": ["selected"],
         "settings" : ["dc_highlight_active_sidebar_row"],
-        "layer0.opacity" : 1.0,
-        "layer1.opacity" : 1.0,
+        "layer2.opacity" : 1.0,
+        "layer3.opacity" : 1.0,
     },
 
     //
