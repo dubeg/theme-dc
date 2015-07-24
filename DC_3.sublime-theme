@@ -30,7 +30,9 @@
         "tab_width": 10,
         "tab_height": 24,
     },
-    //  Default Style
+    //   ---------------
+    //  [ Default Style ]
+    //   ---------------
     {
         "class": "tabset_control",
 
@@ -58,7 +60,9 @@
         "layer3.draw_center": false,
         "layer3.opacity": 1.0,                
     },    
+    //   ------------
     //  [ tab_style2 ]
+    //   ------------
     {
         "class": "tabset_control",
         "settings" : ["dc_use_tab_style2"],
@@ -67,7 +71,15 @@
         "layer2.inner_margin": [0,0,0,1],
         "layer2.tint": [25,25,25],
     },
+    {
+        "class": "tabset_control",
+        "settings" : ["dc_use_tab_style2", "dc_use_tab_contrast"],
+
+        "layer1.tint": [50,50,50],
+    },    
+    //   ------------
     //  [ tab_style3 ]
+    //   ------------
     {
         "class": "tabset_control",
         "settings" : ["dc_use_tab_style3"],
@@ -93,12 +105,21 @@
     {
         "class": "tab_control",
         "content_margin": [12, 3, 7, 5],
-        "max_margin_trim": 0,
+
+        // Shrink content_margin when space is thight.
+        // Left and right. (0: no shrink)
+        "max_margin_trim": 2, 
+
+        // TODO: find use to hittest
         "hit_test_level": 0.0,
 
+        // Set LayerX to receive tint of color scheme.
         "tint_index": 0,
+        //"tint_modifier"
     },
-    //  Default Style
+    //   ---------------
+    //  [ Default Style ]
+    //   ---------------
     {
         "class": "tab_control",
 
@@ -139,6 +160,13 @@
         // Border-Bottom
         "layer3.inner_margin": [0,0,0,1],
     },
+    //  [ tab_contrast ]
+    {
+        "class": "tab_control",
+        "settings" : ["dc_use_tab_style2", "dc_use_tab_contrast"],
+
+        "layer1.tint": [50,50,50],
+    },    
     //   ------------
     //  [ tab_style3 ]
     //   ------------
@@ -263,7 +291,7 @@
         "settings" : ["!show_tab_close_buttons"],
         "content_margin": [0,0]
     },
-    //          STATE DIRTY
+    //  :dirty
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
@@ -272,7 +300,7 @@
         "layer1.opacity": 1.0, 
         "layer2.opacity": 0.0
     }, 
-    //          STATE HOVER
+    //  :hover
     {
         "class": "tab_close_button",
         "attributes" : ["hover"],
@@ -281,7 +309,7 @@
         "layer1.opacity": 0.0,  
         "layer2.opacity": 1.0
     },
-    //          STATE PRESSED
+    //  :pressed
     {
         "class": "tab_close_button",
         "attributes" : ["pressed"],
@@ -301,34 +329,51 @@
     //
     {
         "class": "tab_label",
-        "fade": true,
+
         "fg": [170, 170, 170],
         "shadow_color": [25, 25, 25],
         "shadow_offset": [0,0],
         "font.italic": false
     },
-    //          STATE TAB HOVER
+    //  :dirty
+    {
+        "class": "tab_label",
+        "attributes": ["dirty"],
+        "font.bold": false
+    },    
+    //  :transient
+    {
+        "class": "tab_label",
+        "attributes": ["transient"],
+        "font.italic": true
+    },        
+    //  tab:hover
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
         "fg": [220, 220, 220],
     },
-    //          STATE TAB SELECTED
+    //  tab:selected
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        //"fg": [30,30,30],
-        "fg": [0,255,226],
+        "fg": [32, 255, 237],
         "shadow_color": [0,0,0],
         "shadow_offset": [1,1],
         "font.bold": false
-    },  
-    //          STATE TRANSIENT
+    },
+    //   ------------
+    //  [ tab_style2 ]
+    //   ------------
     {
         "class": "tab_label",
-        "attributes": ["transient"],
-        "font.italic": true
-    },
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "settings" : ["dc_use_tab_style2"],
+
+        // Foreground
+        "fg": [200,200,200],
+        "shadow_offset": [0,0]
+    },       
 
 
 //
