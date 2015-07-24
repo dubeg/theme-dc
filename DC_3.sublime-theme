@@ -1368,6 +1368,7 @@
         "content_margin": [6,4,6,6],
         
         // Background
+        // Can be transparent and composited with view.
         "layer0.texture" : "",
         "layer0.tint" : [30,30,30],
         "layer0.inner_margin":0,
