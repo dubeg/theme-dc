@@ -6,7 +6,7 @@
     {
         "class": "tabset_control",
         "mouse_wheel_switch": false,
-        "content_margin": [0,0,0,0],
+        "content_margin": [0,0,0,1],
 
         "tab_overlap": 1,
         "tab_width": 120,
@@ -46,14 +46,14 @@
         "layer1.inner_margin": [0,0],
         "layer1.opacity": 1.0,
 
-        // Border-bottom
+        // Border-bottom (tabset border)
         "layer2.texture": "",
         "layer2.tint": [50,50,50],
         "layer2.inner_margin": [0,0,0,3],
         "layer2.draw_center": false,
         "layer2.opacity": 1.0,  
 
-        // Border-bottom
+        // Border-bottom (separator between view and tabs)
         "layer3.texture": "",
         "layer3.tint": [25,25,25],
         "layer3.inner_margin": [0,0,0,1],
@@ -66,6 +66,7 @@
     {
         "class": "tabset_control",
         "settings" : ["dc_use_tab_style2"],
+        "content_margin": [0,0,0,0],
 
         "layer1.tint": [40,40,40],
         "layer2.inner_margin": [0,0,0,1],
@@ -143,7 +144,7 @@
         // Border-bottom
         "layer3.texture": "Theme - DC/assets/border_bottom_2px.png",
         "layer3.tint": [255,255,255],
-        "layer3.inner_margin": [0,0,0,3],
+        "layer3.inner_margin": [0,0,0,2],
         "layer3.draw_center": false,
         "layer3.opacity": 1.0,    
     },  
@@ -158,6 +159,8 @@
         "layer1.tint": [40,40,40],
 
         // Border-Bottom
+        "layer3.texture":"",
+        "layer3.tint":[25,25,25],
         "layer3.inner_margin": [0,0,0,1],
     },
     //  [ tab_contrast ]
@@ -188,6 +191,28 @@
 
         "content_margin": [12, 3, 15, 5]
     },
+    //   ------------
+    //  [ tab_style4 ]
+    //   ------------
+    {
+        "class": "tab_control",
+        "settings" : ["dc_use_tab_style4"],
+
+        // Background
+        "layer1.tint": [42,42,42],
+
+        // Border-Bottom
+        "layer3.texture": "",
+        "layer3.inner_margin": [0,0,0,1],
+    },
+    //  [ no_close_buttons ] 
+    {
+        "class": "tab_control",
+        "settings": ["!show_tab_close_buttons"],
+
+        "content_margin": [12, 3, 15, 5]
+    },
+
 
 
 //
@@ -202,7 +227,7 @@
         "layer1.tint": [50,50,50],  
         // Border-bottom
         "layer3.texture": "Theme - DC/assets/border_bottom_2px.png",
-        "layer3.inner_margin": [0,0,0,3],
+        "layer3.inner_margin": [0,0,0,2],
     },
     //  [ no_close_buttons ] 
     {
@@ -230,8 +255,15 @@
         // Background
         "layer0.opacity":1,
         "layer1.opacity": 0,
+
         // Border-Bottom
-        "layer3.opacity":0,
+        // Note: Cyan bar on top
+        // "layer3.inner_margin":[0,3,0,0],
+        // "layer3.tint": [32, 255, 237],
+        // "layer3.texture":"",
+        // "layer3.opacity":1.0,
+        // Note: No bar
+        "layer3.opacity" : 0
     },  
     //   ------------
     //  [ tab_style3 ]
@@ -259,6 +291,7 @@
         "content_margin": [12, 3, 15, 5]
     },            
  
+
 //
 // TAB BUTTONS
 //
@@ -374,6 +407,15 @@
         "fg": [200,200,200],
         "shadow_offset": [0,0]
     },       
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["file_light", "selected"]}],
+        "settings" : ["dc_use_tab_style2"],
+
+        // Foreground
+        "fg": [0,0,0],
+        "shadow_offset": [0,0]
+    },
 
 
 //
