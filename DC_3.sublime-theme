@@ -979,7 +979,6 @@
     },   
     //  :selected
     {
-        "settings" : ["dc_highlight_active_sidebar_row"],
         "class": "tree_row",
         "attributes": ["selected"],
 
