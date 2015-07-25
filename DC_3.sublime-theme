@@ -59,6 +59,8 @@
         "layer3.inner_margin": [0,0,0,1],
         "layer3.draw_center": false,
         "layer3.opacity": 1.0,                
+
+        "layer3.tint": [0,0,0],
     },    
     //   ------------
     //  [ tab_style2 ]
