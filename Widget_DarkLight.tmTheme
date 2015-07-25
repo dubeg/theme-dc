@@ -14,21 +14,21 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#191919</string>
+				<string>#D9D0D5</string><!-- dcdcdc -->
 				<key>caret</key>
-				<string>#dcdcdc</string>
+				<string>#141414</string>
 				<key>foreground</key>
-				<string>#dcdcdc</string>
+				<string>#141414</string>
 				<key>invisibles</key>
 				<string>#0a0a0a</string>
 				<key>lineHighlight</key>
 				<string>#666666</string>
 				<key>selection</key>
-				<string>#2c2c2c</string>
+				<string>#666666</string>
 				<key>selectionBorder</key>
-				<string>#2c2c2c</string>
+				<string>#66666600</string>
 				<key>inactiveSelection</key>
-				<string>#202020</string>
+				<string>#949494</string>
 			</dict>
 		</dict>
 	</array>

@@ -6,43 +6,42 @@ USER_PREFERENCES = 'Preferences.sublime-settings'
 USER_WIDGET_SETTINGS = 'Widget - DC_3.sublime-settings'
 COLOR_SCHEME_KEY = 'color_scheme'
 COLOR_SCHEME_VALUE = "Packages/Theme - DC/{0}"
+IS_DEV = True
 
-WIDGET_DD_KEY = 'dc_use_widget_darkdark'
-WIDGET_DG_KEY = 'dc_use_widget_darkgray' 
-WIDGET_DL_KEY = 'dc_use_widget_darklight'
-WIDGET_GD_KEY = 'dc_use_widget_graydark'
+WIDGET_TYPES = dict()
+WIDGET_KEY_PREFIX  = 'dc_use_widget_'
+WIDGET_FILE_PREFIX = 'Widget_'
+WIDGET_FILE_EXT_DEV  = '.tmTheme'
+WIDGET_FILE_EXT_PROD = '.stTheme'
+WIDGET_FILE_EXT = WIDGET_FILE_EXT_DEV
+WIDGET_TYPENAMES = [
+        "DarkDark",
+        "DarkGray",
+        "DarkLight",
+        "GrayDark"
+    ]
 
-WIDGET_DD_FILE = 'Widget_DarkDark.stTheme'
-WIDGET_DG_FILE = 'Widget_DarkGray.stTheme'
-WIDGET_DL_FILE = 'Widget_DarkLight.stTheme'
-WIDGET_GD_FILE = 'Widget_GrayDark.stTheme'
-
-WIDGET_DD_NAME = 'DarkDark'
-WIDGET_DG_NAME = 'DarkGray'
-WIDGET_DL_NAME = 'DarkLight'
-WIDGET_GD_NAME = 'GrayDark'
+for i,typeName in enumerate(WIDGET_TYPENAMES):
+    WIDGET_TYPES[typeName] = WidgetType(
+        typeName,
+        WIDGET_KEY_PREFIX, 
+        WIDGET_FILE_PREFIX, 
+        WIDGET_FILE_EXT
+        )
 
 
 class WidgetType(object):
-    # Shared variables here.
-    def __init__(self, name, settingKey, settingFilename):
+    def __init__(self, typeName, keyPrefix, filePrefix, fileExt):
         # Instance variables here.
-        self.Name = name
-        self.SettingKey = settingKey
-        self.SettingFilename = settingFilename
+        self.Name = typeName
+        self.SettingKey = keyPrefix + typeName.lower()
+        self.SettingFilename = filePrefix + typeName + fileExt
 
 
 class SetWidget(sublime_plugin.WindowCommand):
-    WidgetTypes = {
-            WIDGET_DD_NAME : WidgetType(WIDGET_DD_NAME, WIDGET_DD_KEY, WIDGET_DD_FILE),
-            WIDGET_DG_NAME : WidgetType(WIDGET_DG_NAME, WIDGET_DG_KEY, WIDGET_DG_FILE),
-            WIDGET_DL_NAME : WidgetType(WIDGET_DL_NAME, WIDGET_DL_KEY, WIDGET_DL_FILE),
-            WIDGET_GD_NAME : WidgetType(WIDGET_GD_NAME, WIDGET_GD_KEY, WIDGET_GD_FILE)
-        }
-
-    def run(self, widgetName): 
+    def run(self, widgetName):
         # Retrieve widgetType
-        widget = self.WidgetTypes.get(widgetName)
+        widget = WIDGET_TYPES.get(widgetName)
         if widget == None:
             print('[SetDCWidget] Unknown widgetName: ' + widgetName) 
             return
@@ -51,7 +50,7 @@ class SetWidget(sublime_plugin.WindowCommand):
         pref = sublime.load_settings(USER_PREFERENCES)
         
         # Remove existing widget keys
-        for key, value in self.WidgetTypes.items():
+        for key, value in WIDGET_TYPES.items():
             pref.erase(value.SettingKey)
         
         # Set Widget key
@@ -66,3 +65,7 @@ class SaveWidgetSettings(sublime_plugin.WindowCommand):
     def run(self):
         sublime.save_settings(USER_PREFERENCES)
         sublime.save_settings(USER_WIDGET_SETTINGS)
+
+class ReloadWidgetTheme(sublime_plugin.WindowCommand):        
+    def run(self):
+        sublime.load_settings("Theme - DC/Widget_DC_3.sublime-settings")
