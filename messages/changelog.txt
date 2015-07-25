@@ -1,11 +1,3 @@
 v1.4.0
 ------
 Release Date : XX XXX 2015
-
-* Changed scrollbars' appearance
-* Changed grid separator color
-* Added another tab style (#6)
-* Added setting to customize fold/unfold icons.
-* Fixed tabset height when small tabs are used and tab scrolling is enabled.  
-* Reduced size of search panel buttons.
-* Added a better opened folder icon to ~folder_icon4

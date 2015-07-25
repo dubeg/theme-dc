@@ -1120,8 +1120,8 @@
         "class": "disclosure_button_control",
         "content_margin": [8, 8],
 
-        "layer0.texture": "Theme - DC/icons/sb/group_closed1.png",
-        "layer1.texture": "Theme - DC/icons/sb/group_opened1.png",
+        "layer0.texture": "Theme - DC/icons/Containers/group_closed1.png",
+        "layer1.texture": "Theme - DC/icons/Containers/group_opened1.png",
         "layer0.inner_margin": 0,
         "layer1.inner_margin": 0,
 
@@ -1132,22 +1132,22 @@
     {
         "class": "disclosure_button_control",
         "settings": ["dc_use_group_icon2"],
-        "layer0.texture": "Theme - DC/icons/sb/group_closed2.png",
-        "layer1.texture": "Theme - DC/icons/sb/group_opened2.png"
+        "layer0.texture": "Theme - DC/icons/Containers/group_closed2.png",
+        "layer1.texture": "Theme - DC/icons/Containers/group_opened2.png"
     },
     //          ALTERNATE ICON 3
     {
         "class": "disclosure_button_control",
         "settings": ["dc_use_group_icon3"],
-        "layer0.texture": "Theme - DC/icons/sb/group_closed3.png",
-        "layer1.texture": "Theme - DC/icons/sb/group_opened3.png"
+        "layer0.texture": "Theme - DC/icons/Containers/group_closed3.png",
+        "layer1.texture": "Theme - DC/icons/Containers/group_opened3.png"
     },
     //          ALTERNATE ICON 4
     {
         "class": "disclosure_button_control",
         "settings": ["dc_use_group_icon4"],
-        "layer0.texture": "Theme - DC/icons/sb/group_closed4.png",
-        "layer1.texture": "Theme - DC/icons/sb/group_opened4.png"
+        "layer0.texture": "Theme - DC/icons/Containers/group_closed4.png",
+        "layer1.texture": "Theme - DC/icons/Containers/group_opened4.png"
     },
     //          STATE EXPANDED
     {
@@ -1172,8 +1172,8 @@
         "class": "icon_folder",
         "content_margin": [8, 8],
 
-        "layer0.texture": "Theme - DC/icons/sb/dir_closed.png",
-        "layer1.texture": "Theme - DC/icons/sb/dir_opened.png",
+        "layer0.texture": "Theme - DC/icons/Containers/dir_closed.png",
+        "layer1.texture": "Theme - DC/icons/Containers/dir_opened.png",
         "layer0.inner_margin": 0,
         "layer1.inner_margin": 0,
 
@@ -1185,7 +1185,7 @@
     },
     {
         "class": "icon_folder_dup",
-        "layer0.texture": "Theme - DC/icons/sb/dir_dup.png",
+        "layer0.texture": "Theme - DC/icons/Containers/dir_dup.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },    
@@ -1193,13 +1193,13 @@
     {
         "class": "icon_folder",
         "settings" : ["dc_use_folder_icon2"],
-        "layer0.texture": "Theme - DC/icons/sb/dir_closed2.png",
-        "layer1.texture": "Theme - DC/icons/sb/dir_opened2.png"
+        "layer0.texture": "Theme - DC/icons/Containers/dir_closed2.png",
+        "layer1.texture": "Theme - DC/icons/Containers/dir_opened2.png"
     },
     {
         "class": "icon_folder_dup",
         "settings" : ["dc_use_folder_icon2"],
-        "layer0.texture": "Theme - DC/icons/sb/dir_dup2.png",
+        "layer0.texture": "Theme - DC/icons/Containers/dir_dup2.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },      
@@ -1207,13 +1207,13 @@
     {
         "class": "icon_folder",
         "settings" : ["dc_use_folder_icon3"],
-        "layer0.texture": "Theme - DC/icons/sb/dir_closed3.png",
-        "layer1.texture": "Theme - DC/icons/sb/dir_opened3.png"
+        "layer0.texture": "Theme - DC/icons/Containers/dir_closed3.png",
+        "layer1.texture": "Theme - DC/icons/Containers/dir_opened3.png"
     },
     {
         "class": "icon_folder_dup",
         "settings" : ["dc_use_folder_icon3"],
-        "layer0.texture": "Theme - DC/icons/sb/dir_dup3.png",
+        "layer0.texture": "Theme - DC/icons/Containers/dir_dup3.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },      
@@ -1221,13 +1221,13 @@
     {
         "class": "icon_folder",
         "settings" : ["dc_use_folder_icon4"],
-        "layer0.texture": "Theme - DC/icons/sb/dir_closed4.png",
-        "layer1.texture": "Theme - DC/icons/sb/dir_opened4.png"
+        "layer0.texture": "Theme - DC/icons/Containers/dir_closed4.png",
+        "layer1.texture": "Theme - DC/icons/Containers/dir_opened4.png"
     },
     {
         "class": "icon_folder_dup",
         "settings" : ["dc_use_folder_icon4"],
-        "layer0.texture": "Theme - DC/icons/sb/dir_dup4.png",
+        "layer0.texture": "Theme - DC/icons/Containers/dir_dup4.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },     
@@ -1235,13 +1235,13 @@
     {
         "class": "icon_folder",
         "settings" : ["dc_use_folder_icon5"],
-        "layer0.texture": "Theme - DC/icons/sb/dir_closed5.png",
-        "layer1.texture": "Theme - DC/icons/sb/dir_opened5.png"
+        "layer0.texture": "Theme - DC/icons/Containers/dir_closed5.png",
+        "layer1.texture": "Theme - DC/icons/Containers/dir_opened5.png"
     },
     {
         "class": "icon_folder_dup",
         "settings" : ["dc_use_folder_icon5"],
-        "layer0.texture": "Theme - DC/icons/sb/dir_dup5.png",
+        "layer0.texture": "Theme - DC/icons/Containers/dir_dup5.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },     
@@ -1714,8 +1714,8 @@
         "class": "icon_regex",
         "content_margin": [8,8],
 
-        "layer0.texture": "Theme - DC/icons/pnl/icon_regex.png",
-        "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_regex.png",
+        "layer0.texture": "Theme - DC/icons/Search/icon_regex.png",
+        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_regex.png",
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
@@ -1726,8 +1726,8 @@
         "settings" : ["dc_use_soda_search_icons"],
         "content_margin": [8,8],
 
-        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_regex.png",
-        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_regex.png",
+        "layer0.texture": "Theme - DC/icons/Search/soda/icon_regex.png",
+        "layer1.texture": "Theme - DC/icons/Search/soda/sltd/icon_regex.png",
     },
     {
         "class": "icon_regex",
@@ -1751,8 +1751,8 @@
         "class": "icon_case",
         "content_margin": [8,8],
 
-        "layer0.texture": "Theme - DC/icons/pnl/icon_case.png",
-        "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_case.png",
+        "layer0.texture": "Theme - DC/icons/Search/icon_case.png",
+        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_case.png",
        
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
@@ -1763,8 +1763,8 @@
         "settings" : ["dc_use_soda_search_icons"],
         "content_margin": [9,9],
 
-        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_case.png",
-        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_case.png",
+        "layer0.texture": "Theme - DC/icons/Search/soda/icon_case.png",
+        "layer1.texture": "Theme - DC/icons/Search/soda/sltd/icon_case.png",
     },
     {
         "class": "icon_case",
@@ -1788,8 +1788,8 @@
         "class": "icon_whole_word",
         "content_margin": [8,8],
 
-        "layer0.texture": "Theme - DC/icons/pnl/icon_wholeword.png",
-        "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_wholeword.png",
+        "layer0.texture": "Theme - DC/icons/Search/icon_wholeword.png",
+        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_wholeword.png",
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
@@ -1800,8 +1800,8 @@
         "settings" : ["dc_use_soda_search_icons"],
         "content_margin": [9,9],
 
-        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_wholeword.png",
-        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_wholeword.png",
+        "layer0.texture": "Theme - DC/icons/Search/soda/icon_wholeword.png",
+        "layer1.texture": "Theme - DC/icons/Search/soda/sltd/icon_wholeword.png",
     },
     {
         "class": "icon_whole_word",
@@ -1824,8 +1824,8 @@
     {
         "class": "icon_context",
         "content_margin": [8,8],
-        "layer0.texture": "Theme - DC/icons/pnl/icon_context.png",
-        "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_context.png",
+        "layer0.texture": "Theme - DC/icons/Search/icon_context.png",
+        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_context.png",
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
@@ -1836,8 +1836,8 @@
         "settings" : ["dc_use_soda_search_icons"],
         "content_margin": [9,9],
 
-        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_context.png",
-        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_context.png",
+        "layer0.texture": "Theme - DC/icons/Search/soda/icon_context.png",
+        "layer1.texture": "Theme - DC/icons/Search/soda/sltd/icon_context.png",
     },
     {
         "class": "icon_context",
@@ -1861,8 +1861,8 @@
         "class": "icon_use_buffer",
         "content_margin": [8,8],
 
-        "layer0.texture": "Theme - DC/icons/pnl/icon_buffer.png",
-        "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_buffer.png",
+        "layer0.texture": "Theme - DC/icons/Search/icon_buffer.png",
+        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_buffer.png",
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
@@ -1873,8 +1873,8 @@
         "settings" : ["dc_use_soda_search_icons"],
         "content_margin": [9,9],
 
-        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_buffer.png",
-        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_buffer.png",
+        "layer0.texture": "Theme - DC/icons/Search/soda/icon_buffer.png",
+        "layer1.texture": "Theme - DC/icons/Search/soda/sltd/icon_buffer.png",
     },
     {
         "class": "icon_use_buffer",
@@ -1898,8 +1898,8 @@
         "class": "icon_reverse",
         "content_margin": [9, 9],
 
-        "layer0.texture": "Theme - DC/icons/pnl/icon_reverse.png",
-        "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_reverse.png",
+        "layer0.texture": "Theme - DC/icons/Search/icon_reverse.png",
+        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_reverse.png",
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
     },
@@ -1909,8 +1909,8 @@
         "settings" : ["dc_use_soda_search_icons"],
         "content_margin": [9,9],
 
-        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_reverse.png",
-        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_reverse.png",
+        "layer0.texture": "Theme - DC/icons/Search/soda/icon_reverse.png",
+        "layer1.texture": "Theme - DC/icons/Search/soda/sltd/icon_reverse.png",
     },
     {
         "class": "icon_reverse",
@@ -1934,8 +1934,8 @@
         "class": "icon_wrap",
         "content_margin": [8,8],
 
-        "layer0.texture": "Theme - DC/icons/pnl/icon_wrap.png",
-        "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_wrap.png",
+        "layer0.texture": "Theme - DC/icons/Search/icon_wrap.png",
+        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_wrap.png",
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
     },
@@ -1945,8 +1945,8 @@
         "settings" : ["dc_use_soda_search_icons"],
         "content_margin": [9,9],
 
-        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_wrap.png",
-        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_wrap.png",
+        "layer0.texture": "Theme - DC/icons/Search/soda/icon_wrap.png",
+        "layer1.texture": "Theme - DC/icons/Search/soda/sltd/icon_wrap.png",
     },
     {
         "class": "icon_wrap",
@@ -1970,8 +1970,8 @@
         "class": "icon_in_selection",
         "content_margin": [8,8],
 
-        "layer0.texture": "Theme - DC/icons/pnl/icon_inselection.png",
-        "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_inselection.png",
+        "layer0.texture": "Theme - DC/icons/Search/icon_inselection.png",
+        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_inselection.png",
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
     },
@@ -1981,8 +1981,8 @@
         "settings" : ["dc_use_soda_search_icons"],
         "content_margin": [9,9],
 
-        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_inselection.png",
-        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_inselection.png",
+        "layer0.texture": "Theme - DC/icons/Search/soda/icon_inselection.png",
+        "layer1.texture": "Theme - DC/icons/Search/soda/sltd/icon_inselection.png",
     },
     {
         "class": "icon_in_selection",
@@ -2006,8 +2006,8 @@
         "class": "icon_preserve_case",
         "content_margin": [8,8],
 
-        "layer0.texture": "Theme - DC/icons/pnl/icon_preservecase.png",
-        "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_preservecase.png",
+        "layer0.texture": "Theme - DC/icons/Search/icon_preservecase.png",
+        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_preservecase.png",
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
     },
@@ -2017,8 +2017,8 @@
         "settings" : ["dc_use_soda_search_icons"],
         "content_margin": [9,9],
 
-        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_preservecase.png",
-        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_preservecase.png",
+        "layer0.texture": "Theme - DC/icons/Search/soda/icon_preservecase.png",
+        "layer1.texture": "Theme - DC/icons/Search/soda/sltd/icon_preservecase.png",
     },
     {
         "class": "icon_preserve_case",
@@ -2042,8 +2042,8 @@
         "class": "icon_highlight",
         "content_margin": [8,8],
 
-        "layer0.texture": "Theme - DC/icons/pnl/icon_highlight.png",
-        "layer1.texture": "Theme - DC/icons/pnl/sltd/icon_highlight.png",
+        "layer0.texture": "Theme - DC/icons/Search/icon_highlight.png",
+        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_highlight.png",
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0,
     },
@@ -2053,8 +2053,8 @@
         "settings" : ["dc_use_soda_search_icons"],
         "content_margin": [9,9],
 
-        "layer0.texture": "Theme - DC/icons/pnl/soda/icon_highlight.png",
-        "layer1.texture": "Theme - DC/icons/pnl/soda/sltd/icon_highlight.png",
+        "layer0.texture": "Theme - DC/icons/Search/soda/icon_highlight.png",
+        "layer1.texture": "Theme - DC/icons/Search/soda/sltd/icon_highlight.png",
     },
     {
         "class": "icon_highlight",
