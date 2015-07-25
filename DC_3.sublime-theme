@@ -2265,21 +2265,9 @@
     //
     {
         "class": "text_line_control",
-        "parents": [{"class": "panel_control"}],
         "settings" : ["dc_use_widget_darkgray"],
 
-        "layer0.tint" : [50,50,50]
-    },
-
-    //
-    // OVERLAY TEXT INPUT
-    //
-    {
-        "class": "text_line_control",
-        "parents": [{"class": "overlay_control"}],
-        "settings" : ["dc_use_widget_darkgray"],
-
-        "layer0.tint" : [50,50,50]
+        "layer0.tint" : [40,40,40]
     },
  
     //
