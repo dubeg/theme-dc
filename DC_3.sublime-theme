@@ -1352,7 +1352,7 @@
         "layer0.texture" : "", 
         "layer0.inner_margin" : [0,0],
         "layer0.repeat" : false,
-        "layer1.opacity" : 0,
+        "layer0.opacity":1
     }, 
     //  [ small_panel ]
     {
@@ -1361,7 +1361,21 @@
         "parents" : [{ "class" : "panel_control" }],
 
         "content_margin": [4,4],
-    },     
+    },
+
+    //
+    // Overlay INPUT 
+    // 
+    {
+        "class": "text_line_control",
+        "parents" : [{ "class" : "overlay_control" }],
+
+        "content_margin": [3,3],
+        "layer0.tint" : [17,17,17],
+        "layer0.texture" : "", 
+        "layer0.inner_margin" : [0,0],
+        "layer0.repeat" : false,        
+    },  
 
     //
     // TEXT INPUT DROPDOWN
@@ -1384,7 +1398,7 @@
     {
         "class": "dropdown_button_control",
         "attributes": ["hover"],
-        
+
         "layer0.tint":[32, 255, 237],
     },
 
@@ -2113,9 +2127,8 @@
         "class": "overlay_control",
         "settings" : ["dc_use_widget_darklight"],
 
-        "content_margin": [1,0,1,1],
-        "layer0.tint" : [30,30,30],
-        "layer1.tint" : [25,25,25]
+        "layer1.tint":[200,200,200],
+        "content_margin":[10,10]
     },
 
 
