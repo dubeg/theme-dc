@@ -8,22 +8,17 @@ COLOR_SCHEME_KEY = 'color_scheme'
 COLOR_SCHEME_VALUE = "Packages/Theme - DC/{0}"
 IS_DEV = True
 
-WIDGET_TYPES = dict()
 WIDGET_KEY_PREFIX  = 'dc_use_widget_'
 WIDGET_FILE_PREFIX = 'Widget_'
 WIDGET_FILE_EXT_DEV  = '.tmTheme'
 WIDGET_FILE_EXT_PROD = '.stTheme'
 WIDGET_FILE_EXT = WIDGET_FILE_EXT_DEV if IS_DEV else WIDGET_FILE_EXT_PROD
-WIDGET_TYPENAMES = ["DarkDark","DarkGray","DarkLight","GrayDark"]
-
-
-for i,typeName in enumerate(WIDGET_TYPENAMES):
-    WIDGET_TYPES[typeName] = WidgetType(
-        typeName, 
-        WIDGET_KEY_PREFIX, 
-        WIDGET_FILE_PREFIX, 
-        WIDGET_FILE_EXT
-        )
+WIDGET_TYPENAMES = [
+    "DarkDark",
+    "DarkGray",
+    "DarkLight",
+    "GrayDark"
+    ]
 
 
 class WidgetType(object):
@@ -34,9 +29,25 @@ class WidgetType(object):
 
 
 class SetWidget(sublime_plugin.WindowCommand):
+    WidgetTypes = None
+
+    def __initTypes(self):
+        types = dict()
+        for i,typeName in enumerate(WIDGET_TYPENAMES):
+            types[typeName] = WidgetType(
+                typeName, 
+                WIDGET_KEY_PREFIX, 
+                WIDGET_FILE_PREFIX, 
+                WIDGET_FILE_EXT
+                )
+        return types
+
     def run(self, widgetName):
+        if SetWidget.WidgetTypes == None:
+            SetWidget.WidgetTypes = self.__initTypes()
+
         # Retrieve widgetType
-        widget = WIDGET_TYPES.get(widgetName)
+        widget = SetWidget.WidgetTypes.get(widgetName)
         if widget == None:
             print('[SetDCWidget] Unknown widgetName: ' + widgetName) 
             return
@@ -45,7 +56,7 @@ class SetWidget(sublime_plugin.WindowCommand):
         pref = sublime.load_settings(USER_PREFERENCES)
         
         # Remove existing widget keys
-        for key, value in WIDGET_TYPES.items():
+        for key, value in SetWidget.WidgetTypes.items():
             pref.erase(value.SettingKey)
         
         # Set Widget key
