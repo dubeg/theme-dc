@@ -13,17 +13,13 @@ WIDGET_KEY_PREFIX  = 'dc_use_widget_'
 WIDGET_FILE_PREFIX = 'Widget_'
 WIDGET_FILE_EXT_DEV  = '.tmTheme'
 WIDGET_FILE_EXT_PROD = '.stTheme'
-WIDGET_FILE_EXT = WIDGET_FILE_EXT_DEV
-WIDGET_TYPENAMES = [
-        "DarkDark",
-        "DarkGray",
-        "DarkLight",
-        "GrayDark"
-    ]
+WIDGET_FILE_EXT = WIDGET_FILE_EXT_DEV if IS_DEV else WIDGET_FILE_EXT_PROD
+WIDGET_TYPENAMES = ["DarkDark","DarkGray","DarkLight","GrayDark"]
+
 
 for i,typeName in enumerate(WIDGET_TYPENAMES):
     WIDGET_TYPES[typeName] = WidgetType(
-        typeName,
+        typeName, 
         WIDGET_KEY_PREFIX, 
         WIDGET_FILE_PREFIX, 
         WIDGET_FILE_EXT
@@ -32,7 +28,6 @@ for i,typeName in enumerate(WIDGET_TYPENAMES):
 
 class WidgetType(object):
     def __init__(self, typeName, keyPrefix, filePrefix, fileExt):
-        # Instance variables here.
         self.Name = typeName
         self.SettingKey = keyPrefix + typeName.lower()
         self.SettingFilename = filePrefix + typeName + fileExt
