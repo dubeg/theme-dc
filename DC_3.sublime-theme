@@ -68,7 +68,7 @@
         "settings" : ["dc_use_tab_style2"],
         "content_margin": [0,0,0,0],
 
-        "layer1.tint": [40,40,40],
+        "layer1.tint": [30,30,30],
         "layer2.inner_margin": [0,0,0,1],
         "layer2.tint": [25,25,25],
     },
@@ -156,11 +156,14 @@
         "settings" : ["dc_use_tab_style2"],
 
         // Background
-        "layer1.tint": [40,40,40],
+        "layer1.tint": [45,45,45],
+
+        // Border-Sides
+        "layer2.tint": [0,0,0],
 
         // Border-Bottom
         "layer3.texture":"",
-        "layer3.tint":[25,25,25],
+        "layer3.tint":[0,0,0],
         "layer3.inner_margin": [0,0,0,1],
     },
     //  [ tab_contrast ]
