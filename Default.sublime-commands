@@ -52,5 +52,10 @@
     {
         "caption": "DC: Save Widget Settings",
         "command": "save_widget_settings", 
+    },
+    // Toggle Widget Dev
+    {
+        "caption": "DC: Toggle DEV",
+        "command": "toggle_widget_dev" 
     } 
 ]
