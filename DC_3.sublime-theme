@@ -274,6 +274,65 @@
         "content_margin": [12, 3, 15, 5]
     },            
 
+//
+// TAB STYLE: 4
+//
+    //  
+    //  Tabset
+    //  
+    {
+        "class": "tabset_control",
+        "settings" : ["dc_use_tab_style4"],
+
+        // Background
+        "layer1.tint": [40,40,40],
+
+        // Border-bottom
+        "layer2.inner_margin": [0,0,0,1],
+        "layer2.tint": [50,50,50],
+        "tab_overlap": -10,
+        "content_margin": [0,0,0,1],
+    },
+    //
+    // Tab
+    //   
+    {
+        "class": "tab_control",
+        "settings" : ["dc_use_tab_style4"],
+
+        // Background
+        "layer1.opacity":0,
+        "layer1.tint": [100,100,100,75],
+
+        // Border Sides
+        "layer2.opacity":0,
+
+        // Border-Bottom
+        "layer3.texture": "",
+        "layer3.tint":[0,255,255],
+        "layer3.inner_margin": [0,2,0,0],
+    },
+    //  [ no_close_buttons ] 
+    {
+        "class": "tab_control",
+        "settings": ["!show_tab_close_buttons", "dc_use_tab_style4"],
+
+        "content_margin": [12, 3, 15, 5]
+    },
+    //
+    // Tab:active
+    //       
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "settings" : ["dc_use_tab_style4"],
+
+        "content_margin": [12, 6, 7, 5],
+
+        // Background
+        "layer1.tint": [255,255,255,20],
+        "layer1.opacity":1
+    },              
  
 
 //
@@ -381,7 +440,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [32, 255, 237],
+        "fg": [255,255,255],//[32, 255, 237],
         "shadow_color": [0,0,0],
         "shadow_offset": [1,1],
         "font.bold": false
