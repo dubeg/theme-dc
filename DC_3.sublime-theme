@@ -151,8 +151,10 @@
         "content_margin": [0,0,0,0],
 
         "layer1.tint": [30,30,30],
+        "layer2.tint": [20,20,20,0],
         "layer2.inner_margin": [0,0,0,3],
-        "layer2.tint": [25,25,25,0],
+        "layer3.tint": [20,20,20],
+        "layer3.inner_margin": [0,0,0,1],
     },  
     //  
     //  Tab
@@ -165,12 +167,12 @@
         "layer1.tint": [45,45,45,0],
 
         // Border-Sides
-        "layer2.tint": [0,0,0],
+        "layer2.tint": [20,20,20],
         "layer2.opacity":0,
 
         // Border-Bottom
         "layer3.texture":"",
-        "layer3.tint":[0,0,0],
+        "layer3.tint":[20,20,20],
         "layer3.inner_margin": [0,0,0,1],
     }, 
     //  
@@ -348,6 +350,7 @@
         // CloseButton
         "layer0.texture": "Theme - DC/assets/btn_close_tab.png",
         "layer0.inner_margin": 0,
+        "layer0.tint":[171,171,212],
 
         // Dirty
         "layer1.texture": "Theme - DC/assets/dirty_square.png", 
@@ -440,7 +443,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [255,255,255],//[32, 255, 237],
+        "fg": [171,171,212],//[32, 255, 237]
         "shadow_color": [0,0,0],
         "shadow_offset": [1,1],
         "font.bold": false
@@ -610,7 +613,7 @@
 
 
 //
-// STANDARD SCROLLBARS
+// SCROLLBARS
 //
 
     //
@@ -685,7 +688,10 @@
         "layer0.inner_margin":[1,1],
         "layer0.tint": [50,50,50],
         "layer0.opacity": 1.0,
-        "layer0.draw_center":false
+        "layer0.draw_center":false,
+
+        "layer1.opacity":0,
+        "min_size": [0,0],
     },
     //  [ scrollbars_style2 ]
     {
@@ -693,19 +699,22 @@
         "settings": ["dc_use_scrollbars_style2"],
         "content_margin": [8,8],
         
-        "layer0.texture":"Theme - DC/assets/scrollbar_puck.png",
-        "layer0.inner_margin":[6,1],
-        "layer0.tint": [255,255,255],
+        "layer0.texture":"",
+        "layer0.inner_margin":[1,1],
+        // --------------------------
+        "layer0.tint": 
+            [
+             89,89,110
+            ],
+        // --------------------------
         "layer0.opacity": 1.0,
-        "layer0.draw_center":true
-    },
-    //  [ scrollbars_style2 ]:horizontal
-    {
-        "class": "puck_control",
-        "attributes": ["horizontal"],
-        "settings": ["dc_use_scrollbars_style2"],
+        "layer0.draw_center":true,
 
-        "layer0.texture":"Theme - DC/assets/scrollbar_puck_horizontal.png"
+        "layer1.texture":"",
+        "layer1.inner_margin":[4,4],
+        "layer1.tint": [28,28,28],
+        "layer1.opacity": 1.0,
+        "layer1.draw_center":false,
     },
 
     //  Hide vertical scrollbar when overlay scrollbars are active, 
@@ -715,19 +724,22 @@
         "parents": [{  "class": "sheet_container_control" }],
         "settings": ["always_show_minimap_viewport", "overlay_scroll_bars"],
         "layer0.opacity" : 0,
+        "layer1.opacity" : 0,
     },
     {
         "class": "puck_control",
         "attributes" : ["horizontal"],
         "parents": [{  "class": "sheet_container_control" }],
         "settings": ["always_show_minimap_viewport", "overlay_scroll_bars"],
-        "layer0.opacity" : 1
+        "layer0.opacity" : 1,
+        "layer1.opacity" : 1,
     },
     //  [ hide_scrollbars ]
     {
         "class": "puck_control",
         "settings": ["dc_hide_scrollbars"],
         "layer0.opacity": 0.0,
+        "layer1.opacity" : 0.0,
         "content_margin":[0,0]
     },
 
