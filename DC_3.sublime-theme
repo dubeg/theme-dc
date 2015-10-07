@@ -242,31 +242,10 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [29,222,206],
+        "fg": [200,222,206],//29,222,206
         "shadow_color": [0,0,0],
         "shadow_offset": [1,1],
         "font.bold": false
-    },
-    //   ------------
-    //  [ tab_style2 ]
-    //   ------------
-    {
-        "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "settings" : ["dc_use_tab_style2"],
-
-        // Foreground
-        "fg": [255,255,255],
-        "shadow_offset": [1,1]
-    },       
-    {
-        "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["file_light", "selected"]}],
-        "settings" : ["dc_use_tab_style2"],
-
-        // Foreground
-        "fg": [0,0,0],
-        "shadow_offset": [0,0]
     },
 
 
@@ -514,7 +493,7 @@
         "layer1.tint": [28,28,28],
         "layer1.opacity": 1.0,
         "layer1.draw_center":false
-    },
+    },  
 
     //  Hide vertical scrollbar when overlay scrollbars are active, 
     //  and minimap is visible.
