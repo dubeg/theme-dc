@@ -242,7 +242,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [200,222,206],//29,222,206
+        "fg": [210,212,216],//29,222,206
         "shadow_color": [0,0,0],
         "shadow_offset": [1,1],
         "font.bold": false
@@ -464,7 +464,7 @@
         
         "layer0.texture":"",
         "layer0.inner_margin":[1,1],
-        "layer0.tint": [50,50,50],
+        "layer0.tint": [70,70,70],
         "layer0.opacity": 1.0,
         "layer0.draw_center":false,
 
@@ -482,7 +482,7 @@
         // --------------------------
         "layer0.tint": 
             [
-             54,52,54
+             70,70,70
             ],
         // --------------------------
         "layer0.opacity": 1.0,
