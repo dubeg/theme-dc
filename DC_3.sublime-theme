@@ -147,11 +147,11 @@
         "content_margin": [7,7], 
 
         // CloseButton 
-        "layer0.texture": "Theme - DC/assets/dirty_dot.png",
+        "layer0.texture": "Theme - DC/assets/circle.png",
         "layer0.inner_margin": 0,
-        "layer0.tint":[80,80,80,150], 
+        "layer0.tint":[80,80,80,255], 
 
-
+        "layer1.texture": "Theme - DC/assets/dirty_dot.png", 
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0
@@ -166,25 +166,38 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "layer0.tint":[150,150,150,140],
+
+        "layer0.texture": "Theme - DC/assets/dirty_dot.png", 
+        "layer0.tint":[
+            255,
+            255,
+            255,
+            100
+            ],
     },     
     //  :dirty
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.tint":[32, 255, 237],
+        "layer1.tint":[32, 255, 237],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
     }, 
     //  :hover
     {
         "class": "tab_close_button",
         "attributes" : ["hover"],
-        "layer0.tint":[170,100,100]
+        "layer1.tint":[170,100,100],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
     },
     //  :pressed
     {
         "class": "tab_close_button",
         "attributes" : ["pressed"],
-        "layer0.tint":[200,90,90],
+        "layer1.tint":[170,100,100,150],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
     },
 
  
