@@ -168,12 +168,7 @@
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
 
         "layer0.texture": "Theme - DC/assets/dirty_dot.png", 
-        "layer0.tint":[
-            255,
-            255,
-            255,
-            100
-            ],
+        "layer0.tint":[210,212,216,200]
     },     
     //  :dirty
     {
