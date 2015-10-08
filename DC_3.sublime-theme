@@ -147,11 +147,11 @@
         "content_margin": [7,7], 
 
         // CloseButton 
-        "layer0.texture": "Theme - DC/assets/circle.png",
+        "layer0.texture": "Theme - DC/assets/circle_empty.png",
         "layer0.inner_margin": 0,
         "layer0.tint":[80,80,80,255], 
 
-        "layer1.texture": "Theme - DC/assets/dirty_dot.png", 
+        "layer1.texture": "Theme - DC/assets/circle_empty_big.png", 
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0
@@ -161,13 +161,13 @@
         "class": "tab_close_button",
         "settings" : ["!show_tab_close_buttons"],
         "content_margin": [0,0]
-    },
+    }, 
     //  :selected
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
 
-        "layer0.texture": "Theme - DC/assets/dirty_dot.png", 
+        "layer0.texture": "Theme - DC/assets/dot.png", 
         "layer0.tint":[210,212,216,200]
     },     
     //  :dirty
