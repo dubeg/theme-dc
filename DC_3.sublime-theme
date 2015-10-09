@@ -140,7 +140,7 @@
 // TAB BUTTONS
 //
     //
-    // CLOSE BUTTON
+    // CLOSE BUTTON 
     //
     {
         "class": "tab_close_button",
@@ -151,7 +151,7 @@
         "layer0.inner_margin": 0,
         "layer0.tint":[80,80,80,255], 
 
-        "layer1.texture": "Theme - DC/assets/circle_empty_big.png", 
+        "layer1.texture": "Theme - DC/assets/dot.png", 
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0
