@@ -174,9 +174,8 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer1.tint":[32, 255, 237],
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 1.0
+        "layer0.tint":[32, 255, 237],
+        "layer1.tint":[32, 255, 237], 
     }, 
     //  :hover
     {
