@@ -1,5 +1,5 @@
 [
-
+ 
 //
 // TAB STYLE: DEFAULT
 //
@@ -146,12 +146,13 @@
         "class": "tab_close_button",
         "content_margin": [7,7], 
 
-        // CloseButton 
+        // Defaut | Inactive 
         "layer0.texture": "Theme - DC/assets/circle_empty.png",
         "layer0.inner_margin": 0,
         "layer0.tint":[80,80,80,255], 
 
-        "layer1.texture": "Theme - DC/assets/dot.png", 
+        // Dirty | Hover | Pressed
+        "layer1.texture": "Theme - DC/assets/dot.png",  
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 0.0
@@ -166,16 +167,17 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-
-        "layer0.texture": "Theme - DC/assets/dot.png", 
-        "layer0.tint":[210,212,216,200]
+        // Active
+        "layer0.texture": "Theme - DC/assets/buttons/dark_full.png",
+        "layer0.tint":[255,255,255],
     },     
     //  :dirty
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.tint":[32, 255, 237],
         "layer1.tint":[32, 255, 237], 
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0        
     }, 
     //  :hover
     {
@@ -888,8 +890,8 @@
     {
         "class": "close_button",
 
-        // CloseButton 
-        "layer0.texture": "Theme - DC/assets/dirty_square.png",
+        // CloseButton  
+        "layer0.texture": "Theme - DC/assets/dirty_square.png", 
         "layer0.inner_margin": 0,
         "layer0.tint":[80,80,80],
 
