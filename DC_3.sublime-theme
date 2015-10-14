@@ -168,8 +168,11 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
         // Active
-        "layer0.texture": "Theme - DC/assets/buttons/dark_full.png",
-        "layer0.tint":[255,255,255],
+
+        //"layer0.texture": "Theme - DC/assets/buttons/xs1.png",
+        //"layer0.tint":[255,255,255,200],
+        "layer0.texture": "Theme - DC/assets/dot.png",
+        "layer0.tint":[33,30,35],
     },     
     //  :dirty
     {
