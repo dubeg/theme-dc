@@ -653,7 +653,7 @@
     // 
     {
         "class": "status_bar",
-        "content_margin": [8, 8],
+        "content_margin": [8, 4],
 
         // Background
         "layer0.texture": "",
@@ -667,11 +667,6 @@
         "layer1.inner_margin" : [0,1,0,0],
         "layer1.draw_center": false,
         "layer1.opacity": 1.0
-    },
-    {
-        "class": "status_bar",
-        "settings" : ["dc_use_small_statusbar"],
-        "content_margin": [8, 4]
     },
 
     //
