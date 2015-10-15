@@ -171,8 +171,8 @@
 
         //"layer0.texture": "Theme - DC/assets/buttons/xs1.png",
         //"layer0.tint":[255,255,255,200],
-        "layer0.texture": "Theme - DC/assets/dot.png",
-        "layer0.tint":[33,30,35],
+        "layer0.texture": "Theme - DC/assets/buttons/d4.png",
+        "layer0.tint":[255,255,255], 
     },     
     //  :dirty
     {
