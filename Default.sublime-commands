@@ -1,5 +1,5 @@
 [
-    // Open Widget Settings
+    // Open ..
     {
         "caption": "DC: Open Widget User",
         "command": "open_file", "args":
@@ -15,6 +15,14 @@
             "file": "${packages}/Theme - DC/Widget - DC_3.sublime-settings"
         }
     },
+    {
+        "caption": "DC: Open DC_3",
+        "command": "open_file", 
+        "args": 
+        {
+            "file": "${packages}/Theme - DC/DC_3.sublime-theme"
+        }
+    },    
     // Set Widget Styles
     {
         "caption": "DC: Set Widget DarkDark",
@@ -57,5 +65,5 @@
     {
         "caption": "DC: Toggle DEV",
         "command": "toggle_widget_dev" 
-    } 
+    }
 ]
