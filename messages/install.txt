@@ -4,105 +4,20 @@
 
     "theme": "DC_3.sublime-theme"
 
-    // OR
-    // for different widget colors, 
-    // you can try the following..
-    "theme": "DC_3_LW.sublime-theme"
-    "theme": "DC_3_GW.sublime-theme"
-    "theme": "DC_3_DD.sublime-theme"
-
-
-
 **Sublime Text 2 - User Settings**
 
-    "theme" : "DC_2.sublime-theme"
-
+    N/A
 
 # Customization
 
 **Sublime Text 3 - User Settings**
 
-    "dc_hide_btn_close_tab" : true,
-    "dc_always_show_minimap_viewport" : true,
-    "dc_autohide_scrollbar" : true,
-    "dc_bold_folder_labels" : true,
-    "dc_mouse_wheel_switches_tabs" : true,
-    "dc_highlight_active_sidebar_row" : true,
-    
-    "dc_hide_file_icons" : true,
-    "dc_hide_folders" : true,
-    "dc_hide_group_icons" : true,
-    "dc_hide_scrollbars" : true,
-
-    "dc_use_soda_search_icons" : true,
-    //"dc_use_white_puck" : true, // Removed in v1.3.0
-
-    "dc_use_folder_icon1" : true, // default
-    "dc_use_folder_icon2" : true,
-    "dc_use_folder_icon3" : true,
-    "dc_use_folder_icon4" : true,
-
-    "dc_use_group_icon1" : true, // default
-    "dc_use_group_icon2" : true,
-    "dc_use_group_icon3" : true,
-    "dc_use_group_icon4" : true,
-
-    //-------------------------------
-    // New with v1.2.7
-    //-------------------------------
-    "dc_use_darker_tab_colors": true, // Removed in v1.3.0
-
-    "dc_use_sidebar_active_row_style1": true, // default
-    "dc_use_sidebar_active_row_style2": true,
-    "dc_use_sidebar_active_row_style3": true,
-    
-    //-------------------------------
-    // New with v1.2.9
-    //-------------------------------
-    "dc_use_dark_tab_style0" : true, // Default
-    "dc_use_dark_tab_style1" : true,
-    "dc_use_dark_tab_style2" : true,
-    "dc_use_dark_tab_style3" : true,
-    "dc_use_dark_tab_style4" : true,
-
-    "dc_use_small_tabs": true
+    ...
 
 
 **Sublime Text 2 - User Settings**
 
-    "dc_hide_group_icons" : true,
-    "dc_use_soda_search_icons" : true,
-    "dc_use_white_puck" : true, // Removed in v1.3.0
-    "dc_mouse_wheel_switches_tabs" : true,
-    "dc_bold_folder_labels" : true,
-    "dc_highlight_active_sidebar_row" : true,
-
-    "dc_use_group_icon1" : true,
-    "dc_use_group_icon2" : true,
-    "dc_use_group_icon3" : true,
-    "dc_use_group_icon4" : true,
-
-    //-------------------------------
-    // New with v1.2.7
-    //-------------------------------
-    "dc_use_darker_tab_colors": true, // Removed in v1.3.0
-
-    "dc_use_sidebar_active_row_style1": true, // Default
-    "dc_use_sidebar_active_row_style2": true,
-    "dc_use_sidebar_active_row_style3": true,
-
-    //-------------------------------
-    // New with v1.2.9
-    //-------------------------------
-    "dc_use_dark_tab_style0" : true, // Default
-    "dc_use_dark_tab_style1" : true,
-    "dc_use_dark_tab_style2" : true,
-    "dc_use_dark_tab_style3" : true,
-    "dc_use_dark_tab_style4" : true,
-
-    "dc_use_small_tabs": true
-
-
+    N/A
 
 # Information
 
