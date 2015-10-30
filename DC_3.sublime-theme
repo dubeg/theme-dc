@@ -147,15 +147,21 @@
         "content_margin": [7,7], 
 
         // Defaut | Inactive 
-        "layer0.texture": "Theme - DC/assets/circle_empty.png",
+        "layer0.texture": "Theme - DC/assets/buttons/dot_black.png",  
         "layer0.inner_margin": 0,
         "layer0.tint":[80,80,80,255], 
 
         // Dirty | Hover | Pressed
         "layer1.texture": "Theme - DC/assets/dot.png",  
+        "layer1.tint":[255,255,255,200], 
 
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0
+        "layer3.texture": "Theme - DC/assets/circle_empty.png",
+        "layer3.tint":[255,255,255,100], 
+
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 0.0,
+        "layer2.opacity": 0.0,
+        "layer3.opacity": 0.0
     },
     //  [ hide_close_button ]
     {
@@ -167,13 +173,22 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        // Active
+        // Active 
+        "layer0.opacity": 0,
+        "layer1.opacity": 0,
+        "layer2.opacity": 0,
+        "layer3.opacity": 0,
+    },
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+        // Tab:hover 
+        "layer1.tint":[255,255,255,100], 
 
-        "layer0.texture": "Theme - DC/assets/buttons/xs1.png",
-        "layer0.tint":[255,255,255,200],
-        "layer0.texture": "Theme - DC/assets/buttons/dot_black.png",
-        "layer0.tint":[255,255,255], 
-    },     
+        "layer0.opacity": 1.0,
+        "layer1.opacity": 1.0,
+        "layer3.opacity": 0.0
+    }, 
     //  :dirty
     {
         "class": "tab_close_button",
@@ -186,7 +201,8 @@
     {
         "class": "tab_close_button",
         "attributes" : ["hover"],
-        "layer1.tint":[170,100,100],
+        "layer1.tint":[255,100,100,200],
+        "layer3.tint":[0,0,0,0],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
     },
@@ -195,6 +211,7 @@
         "class": "tab_close_button",
         "attributes" : ["pressed"],
         "layer1.tint":[170,100,100,150],
+        "layer3.tint":[0,0,0,0],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
     },
