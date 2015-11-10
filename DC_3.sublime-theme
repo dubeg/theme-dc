@@ -906,22 +906,22 @@
         "class": "close_button",
 
         // CloseButton  
-        "layer0.texture": "Theme - DC/assets/dirty_square.png", 
+        "layer0.texture": "Theme - DC/assets/dot.png", 
         "layer0.inner_margin": 0,
         "layer0.tint":[80,80,80],
 
         // Dirty
-        "layer1.texture": "Theme - DC/assets/dirty_square.png", 
+        "layer1.texture": "Theme - DC/assets/dot.png", 
         "layer1.inner_margin": 0, 
         "layer1.tint":[32, 255, 237],
 
         // Hover
-        "layer2.texture": "Theme - DC/assets/dirty_square.png",
+        "layer2.texture": "Theme - DC/assets/dot.png",
         "layer2.inner_margin": 0,  
         "layer2.tint":[200,0,50],      
 
         // Pressed 
-        "layer3.texture": "Theme - DC/assets/dirty_square.png", 
+        "layer3.texture": "Theme - DC/assets/dot.png", 
         "layer3.tint":[120,0,0],
 
 
