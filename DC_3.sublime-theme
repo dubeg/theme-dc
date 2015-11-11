@@ -119,15 +119,7 @@
         // Border-bottom
         "layer3.texture": "Theme - DC/assets/border_bottom_2px.png",
         "layer3.inner_margin": [0,0,0,2]
-    },
-    // Tab[ no_close_buttons ] 
-    {
-        "class": "tab_control",
-        "attributes": ["selected"],
-        "settings": ["!show_tab_close_buttons"],
-
-        "content_margin": [12, 5, 15, 5]
-    },  
+    }, 
     // Tab[ noscroll ] 
     {
         "class": "tab_control",
@@ -147,7 +139,7 @@
         "content_margin": [7,7], 
 
         // Defaut | Inactive 
-        "layer0.texture": "Theme - DC/assets/buttons/dot_black.png",  
+        "layer0.texture": "Theme - DC/assets/dot_black.png",  
         "layer0.inner_margin": 0,
         "layer0.tint":[80,80,80,255], 
 
@@ -163,12 +155,6 @@
         "layer2.opacity": 0.0,
         "layer3.opacity": 0.0
     },
-    //  [ hide_close_button ]
-    {
-        "class": "tab_close_button",
-        "settings" : ["!show_tab_close_buttons"],
-        "content_margin": [0,0]
-    }, 
     //  :selected
     {
         "class": "tab_close_button",
@@ -368,21 +354,7 @@
         "settings" : ["dc_use_folding_icon2"],
         "layer0.texture": "Theme - DC/assets/folding_plus2.png",
         "layer1.texture": "Theme - DC/assets/folding_minus2.png"
-    },
-    //          Fold Button Style 3
-    {
-        "class": "fold_button_control",
-        "settings" : ["dc_use_folding_icon3"],
-        "layer0.texture": "Theme - DC/assets/folding_plus3.png",
-        "layer1.texture": "Theme - DC/assets/folding_minus3.png"
-    },
-    //          Fold Button Style 4
-    {
-        "class": "fold_button_control",
-        "settings" : ["dc_use_folding_icon4"],
-        "layer0.texture": "Theme - DC/assets/folding_plus4.png",
-        "layer1.texture": "Theme - DC/assets/folding_minus4.png"
-    },             
+    },            
     //          STATE HOVER
     {
         "class": "fold_button_control",
@@ -804,11 +776,11 @@
 
         // Borders
         "layer1.inner_margin" : [0,0,0,1], 
-        "layer1.tint" : [40,40,40,255],
+        "layer1.tint" : [25,25,25,255],
 
         // Selected Borders
-        "layer3.inner_margin" : [0,0,0,1], 
-        "layer3.tint" : [40,40,40,255]
+        "layer3.inner_margin" : [0,1,0,1], 
+        "layer3.tint" : [22,22,22,0]
     },
 
     //  [ active_row_style2 ]
@@ -999,13 +971,6 @@
         "settings": ["dc_use_group_icon3"],
         "layer0.texture": "Theme - DC/icons/Containers/group_closed3.png",
         "layer1.texture": "Theme - DC/icons/Containers/group_opened3.png"
-    },
-    //          ALTERNATE ICON 4
-    {
-        "class": "disclosure_button_control",
-        "settings": ["dc_use_group_icon4"],
-        "layer0.texture": "Theme - DC/icons/Containers/group_closed4.png",
-        "layer1.texture": "Theme - DC/icons/Containers/group_opened4.png"
     },
     //          STATE EXPANDED
     {
@@ -1528,7 +1493,7 @@
     {
         "class": "panel_close_button",
         "content_margin": [12,14],
-        "layer0.texture": "Theme - DC/assets/big_dot2.png",
+        "layer0.texture": "Theme - DC/assets/dot_big_1.png",
         "layer0.tint" : [170,170,170],
         "layer0.opacity": 1
     },  
@@ -1539,7 +1504,7 @@
         "settings": ["dc_use_small_panel"],
 
         "content_margin": [11,11],
-        "layer0.texture": "Theme - DC/assets/big_dot.png",
+        "layer0.texture": "Theme - DC/assets/dot_big_1.png",
     },       
     //  :hover
     {
