@@ -61,6 +61,12 @@
         "layer3.opacity": 1.0,                
         "layer3.tint": [30,30,30]
     },   
+    // Tab[ noscroll ] 
+    {
+        "class": "tabset_control",
+        "settings": ["!enable_tab_scrolling"],
+        "tab_overlap":0
+    }, 
 
     //
     // Tab
@@ -77,19 +83,17 @@
         "hit_test_level": 0.0,
 
         // Set LayerX to receive tint of color scheme.
-        "tint_index": 0
-    },
-    {
-        "class": "tab_control",
+        "tint_index": 0,
 
         // ColorScheme layer
-        "layer0.opacity": 0,
+        "layer0.opacity": 0.0,
         "layer0.texture":"",
+        "layer0.inner_margin": [0,0,0,0],
 
         // Background
         "layer1.texture": "",
         "layer1.tint": [34,34,34],
-        "layer1.inner_margin": [0,0],
+        "layer1.inner_margin": [0,0,0,0],
         "layer1.opacity": 1.0,
 
         // Border-Sides
