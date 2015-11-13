@@ -4,7 +4,7 @@ Dark and Cyan - User Interface theme for SublimeText.
 
 ## Screenshots
 
-![Main window](http://i.imgur.com/YKFpZPQ.png)
+![Main window](http://i.imgur.com/s7wbzui.png)
 
 ## Installation
 
