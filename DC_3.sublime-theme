@@ -173,7 +173,7 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
         // Tab:hover 
-        "layer1.tint":[255,255,255,50], 
+        "layer1.tint":[255,255,255,100], 
 
         "layer0.opacity": 1.0,
         "layer1.opacity": 1.0,
