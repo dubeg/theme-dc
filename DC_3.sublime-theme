@@ -142,48 +142,40 @@
         "class": "tab_close_button",
         "content_margin": [7,7], 
 
-        // Defaut | Inactive 
-        "layer0.texture": "Theme - DC/assets/dot_black.png",  
+        // Inactive
+        "layer0.texture": "",  
         "layer0.inner_margin": 0,
         "layer0.tint":[80,80,80,255], 
 
-        // Dirty | Hover | Pressed
-        "layer1.texture": "Theme - DC/assets/dot.png",  
+        // Active
+        "layer1.texture": "Theme - DC/assets/square.png",
+        "layer1.texture": "Theme - DC/assets/dot.png",
         "layer1.tint":[255,255,255,200], 
 
-        "layer3.texture": "Theme - DC/assets/circle_empty.png",
-        "layer3.tint":[255,255,255,100], 
-
         "layer0.opacity": 0.0,
-        "layer1.opacity": 0.0,
-        "layer2.opacity": 0.0,
-        "layer3.opacity": 0.0
+        "layer1.opacity": 0.0
     },
     //  :selected
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        // Active 
-        "layer0.opacity": 0,
-        "layer1.opacity": 0,
-        "layer2.opacity": 0,
-        "layer3.opacity": 0,
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 0.0
     },
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
         // Tab:hover 
-        "layer1.tint":[255,255,255,100], 
+        "layer1.tint":[255,255,255,120], 
 
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 1.0,
-        "layer3.opacity": 0.0
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
     }, 
     //  :dirty
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer1.tint":[32, 255, 237], 
+        "layer1.tint": [32, 255, 237,250], 
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0        
     }, 
@@ -192,7 +184,6 @@
         "class": "tab_close_button",
         "attributes" : ["hover"],
         "layer1.tint":[255,50,50,200],
-        "layer3.tint":[0,0,0,0],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
     },
@@ -201,7 +192,6 @@
         "class": "tab_close_button",
         "attributes" : ["pressed"],
         "layer1.tint":[255,50,50,100],
-        "layer3.tint":[0,0,0,0],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
     },
