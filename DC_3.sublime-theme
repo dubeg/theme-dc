@@ -719,7 +719,7 @@
     //
     {
         "class": "sidebar_tree",
-        "row_padding": [8,2,8,5],
+        "row_padding": [8,3,8,6],
         "indent": 15,
         "indent_offset": 15,
         "indent_top_level": false,
@@ -772,11 +772,10 @@
 
         // Borders
         "layer1.inner_margin" : [0,0,0,1], 
-        "layer1.tint" : [25,25,25,255],
+        "layer1.tint" : [20,20,20,255],
 
         // Selected Borders
-        "layer3.inner_margin" : [0,1,0,1], 
-        "layer3.tint" : [22,22,22,0]
+        // "layer3"
     },
 
     //  [ active_row_style2 ]
@@ -784,8 +783,20 @@
         "settings" : ["dc_use_sidebar_active_row_style2"],
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer2.tint" : [25,25,25]
+        "layer2.tint" : [45,45,45],
+        
+        "layer3.texture" : "",
+        "layer3.tint" : [25,25,25],
+        "layer3.inner_margin" : [1,1,1,1]        
     },      
+    //  [ active_row_style2 ]
+    {
+        "settings" : ["dc_use_sidebar_active_row_style2", "dc_use_sidebar_style2"],
+        "class": "tree_row",
+        "attributes": ["selected"],
+
+        "layer3.inner_margin" : [1,0,1,1]   
+    },  
 
     //  [ active_row_style3 ]
     {
@@ -794,6 +805,7 @@
         "attributes": ["selected"],
 
         "layer0.tint" : [0,0,0,0],
+        "layer2.tint" : [20,20,20],
 
         "layer3.texture" : "",
         "layer3.tint" : [32, 255, 237],
