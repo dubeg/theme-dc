@@ -1944,6 +1944,14 @@
         "content_margin":[10,10]
     },
 
+    {
+        "class": "panel_button_control",
+        "layer0.texture": "Theme - Default/panels.png",
+        "layer0.opacity": 0.7,
+        "layer0.tint":[32, 255, 237],
+        "content_margin": [12, 8]
+    },
+
 
 // --------------------------------------------------
 // Widget Style GrayDark: Gray Background, Dark Input
