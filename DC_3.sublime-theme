@@ -720,6 +720,18 @@
         "shadow_offset": [0, 0]
     },
 
+    
+    //
+    // Panels Button
+    //
+    {
+        "class": "panel_button_control",
+        "layer0.texture": "Theme - Default/panels.png",
+        "layer0.opacity": 0.7,
+        "layer0.tint":[32, 255, 237],
+        "content_margin": [12, 8]
+    },    
+
 
 //
 // SIDEBAR
