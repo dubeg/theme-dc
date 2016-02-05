@@ -1943,7 +1943,9 @@
         "layer1.tint":[200,200,200],
         "content_margin":[10,10]
     },
-
+    //
+    // Panels Button
+    //
     {
         "class": "panel_button_control",
         "layer0.texture": "Theme - Default/panels.png",
