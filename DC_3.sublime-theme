@@ -627,7 +627,7 @@
     {
         "class":"grid_layout_control",
         "settings":["dc_use_light"],
-        "border_size": 1,
+        "border_size": 0,
         "border_color":[170,170,190],
     },
 
