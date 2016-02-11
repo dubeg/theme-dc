@@ -58,12 +58,12 @@
     },
     // Save Widget Style
     {
-        "caption": "DC: Save Widget Settings",
+        "caption": "DC: Save Widget ColorScheme",
         "command": "save_widget_settings", 
     },
     // Toggle Widget Dev
     {
-        "caption": "DC: Toggle DEV",
+        "caption": "DC: Toggle widget development",
         "command": "toggle_widget_dev" 
     }
 ]

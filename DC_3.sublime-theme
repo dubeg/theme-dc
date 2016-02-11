@@ -32,7 +32,7 @@
         "tab_min_width": 10,
         "tab_width": 10,
         "tab_height": 24
-    },
+    },    
     // Style 
     {
         "class": "tabset_control",
@@ -60,7 +60,17 @@
         "layer3.draw_center": false,
         "layer3.opacity": 1.0,                
         "layer3.tint": [30,30,30]
-    },   
+    },  
+    {
+        "class": "tabset_control",
+        "settings" : ["dc_use_light"],
+        "content_margin": [0,0,16,0], 
+        "layer1.tint": [200,200,220],
+        "layer2.tint": [170,170,190],
+        
+        "layer2.opacity":0,
+        "layer3.opacity":0,
+    },     
     // Tab[ noscroll ] 
     {
         "class": "tabset_control",
@@ -110,6 +120,17 @@
         "layer3.draw_center": false,
         "layer3.opacity": 1.0 
     },  
+    {
+        "class": "tab_control",
+        "settings" : ["dc_use_light"],
+        "content_margin": [12, 7, 7, 5],
+        "layer1.tint": [200,200,220],
+
+        "layer2.opacity":0,
+        "layer3.opacity":0,
+        "layer3.texture":"",
+        "layer3.tint": [170,170,190],
+    },      
     //
     // Tab:selected
     //
@@ -127,9 +148,28 @@
     // Tab[ noscroll ] 
     {
         "class": "tab_control",
-        "settings": ["!enable_tab_scrolling"],
+        "settings": ["!enable_tab_scrolling", "!dc_use_light"],
         "layer2.inner_margin":[0,0,1,0]
-    }, 
+    },     
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "settings" : ["dc_use_light"],
+        "content_margin": [12, 3, 7, 5],
+
+        "layer1.tint": [200,200,220],
+
+        "layer2.texture": "",
+        "layer2.tint": [100,100,120,255],
+        "layer2.inner_margin": [0,0,0,5],
+        "layer2.draw_center": false,
+        "layer2.opacity": 1.0,  
+
+        "layer3.opacity":1,
+        "layer3.inner_margin":[0,2,9,0],
+        "layer3.texture":"",
+        "layer3.tint": [200,200,220,255],
+    },      
     
 
 //
@@ -171,6 +211,17 @@
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
     }, 
+    {
+        "class": "tab_close_button",
+        "settings":["dc_use_light"],
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+
+        "layer1.tint":[240,240,240], 
+        "layer1.tint":[240,150,150,255],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
+    }, 
+
     //  :dirty
     {
         "class": "tab_close_button",
@@ -179,6 +230,15 @@
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0        
     }, 
+    {
+        "class": "tab_close_button",
+        "settings":["dc_use_light"],
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "layer1.texture":"Theme - DC/assets/square.png",
+        "layer1.tint": [100,100,120,255],    
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0        
+    },     
     //  :hover
     {
         "class": "tab_close_button",
@@ -187,6 +247,16 @@
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
     },
+    {
+        "class": "tab_close_button",
+        "settings":["dc_use_light"],
+        "attributes" : ["hover"],
+        "layer1.texture":"Theme - DC/assets/dot.png", 
+        "layer1.tint":[240,150,150,255],
+
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
+    },     
     //  :pressed
     {
         "class": "tab_close_button",
@@ -212,6 +282,13 @@
         "font.italic": false,
         "font.bold": false
     },
+    {
+        "class": "tab_label",
+        "settings" : ["dc_use_light"],
+        "fg": [0,0,0],
+        "shadow_color": [220,220,220],
+        "shadow_offset": [0,0],
+    },     
     //  :dirty
     {
         "class": "tab_label",
@@ -229,15 +306,22 @@
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
         "fg": [170, 170, 170]
-    },
+    },   
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+        "settings" : ["dc_use_light"],
+        "fg": [0,0,0],
+    },        
     //  tab:selected
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [210,212,216],//29,222,206
+        "fg": [30,30,60],//[210,212,216],//29,222,206
         "shadow_color": [0,0,0],
-        "shadow_offset": [1,1],
-        "font.bold": false
+        "shadow_offset": [0,0],
+        "font.bold": false,
+
     },
 
 
@@ -404,6 +488,11 @@
         "layer0.tint" : [28,28,28],
         "layer0.opacity": 1.0
     },
+    {
+        "class": "scroll_bar_control",
+        "settings":["dc_use_light"],
+        "layer0.tint": [200,200,220],
+    },    
     //  [ hide_scrollbars ]
     {
         "class": "scroll_bar_control",
@@ -431,7 +520,11 @@
         "layer0.tint" : [29,29,29],
         "layer0.opacity": 1.0
     },
-
+    {
+        "class": "scroll_corner_control",
+        "settings":["dc_use_light"],
+        "layer0.tint": [200,200,220],
+    },
     //
     // PUCK
     //
@@ -450,6 +543,11 @@
         "layer1.opacity":0,
         "min_size": [0,0]
     },
+    {
+        "class": "puck_control",
+        "settings":["dc_use_light"],
+        "layer0.tint" : [150,150,170],
+    },    
     //  [ scrollbars_style2 ]
     //  : Full puck
     {
@@ -474,6 +572,12 @@
         "layer1.opacity": 1.0,
         "layer1.draw_center":false
     },  
+    {
+        "class": "puck_control",
+        "settings": ["dc_use_scrollbars_style2","dc_use_light"],
+        "layer1.tint": [200,200,220],
+        "layer0.tint": [100,100,120],
+    },     
 
     //  Hide vertical scrollbar when overlay scrollbars are active, 
     //  and minimap is visible.
@@ -519,6 +623,12 @@
         "class": "grid_layout_control",
         "border_size": 1,
         "border_color": [25,25,25]
+    },
+    {
+        "class":"grid_layout_control",
+        "settings":["dc_use_light"],
+        "border_size": 1,
+        "border_color":[170,170,190],
     },
 
 
@@ -656,6 +766,10 @@
         "layer1.draw_center": false,
         "layer1.opacity": 1.0
     },
+    {
+        "class":"status_bar",
+        "settings":["dc_use_light"],
+    },
 
     //
     // BUTTON
@@ -713,13 +827,22 @@
         "layer1.opacity": 1.0,
         "layer1.draw_center": false
     },
+    {
+         "content_margin": [0, 9, 0, 0],
 
+        "class":"sidebar_container",
+        "settings":["dc_use_light"],
+        "layer0.tint": [200,200,220],
+        "layer1.tint": [150,150,150],
+
+        "layer1.opacity": 0.0,
+    },
     //
     // SIDEBAR TREE
     //
     {
         "class": "sidebar_tree",
-        "row_padding": [8,3,8,6],
+        "row_padding": [8,4],
         "indent": 15,
         "indent_offset": 15,
         "indent_top_level": false,
@@ -731,6 +854,7 @@
 
         "row_padding": [8,8]
     },    
+
 
     //
     // SIDEBAR TREE ROW
@@ -789,6 +913,14 @@
         "layer3.tint" : [25,25,25],
         "layer3.inner_margin" : [1,1,1,1]        
     },      
+    {
+        "settings" : ["dc_use_sidebar_active_row_style2", "dc_use_light"],
+        "class": "tree_row",
+        "attributes": ["selected"],
+        "layer2.tint" : [60,60,80,100],
+        "layer3.tint" : [40,40,40,100],
+    }, 
+
     //  [ active_row_style2 ]
     {
         "settings" : ["dc_use_sidebar_active_row_style2", "dc_use_sidebar_style2"],
@@ -835,6 +967,12 @@
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, -1]
     },  
+    {
+        "class":"sidebar_heading",
+        "settings":["dc_use_light"],
+        "color": [130,130,160],
+        "shadow_offset": [0, 0]
+    },    
 
     //
     // SIDEBAR LABEL
@@ -847,12 +985,25 @@
         "font.bold": false,
         "font.italic": false
     },    
+    {
+        "class":"sidebar_label",
+        "settings":["dc_use_light"],
+        "color": [60,60,60],
+        "shadow_offset": [0, 0]
+    },      
     //  :hover
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "color": [200,200,200]
     },
+    {
+        "class":"sidebar_label",
+        "settings":["dc_use_light"],
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [0,0,0],
+        "shadow_offset": [0, 0]
+    },       
     //  :selected
     {
         "class": "sidebar_label",
@@ -861,6 +1012,14 @@
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 1]
     },
+    {
+        "class": "sidebar_label",
+        "settings":["dc_use_light"],
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [255,255,255],
+        "shadow_color": [100,100,120],
+        "shadow_offset": [1,1]
+    },    
     //  :transient
     {
         "class": "sidebar_label",
@@ -912,6 +1071,13 @@
         "layer1.opacity": 0.0,
         "layer2.opacity": 0.0,
         "layer3.opacity": 0.0
+    },
+    {
+        "class":"close_button",
+        "settings":["dc_use_light"],
+        "layer1.texture":"Theme - DC/assets/square.png",
+        "layer1.tint":[100,100,120,255],
+        "layer0.tint":[240,150,150,255],
     },
     //          STATE TREE-ROW HOVER
     { 
