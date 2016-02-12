@@ -2069,9 +2069,50 @@
     },
 
 
+
+// ----------------------------------------------------
+// Widget Style DarkLight: Dark Background, Dark Input
+// ----------------------------------------------------
+    //
+    // BUTTON
+    //
+    {
+        "class": "button_control",
+        "settings" : ["dc_use_widget_darkdark"],
+
+        "layer0.tint" : [30,30,30],
+        "layer1.tint" : [50,50,50],
+        "layer2.tint" : [20,20,20],
+    },
+
+    //
+    // BUTTON LABEL
+    //
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control"}],
+        "settings" : ["dc_use_widget_darkdark"],
+        "color":[200,200,200],
+        "shadow_color": [20,20,20],
+        "shadow_offset": [1,1]
+    },
+
+
 // ----------------------------------------------------
 // Widget Style DarkLight: Dark Background, Light Input
 // ----------------------------------------------------
+
+    //
+    // BUTTON
+    //
+    {
+        "class": "button_control",
+        "settings" : ["dc_use_widget_darklight"],
+
+        "layer0.tint" : [30,30,30],
+        "layer1.tint" : [50,50,50],
+        "layer2.tint" : [20,20,20],
+    },
 
     //
     // BUTTON LABEL
@@ -2080,10 +2121,10 @@
         "class": "label_control",
         "parents": [{"class": "button_control"}],
         "settings" : ["dc_use_widget_darklight"],
-
-        "shadow_offset": [0, -1]
+        "color":[200,200,200],
+        "shadow_color": [20,20,20],
+        "shadow_offset": [1,1]
     },
-
 
     //
     // GENERAL INPUT
@@ -2153,6 +2194,7 @@
         "class": "label_control",
         "parents": [{"class": "button_control"}],
         "settings" : ["dc_use_widget_graydark"],
+        "color":[200,200,200],
         "shadow_color": [20,20,20],
         "shadow_offset": [1,1]
     },
@@ -2259,6 +2301,30 @@
 // --------------------------------------------------
 
     //
+    // BUTTON
+    //
+    {
+        "class": "button_control",
+        "settings" : ["dc_use_widget_darkgray"],
+
+        "layer0.tint" : [30,30,30],
+        "layer1.tint" : [50,50,50],
+        "layer2.tint" : [20,20,20],
+    },
+
+    //
+    // BUTTON LABEL
+    //
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control"}],
+        "settings" : ["dc_use_widget_darkgray"],
+        "color":[200,200,200],
+        "shadow_color": [20,20,20],
+        "shadow_offset": [1,1]
+    },
+
+    //
     // PANEL TEXT INPUT
     //
     {
@@ -2285,8 +2351,14 @@
 // Light Mode
 // --------------------------------------------------
     {
+        "class": "text_line_control",
+        "settings" : ["dc_use_widget_lightmode"],
+
+        "layer0.tint" : [210,210,220],
+    },
+    {
         "class": "button_control",
-        "settings":["dc_use_light"],
+        "settings":["dc_use_widget_lightmode"],
         "layer0.tint":[200,200,220],
         "layer1.tint":[180,180,210],
         "layer2.tint":[100,100,120],
@@ -2294,25 +2366,25 @@
     {
         "class": "label_control",
         "parents": [{"class": "button_control"}],
-        "settings" : ["dc_use_light"],
+        "settings" : ["dc_use_widget_lightmode"],
         "shadow_color": [0,0,0],
         "shadow_offset": [0,0]
     },   
     {
         "class": "panel_close_button",
-        "settings":["dc_use_light"],
+        "settings":["dc_use_widget_lightmode"],
         "layer0.tint" : [200,200,220],
         "layer0.texture": "Theme - DC/assets/dot_big_1.png",
     },     
     {
         "class":"overlay_control",
-        "settings":["dc_use_light"],    
+        "settings":["dc_use_widget_lightmode"],    
         "layer0.tint":[180,180,200],
         "layer1.tint":[180,180,180],
     },
     {
         "class": "panel_control",
-        "settings":["dc_use_light"],
+        "settings":["dc_use_widget_lightmode"],
         "layer1.tint": [170,170,190],
         "layer0.tint": [170,170,190],
     },    

@@ -32,7 +32,8 @@ class DCUtils:
         "DarkDark",
         "DarkGray",
         "DarkLight",
-        "GrayDark"
+        "GrayDark",
+        "LightMode"
         ]
 
     @staticmethod

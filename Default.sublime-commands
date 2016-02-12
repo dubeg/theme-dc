@@ -56,6 +56,14 @@
             "widgetName": "DarkGray"
         }
     },
+    {
+        "caption": "DC: Set Widget LightMode",
+        "command": "set_widget", 
+        "args": 
+        {
+            "widgetName": "LightMode"
+        }
+    },    
     // Save Widget Style
     {
         "caption": "DC: Save Widget ColorScheme",
