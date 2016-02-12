@@ -1479,12 +1479,6 @@
         "layer1.draw_center": false
 
     },
-    {
-        "class": "panel_control",
-        "settings":["dc_use_light"],
-        "layer1.tint": [170,170,190],
-        "layer0.tint": [170,170,190],
-    },
     //
     // TEXTBOX
     //
@@ -1683,13 +1677,7 @@
 
         "content_margin": [11,11],
         "layer0.texture": "Theme - DC/assets/dot_big_1.png",
-    },  
-    {
-        "class": "panel_close_button",
-        "settings":["dc_use_light"],
-        "layer0.tint" : [200,200,220],
-        "layer0.texture": "Theme - DC/assets/dot_big_1.png",
-    },         
+    },        
     // :hover
     {
         "class": "panel_close_button",
@@ -1733,7 +1721,7 @@
     {
         "class": "icon_regex",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[0,0,0]
+        "layer1.tint":[100,100,120]
     },    
     //  :selected
     {
@@ -1771,7 +1759,7 @@
     {
         "class": "icon_case",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[0,0,0]
+        "layer1.tint":[100,100,120]
     },         
     //  :selected
     {
@@ -1809,7 +1797,7 @@
     {
         "class": "icon_whole_word",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[0,0,0]
+        "layer1.tint":[100,100,120]
     },       
     //  :selected
     {
@@ -1846,7 +1834,7 @@
     {
         "class": "icon_context",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[0,0,0]
+        "layer1.tint":[100,100,120]
     },    
     //  :selected
     {
@@ -1884,7 +1872,7 @@
     {
         "class": "icon_use_buffer",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[0,0,0]
+        "layer1.tint":[100,100,120]
     },       
     //  :selected
     {
@@ -1921,7 +1909,7 @@
     {
         "class": "icon_reverse",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[0,0,0]
+        "layer1.tint":[100,100,120]
     },    
     //  :selected
     {
@@ -1958,7 +1946,7 @@
     {
         "class": "icon_wrap",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[0,0,0]
+        "layer1.tint":[100,100,120]
     },      
     //  :selected
     {
@@ -1995,7 +1983,7 @@
     {
         "class": "icon_in_selection",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[0,0,0]
+        "layer1.tint":[100,100,120]
     },     
     //  :selected
     {
@@ -2032,7 +2020,7 @@
     {
         "class": "icon_preserve_case",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[0,0,0]
+        "layer1.tint":[100,100,120]
     },     
     //  :selected
     {
@@ -2069,7 +2057,7 @@
     {
         "class": "icon_highlight",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[0,0,0]
+        "layer1.tint":[100,100,120]
     },    
     //  :selected
     {
@@ -2289,5 +2277,44 @@
         
         "layer0.tint" : [30,30,30],
         "layer1.tint" : [25,25,25]
-    }   
+    },
+
+
+
+// --------------------------------------------------
+// Light Mode
+// --------------------------------------------------
+    {
+        "class": "button_control",
+        "settings":["dc_use_light"],
+        "layer0.tint":[200,200,220],
+        "layer1.tint":[180,180,210],
+        "layer2.tint":[100,100,120],
+    },
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control"}],
+        "settings" : ["dc_use_light"],
+        "shadow_color": [0,0,0],
+        "shadow_offset": [0,0]
+    },   
+    {
+        "class": "panel_close_button",
+        "settings":["dc_use_light"],
+        "layer0.tint" : [200,200,220],
+        "layer0.texture": "Theme - DC/assets/dot_big_1.png",
+    },     
+    {
+        "class":"overlay_control",
+        "settings":["dc_use_light"],    
+        "layer0.tint":[180,180,200],
+        "layer1.tint":[180,180,180],
+    },
+    {
+        "class": "panel_control",
+        "settings":["dc_use_light"],
+        "layer1.tint": [170,170,190],
+        "layer0.tint": [170,170,190],
+    },    
+
 ]
