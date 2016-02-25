@@ -58,11 +58,7 @@
     },
     {
         "caption": "DC: Set Widget LightMode",
-        "command": "set_widget", 
-        "args": 
-        {
-            "widgetName": "LightMode"
-        }
+        "command": "activate_light_mode"
     },    
     // Save Widget Style
     {

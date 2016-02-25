@@ -18,11 +18,13 @@ class DCUtils:
     # Private
     __widgetTypes = None
     # Public
+    IS_DEV = True
     USER_PREFERENCES = 'Preferences.sublime-settings'
     USER_WIDGET_SETTINGS = 'Widget - DC_3.sublime-settings'
+
+    LIGHTMODE_KEY = "dc_use_light";
     COLOR_SCHEME_KEY = 'color_scheme'
     COLOR_SCHEME_VALUE = "Packages/Theme - DC/{0}"
-    IS_DEV = True
 
     WIDGET_KEY_PREFIX  = 'dc_use_widget_'
     WIDGET_FILE_PREFIX = 'Widget_'
@@ -82,6 +84,7 @@ class DCUtils:
         
         # Set Widget key
         pref.set(widget.SettingKey, True)
+        pref.set(DCUtils.LIGHTMODE_KEY, False)
 
         # Change setting in Widget - DC.sublime-settings
         widgetSettings = sublime.load_settings(DCUtils.USER_WIDGET_SETTINGS)
@@ -91,6 +94,12 @@ class DCUtils:
             )
 
         return None
+
+    def activateLightMode():
+        pref = sublime.load_settings(DCUtils.USER_PREFERENCES)
+        pref.set(DCUtils.LIGHTMODE_KEY, True)
+        return None
+
 
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Save Widget Settings
@@ -145,6 +154,12 @@ class DCUtils:
 # ===================================================================
 # Section: Plugin Window Commands
 # ===================================================================
+class ActivateLightMode(sublime_plugin.WindowCommand):
+    def run(self):
+        DCUtils.setWidgetTheme("LightMode")
+        DCUtils.activateLightMode()
+        return None
+
 class SetWidget(sublime_plugin.WindowCommand):
     def run(self, widgetName):
         DCUtils.setWidgetTheme(widgetName)
