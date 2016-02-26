@@ -757,7 +757,7 @@
     //
     {
         "class": "minimap_control",
-        "viewport_color": [5,5,10,150],
+        "viewport_color": [0,0,0,100],
         "viewport_opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" }
     },
     // [ always_show_minimap_viewport ]
