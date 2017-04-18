@@ -297,7 +297,7 @@
 
         "layer2.texture": "",
         "layer2.inner_margin":[0,0,0,3],
-        "layer2.tint" : [255,255,255,200],//[32, 255, 237,200],//[80,95, 160],
+        "layer2.tint" : [100,130,200,255],//[32, 255, 237,200],//[80,95, 160],
 
         "layer3.texture": "",
         "layer3.inner_margin":[0,0,3,0],
@@ -335,7 +335,7 @@
     {
         "class": "tab_close_button",
         "settings":["dc_use_mindark"],
-        "layer1.tint": [255,255,255,200]
+        "layer1.tint": [100,130,200,255]
     },    
     //  :selected
     {
@@ -375,7 +375,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer1.tint": [32, 255, 237,250], 
+        //"layer1.tint": [32, 255, 237,250], 
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0        
     }, 
@@ -1193,7 +1193,7 @@
         "layer2.tint" : [25,25,25],
 
         "layer3.texture" : "",
-        "layer3.tint" : [255,255,255,200],//[32, 255, 237],
+        "layer3.tint" : [100,130,200,255],//[32, 255, 237],
         "layer3.inner_margin" : [3, 0, 0, 0]
     },   
 
@@ -1306,7 +1306,8 @@
         // Dirty
         "layer1.texture": "Theme - DC/assets/square.png", 
         "layer1.inner_margin": 0, 
-        "layer1.tint":[32, 255, 237],
+        //"layer1.tint":[32, 255, 237],
+        "layer1.tint": [100,100,120,255],    
 
         // Hover
         "layer2.texture": "Theme - DC/assets/square.png",
