@@ -12,7 +12,7 @@
 //
     //
     // CONTAINER
-    //
+    //\
     {
         "class": "button_control",
         "content_margin": [6, 7, 6, 6],
@@ -1148,7 +1148,8 @@
         "settings" : ["dc_use_sidebar_active_row_style2"],
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer2.tint" : [255,255,255,255],//[32, 255, 237],
+        "layer2.tint" : [255,255,255,0],//[32, 255, 237],
+        "layer2.opacity":1,
 
         "layer3.texture" : "",
         "layer3.tint" : [25,25,25],
