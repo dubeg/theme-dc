@@ -25,14 +25,7 @@
         "layer0.opacity" : 1,
         "layer1.opacity" : 0,
         "layer2.opacity" : 0
-    },
-    {
-        "class": "button_control",
-        "settings":["dc_use_light"],
-        "layer0.tint":[200,200,220],
-        "layer2.tint":[200,200,220],
-        "layer3.tint":[200,200,220]
-    },      
+    },     
     // :hover
     {
         "class": "button_control",
@@ -157,16 +150,6 @@
         "layer3.opacity": 1.0,                
         "layer3.tint": [30,30,30]
     },  
-    {
-        "class": "tabset_control",
-        "settings" : ["dc_use_light"],
-        "content_margin": [0,0,16,0], 
-        "layer1.tint": [200,200,220],
-        "layer2.tint": [170,170,190],
-        
-        "layer2.opacity":0,
-        "layer3.opacity":0,
-    },     
     // [ noscroll ] 
     {
         "class": "tabset_control",
@@ -220,17 +203,7 @@
         "layer3.draw_center": false,
         "layer3.opacity": 1.0 
     },  
-    {
-        "class": "tab_control",
-        "settings" : ["dc_use_light"],
-        "content_margin": [12, 7, 7, 5],
-        "layer1.tint": [200,200,220],
-
-        "layer2.opacity":0,
-        "layer3.opacity":0,
-        "layer3.texture":"",
-        "layer3.tint": [170,170,190],
-    },      
+  
     //
     // :selected
     //
@@ -252,25 +225,7 @@
         "settings": ["!enable_tab_scrolling", "!dc_use_light"],
         "layer2.inner_margin":[0,0,1,0]
     },     
-    {
-        "class": "tab_control",
-        "attributes": ["selected"],
-        "settings" : ["dc_use_light"],
-        "content_margin": [12, 3, 7, 5],
-
-        "layer1.tint": [200,200,220],
-
-        "layer2.texture": "",
-        "layer2.tint": [100,100,120,255],
-        "layer2.inner_margin": [0,0,0,5],
-        "layer2.draw_center": false,
-        "layer2.opacity": 1.0,  
-
-        "layer3.opacity":1,
-        "layer3.inner_margin":[0,2,9,0],
-        "layer3.texture":"",
-        "layer3.tint": [200,200,220,255],
-    },      
+   
     
 
 //
@@ -302,15 +257,6 @@
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
         "layer0.opacity": 0.0,
         "layer1.opacity": 0.0
-    },
-    {
-        "class": "tab_close_button",
-        "settings":["dc_use_light"],
-        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "layer1.texture":"Theme - DC/assets/square.png",
-        
-         "layer0.opacity": 0.0,
-        "layer1.opacity": 0.0
     },    
     {
         "class": "tab_close_button",
@@ -320,31 +266,13 @@
 
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
-    }, 
-    {
-        "class": "tab_close_button",
-        "settings":["dc_use_light"],
-        "parents": [{"class": "tab_control", "attributes": ["hover"]}], 
-        "layer1.tint":[240,150,150,150],
-        "layer1.tint":[240,240,240,150],
-
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 1.0
-    },      
+    },       
 
     //  :dirty
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "layer1.tint": [32, 255, 237,250], 
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 1.0        
-    }, 
-    {
-        "class": "tab_close_button",
-        "settings":["dc_use_light"],
-        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer1.tint": [100,100,120,255],    
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0        
     },     
@@ -355,17 +283,7 @@
         "layer1.tint":[255,50,50,200],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
-    },
-    {
-        "class": "tab_close_button",
-        "settings":["dc_use_light"],
-        "attributes" : ["hover"],
-        "layer1.tint":[225,225,225,150],
-        "layer1.tint":[240,150,150,255],
-
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 1.0
-    },     
+    },   
     //  :pressed
     {
         "class": "tab_close_button",
@@ -390,14 +308,7 @@
         "shadow_offset": [0,1],
         "font.italic": false,
         "font.bold": false
-    },
-    {
-        "class": "tab_label",
-        "settings" : ["dc_use_light"],
-        "fg": [0,0,0],
-        "shadow_color": [220,220,220],
-        "shadow_offset": [0,0],
-    },     
+    },   
     //  :dirty
     {
         "class": "tab_label",
@@ -415,13 +326,7 @@
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
         "fg": [170, 170, 170]
-    },   
-    {
-        "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "settings" : ["dc_use_light"],
-        "fg": [0,0,0],
-    },        
+    },         
     //  tab:selected
     {
         "class": "tab_label",
@@ -431,15 +336,7 @@
         "shadow_offset": [0,0],
         "font.bold": false,
     },
-    {
-        "class": "tab_label",
-        "settings":["dc_use_light"],
-        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [30,30,60],
-        "shadow_color": [0,0,0],
-        "shadow_offset": [0,0],
-        "font.bold": false,
-    },
+
 
 
 
@@ -605,12 +502,7 @@
         // TODO:set to 30,30,30
         "layer0.tint" : [28,28,28],
         "layer0.opacity": 1.0
-    },
-    {
-        "class": "scroll_bar_control",
-        "settings":["dc_use_light"],
-        "layer0.tint": [200,200,220],
-    },    
+    },   
     //  [ hide_scrollbars ]
     {
         "class": "scroll_bar_control",
@@ -638,11 +530,6 @@
         "layer0.tint" : [29,29,29],
         "layer0.opacity": 1.0
     },
-    {
-        "class": "scroll_corner_control",
-        "settings":["dc_use_light"],
-        "layer0.tint": [200,200,220],
-    },
     //
     // PUCK
     //
@@ -660,11 +547,6 @@
 
         "layer1.opacity":0,
         "min_size": [0,0]
-    },
-    {
-        "class": "puck_control",
-        "settings":["dc_use_light"],
-        "layer0.tint" : [150,150,170],
     },    
     //  [ scrollbars_style2 ]
     //  : Full puck
@@ -689,14 +571,7 @@
         "layer1.tint": [28,28,28],
         "layer1.opacity": 1.0,
         "layer1.draw_center":false
-    },  
-    {
-        "class": "puck_control",
-        "settings": ["dc_use_scrollbars_style2","dc_use_light"],
-
-        "layer1.tint": [200,200,220],
-        "layer0.tint": [150,150,175],
-    },     
+    },       
 
     //  Hide vertical scrollbar when overlay scrollbars are active, 
     //  and minimap is visible.
@@ -742,12 +617,6 @@
         "border_size": 1,
         "border_color": [25,25,25]
     },
-    {
-        "class":"grid_layout_control",
-        "settings":["dc_use_light"],
-        "border_size": 0,
-        "border_color":[170,170,190],
-    },
 
 
 //
@@ -783,12 +652,6 @@
         "layer0.tint": [30,30,30],
         "layer0.opacity": 1.0
     },
-    {
-        "class": "dialog",
-        "settings":["dc_use_light"],
-        "layer0.tint": [230,230,245],
-        "layer0.opacity": 1.0
-    },
 
 
 //
@@ -811,12 +674,6 @@
         "layer0.tint": [144, 144, 144],
         "layer0.opacity": 1.0,
         "content_margin": [0, 6]
-    },
-    {
-        "class": "progress_gauge_control",
-        "settings":["dc_use_light"],
-        "layer0.tint": [200,200,220],
-        "layer0.opacity": 1.0
     },
 
 
@@ -940,10 +797,10 @@
     //
     {
         "class": "panel_button_control",
-        "layer0.texture": "Theme - Default/panels.png",
+        "layer0.texture": "Theme - DC/assets/panels_button.png",
         "layer0.opacity": 1,
         "layer0.tint":[32, 255, 237],
-        "content_margin": [12, 8]
+        "content_margin": [10, 4, 8, 10]
     },        
     //
     // LABEL
@@ -980,16 +837,6 @@
         "layer1.inner_margin": [0,0,1,0],
         "layer1.opacity": 1.0,
         "layer1.draw_center": false
-    },
-    {
-         "content_margin": [0, 9, 0, 0],
-
-        "class":"sidebar_container",
-        "settings":["dc_use_light"],
-        "layer0.tint": [200,200,220],
-        "layer1.tint": [150,150,150],
-
-        "layer1.opacity": 0.0,
     },
     //
     // SIDEBAR TREE
@@ -1067,13 +914,6 @@
         "layer3.tint" : [25,25,25],
         "layer3.inner_margin" : [1,1,1,1]        
     },      
-    {
-        "settings" : ["dc_use_sidebar_active_row_style2", "dc_use_light"],
-        "class": "tree_row",
-        "attributes": ["selected"],
-        "layer2.tint" : [60,60,80,100],
-        "layer3.tint" : [40,40,40,100],
-    }, 
 
     //  [ active_row_style2 ]
     {
@@ -1120,44 +960,25 @@
         "font.bold": true,
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, -1]
-    },  
-    {
-        "class":"sidebar_heading",
-        "settings":["dc_use_light"],
-        "color": [130,130,160],
-        "shadow_offset": [0, 0]
-    },    
+    },     
 
     //
     // SIDEBAR LABEL
     //
     {
         "class": "sidebar_label",
-        "color": [125, 125, 125],
+        "color": [135,135,135],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, -1],
         "font.bold": false,
         "font.italic": false
-    },    
-    {
-        "class":"sidebar_label",
-        "settings":["dc_use_light"],
-        "color": [60,60,60],
-        "shadow_offset": [0, 0]
-    },      
+    },          
     //  :hover
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "color": [200,200,200]
-    },
-    {
-        "class":"sidebar_label",
-        "settings":["dc_use_light"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [0,0,0],
-        "shadow_offset": [0, 0]
-    },       
+    },      
     //  :selected
     {
         "class": "sidebar_label",
@@ -1165,15 +986,7 @@
         "color": [200,200,200],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 1]
-    },
-    {
-        "class": "sidebar_label",
-        "settings":["dc_use_light"],
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [0,0,0],
-        "shadow_color": [200,200,255],
-        "shadow_offset": [1,1]
-    },   
+    },  
     {
         "class": "sidebar_label",
         "settings":["dc_use_sidebar_active_row_style2", "dc_use_light"],
@@ -1233,13 +1046,6 @@
         "layer1.opacity": 0.0,
         "layer2.opacity": 0.0,
         "layer3.opacity": 0.0
-    },
-    {
-        "class":"close_button",
-        "settings":["dc_use_light"],
-        "layer1.texture":"Theme - DC/assets/square.png",
-        "layer1.tint":[100,100,120,255],
-        "layer0.tint":[240,150,150,255],
     },
     //          STATE TREE-ROW HOVER
     { 
@@ -1723,11 +1529,7 @@
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_regex.png",
         "layer1.tint":[32, 255, 237]
     },  
-    {
-        "class": "icon_regex",
-        "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[100,100,120]
-    },    
+   
     //  :selected
     {
         "class": "icon_regex",
@@ -1761,11 +1563,7 @@
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_case.png",
         "layer1.tint":[32, 255, 237]
     }, 
-    {
-        "class": "icon_case",
-        "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[100,100,120]
-    },         
+      
     //  :selected
     {
         "class": "icon_case",
@@ -1799,11 +1597,7 @@
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_wholeword.png",
         "layer1.tint":[32, 255, 237]
     },     
-    {
-        "class": "icon_whole_word",
-        "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[100,100,120]
-    },       
+     
     //  :selected
     {
         "class": "icon_whole_word",
@@ -1836,11 +1630,7 @@
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_context.png",
         "layer1.tint":[32, 255, 237]
     },     
-    {
-        "class": "icon_context",
-        "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[100,100,120]
-    },    
+   
     //  :selected
     {
         "class": "icon_context",
@@ -1874,11 +1664,7 @@
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_buffer.png",
         "layer1.tint":[32, 255, 237]
     },     
-    {
-        "class": "icon_use_buffer",
-        "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[100,100,120]
-    },       
+      
     //  :selected
     {
         "class": "icon_use_buffer",
@@ -1911,11 +1697,7 @@
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_reverse.png",
         "layer1.tint":[32, 255, 237]
     },     
-    {
-        "class": "icon_reverse",
-        "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[100,100,120]
-    },    
+   
     //  :selected
     {
         "class": "icon_reverse",
@@ -1948,11 +1730,7 @@
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_wrap.png",
         "layer1.tint":[32, 255, 237]
     },     
-    {
-        "class": "icon_wrap",
-        "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[100,100,120]
-    },      
+     
     //  :selected
     {
         "class": "icon_wrap",
@@ -1985,11 +1763,7 @@
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_inselection.png",
         "layer1.tint":[32, 255, 237]
     },     
-    {
-        "class": "icon_in_selection",
-        "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[100,100,120]
-    },     
+   
     //  :selected
     {
         "class": "icon_in_selection",
@@ -2022,11 +1796,7 @@
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_preservecase.png",
         "layer1.tint":[32, 255, 237]
     },     
-    {
-        "class": "icon_preserve_case",
-        "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[100,100,120]
-    },     
+    
     //  :selected
     {
         "class": "icon_preserve_case",
@@ -2059,11 +1829,7 @@
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_highlight.png",
         "layer1.tint":[32, 255, 237]
     },     
-    {
-        "class": "icon_highlight",
-        "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
-        "layer1.tint":[100,100,120]
-    },    
+   
     //  :selected
     {
         "class": "icon_highlight",
@@ -2352,262 +2118,510 @@
 
 
 
-// --------------------------------------------------
-// Light Mode
-// --------------------------------------------------
-    {
-        "class": "text_line_control",
-        "settings" : ["dc_use_widget_lightmode"],
+// // --------------------------------------------------
+// // Light Mode
+// // --------------------------------------------------
+//     {
+//         "class": "text_line_control",
+//         "settings" : ["dc_use_widget_lightmode"],
 
-        "layer0.tint" : [200,200,220],
-    },
-    {
-        "class": "button_control",
-        "settings":["dc_use_light"],
-        "layer0.tint":[200,200,220],
-        "layer1.tint":[180,180,210],
-        "layer2.tint":[100,100,120],
-    },
-    {
-        "class": "label_control",
-        "parents": [{"class": "button_control"}],
-        "settings" : ["dc_use_light"],
-        "shadow_color": [0,0,0],
-        "shadow_offset": [0,0]
-    },   
-    {
-        "class": "panel_close_button",
-        "settings":["dc_use_light"],
-        "layer0.tint" : [200,200,220],
-        "layer0.texture": "Theme - DC/assets/dot_big_1.png",
-    },     
-    {
-        "class":"overlay_control",
-        "settings":["dc_use_light"],    
-        "layer0.tint":[180,180,200],
-        "layer1.tint":[180,180,180],
-    },
-    {
-        "class": "panel_control",
-        "settings":["dc_use_light"],
-        "content_margin": [0,0,0,0],
-        "layer0.tint": [170,170,190],
-        "layer1.tint": [200,200,220,0],
-        "layer1.inner_margin":[0,0,0,0]
-    },  
-    {
-        "class":"label_control",
-        "parents":[{"class": "panel_control"}],
-        "settings":["dc_use_light"],
-        "color": [60,60,90,255],
-    },    
+//         "layer0.tint" : [200,200,220],
+//     },
+//     {
+//         "class": "button_control",
+//         "settings":["dc_use_light"],
+//         "layer0.tint":[200,200,220],
+//         "layer1.tint":[180,180,210],
+//         "layer2.tint":[100,100,120],
+//     },
+//     {
+//         "class": "label_control",
+//         "parents": [{"class": "button_control"}],
+//         "settings" : ["dc_use_light"],
+//         "shadow_color": [0,0,0],
+//         "shadow_offset": [0,0]
+//     },   
+//     {
+//         "class": "panel_close_button",
+//         "settings":["dc_use_light"],
+//         "layer0.tint" : [200,200,220],
+//         "layer0.texture": "Theme - DC/assets/dot_big_1.png",
+//     },     
+//     {
+//         "class":"overlay_control",
+//         "settings":["dc_use_light"],    
+//         "layer0.tint":[180,180,200],
+//         "layer1.tint":[180,180,180],
+//     },
+//     {
+//         "class": "panel_control",
+//         "settings":["dc_use_light"],
+//         "content_margin": [0,0,0,0],
+//         "layer0.tint": [170,170,190],
+//         "layer1.tint": [200,200,220,0],
+//         "layer1.inner_margin":[0,0,0,0]
+//     },  
+//     {
+//         "class":"label_control",
+//         "parents":[{"class": "panel_control"}],
+//         "settings":["dc_use_light"],
+//         "color": [60,60,90,255],
+//     },    
 
-//
-// QUICK PANEL
-// 
-    {
-        "class": "quick_panel",
-        "settings":["dc_use_light"],
-        "dark_content": false 
-    },    
-    //
-    // QUICK PANEL ROW
-    //
-    {
-        "class": "quick_panel_row",
-        "settings":["dc_use_light"],
+//     {
+//         "class": "button_control",
+//         "settings":["dc_use_light"],
+//         "layer0.tint":[200,200,220],
+//         "layer2.tint":[200,200,220],
+//         "layer3.tint":[200,200,220]
+//     }, 
+
+//     {
+//         "class": "tabset_control",
+//         "settings" : ["dc_use_light"],
+//         "content_margin": [0,0,16,0], 
+//         "layer1.tint": [200,200,220],
+//         "layer2.tint": [170,170,190],
         
-        // Background
-        "layer0.tint" : [205,205,220],
-        "layer0.texture" : "",
+//         "layer2.opacity":0,
+//         "layer3.opacity":0,
+//     }, 
+//     {
+//         "class": "tab_control",
+//         "settings" : ["dc_use_light"],
+//         "content_margin": [12, 7, 7, 5],
+//         "layer1.tint": [200,200,220],
 
-        // Borders
-        "layer1.inner_margin" : [0,0,0,1], 
-        "layer1.tint" : [210,210,225],
-        "layer1.texture" : "",        
-        "layer1.draw_center":false,
+//         "layer2.opacity":0,
+//         "layer3.opacity":0,
+//         "layer3.texture":"",
+//         "layer3.tint": [170,170,190],
+//     },   
+//     {
+//         "class": "tab_control",
+//         "attributes": ["selected"],
+//         "settings" : ["dc_use_light"],
+//         "content_margin": [12, 3, 7, 5],
 
-        // Selected Background
-        "layer2.inner_margin" : [0,0,0,0], 
-        "layer2.tint" : [80,80,100,225],
-        "layer2.texture" : "",        
-        "layer2.draw_center":true,
+//         "layer1.tint": [200,200,220],
 
-        // Selected Border
-        "layer3.inner_margin" : [5,0,0,0], 
-        "layer3.tint" : [150,150,180,0],
-        "layer3.texture" : "",        
-        "layer3.draw_center":false,
+//         "layer2.texture": "",
+//         "layer2.tint": [100,100,120,255],
+//         "layer2.inner_margin": [0,0,0,5],
+//         "layer2.draw_center": false,
+//         "layer2.opacity": 1.0,  
 
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 1.0,
-        "layer2.opacity": 0.0, 
-        "layer3.opacity": 0.0         
-    },
-    //  :selected
-    {
-        "class": "quick_panel_row",
-        "settings":["dc_use_light"],
-        "attributes": ["selected"],
+//         "layer3.opacity":1,
+//         "layer3.inner_margin":[0,2,9,0],
+//         "layer3.texture":"",
+//         "layer3.tint": [200,200,220,255],
+//     },    
+//     {
+//         "class": "tab_close_button",
+//         "settings":["dc_use_light"],
+//         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+//         "layer1.texture":"Theme - DC/assets/square.png",
+        
+//          "layer0.opacity": 0.0,
+//         "layer1.opacity": 0.0
+//     },
+//     {
+//         "class": "tab_close_button",
+//         "settings":["dc_use_light"],
+//         "parents": [{"class": "tab_control", "attributes": ["hover"]}], 
+//         "layer1.tint":[240,150,150,150],
+//         "layer1.tint":[240,240,240,150],
 
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
-        "layer2.opacity": 1.0,
-        "layer3.opacity": 1.0 
-    },
+//         "layer0.opacity": 0.0,
+//         "layer1.opacity": 1.0
+//     },
+//     {
+//         "class": "tab_close_button",
+//         "settings":["dc_use_light"],
+//         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+//         "layer1.tint": [100,100,120,255],    
+//         "layer0.opacity": 0.0,
+//         "layer1.opacity": 1.0        
+//     }, 
+//     {
+//         "class": "tab_close_button",
+//         "settings":["dc_use_light"],
+//         "attributes" : ["hover"],
+//         "layer1.tint":[225,225,225,150],
+//         "layer1.tint":[240,150,150,255],
 
-    //
-    // QUICK PANEL LABEL
-    //
-    {
-        "class": "quick_panel_label",
-        "settings":["dc_use_light"],
+//         "layer0.opacity": 0.0,
+//         "layer1.opacity": 1.0
+//     },  
+//     {
+//         "class": "tab_label",
+//         "settings" : ["dc_use_light"],
+//         "fg": [0,0,0],
+//         "shadow_color": [220,220,220],
+//         "shadow_offset": [0,0],
+//     },  
+//     {
+//         "class": "tab_label",
+//         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+//         "settings" : ["dc_use_light"],
+//         "fg": [0,0,0],
+//     },  
+//     {
+//         "class": "tab_label",
+//         "settings":["dc_use_light"],
+//         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+//         "fg": [30,30,60],
+//         "shadow_color": [0,0,0],
+//         "shadow_offset": [0,0],
+//         "font.bold": false,
+//     },
+//     {
+//         "class": "scroll_bar_control",
+//         "settings":["dc_use_light"],
+//         "layer0.tint": [200,200,220],
+//     }, 
+//     {
+//         "class": "scroll_corner_control",
+//         "settings":["dc_use_light"],
+//         "layer0.tint": [200,200,220],
+//     },
+//     {
+//         "class": "puck_control",
+//         "settings":["dc_use_light"],
+//         "layer0.tint" : [150,150,170],
+//     },
+//     {
+//         "class": "puck_control",
+//         "settings": ["dc_use_scrollbars_style2","dc_use_light"],
 
-        "fg":       [90,90,110],
-        "match_fg": [90,90,110],
+//         "layer1.tint": [200,200,220],
+//         "layer0.tint": [150,150,175],
+//     },
+//     {
+//         "class":"grid_layout_control",
+//         "settings":["dc_use_light"],
+//         "border_size": 0,
+//         "border_color":[170,170,190],
+//     },
+//     {
+//         "class": "dialog",
+//         "settings":["dc_use_light"],
+//         "layer0.tint": [230,230,245],
+//         "layer0.opacity": 1.0
+//     },
+//     {
+//         "class": "progress_gauge_control",
+//         "settings":["dc_use_light"],
+//         "layer0.tint": [200,200,220],
+//         "layer0.opacity": 1.0
+//     },
+//     {
+//          "content_margin": [0, 9, 0, 0],
 
-        "selected_fg": [255,255,255],
-        "selected_match_fg": [255,255,255],    
-    },
+//         "class":"sidebar_container",
+//         "settings":["dc_use_light"],
+//         "layer0.tint": [200,200,220],
+//         "layer1.tint": [150,150,150],
 
-    //
-    // PATH LABEL
-    //
-    {
-        "class": "quick_panel_path_label",
-        "settings":["dc_use_light"],
+//         "layer1.opacity": 0.0,
+//     },
+//     {
+//         "settings" : ["dc_use_sidebar_active_row_style2", "dc_use_light"],
+//         "class": "tree_row",
+//         "attributes": ["selected"],
+//         "layer2.tint" : [60,60,80,100],
+//         "layer3.tint" : [40,40,40,100],
+//     }, 
+//     {
+//         "class":"sidebar_heading",
+//         "settings":["dc_use_light"],
+//         "color": [130,130,160],
+//         "shadow_offset": [0, 0]
+//     }, 
+//     {
+//         "class":"sidebar_label",
+//         "settings":["dc_use_light"],
+//         "color": [60,60,60],
+//         "shadow_offset": [0, 0]
+//     },
+//     {
+//         "class":"sidebar_label",
+//         "settings":["dc_use_light"],
+//         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+//         "color": [0,0,0],
+//         "shadow_offset": [0, 0]
+//     }, 
+//     {
+//         "class": "sidebar_label",
+//         "settings":["dc_use_light"],
+//         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+//         "color": [0,0,0],
+//         "shadow_color": [200,200,255],
+//         "shadow_offset": [1,1]
+//     }, 
+//     {
+//         "class":"close_button",
+//         "settings":["dc_use_light"],
+//         "layer1.texture":"Theme - DC/assets/square.png",
+//         "layer1.tint":[100,100,120,255],
+//         "layer0.tint":[240,150,150,255],
+//     },
+//     {
+//         "class": "icon_regex",
+//         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
+//         "layer1.tint":[100,100,120]
+//     }, 
+//     {
+//         "class": "icon_case",
+//         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
+//         "layer1.tint":[100,100,120]
+//     },   
+//     {
+//         "class": "icon_whole_word",
+//         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
+//         "layer1.tint":[100,100,120]
+//     },  
+//     {
+//         "class": "icon_context",
+//         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
+//         "layer1.tint":[100,100,120]
+//     }, 
+//     {
+//         "class": "icon_use_buffer",
+//         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
+//         "layer1.tint":[100,100,120]
+//     }, 
+//     {
+//         "class": "icon_reverse",
+//         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
+//         "layer1.tint":[100,100,120]
+//     }, 
+//     {
+//         "class": "icon_wrap",
+//         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
+//         "layer1.tint":[100,100,120]
+//     }, 
+//     {
+//         "class": "icon_in_selection",
+//         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
+//         "layer1.tint":[100,100,120]
+//     },  
+//     {
+//         "class": "icon_preserve_case",
+//         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
+//         "layer1.tint":[100,100,120]
+//     }, 
+//     {
+//         "class": "icon_highlight",
+//         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
+//         "layer1.tint":[100,100,120]
+//     }, 
+// //
+// // QUICK PANEL
+// // 
+//     {
+//         "class": "quick_panel",
+//         "settings":["dc_use_light"],
+//         "dark_content": false 
+//     },    
+//     //
+//     // QUICK PANEL ROW
+//     //
+//     {
+//         "class": "quick_panel_row",
+//         "settings":["dc_use_light"],
+        
+//         // Background
+//         "layer0.tint" : [205,205,220],
+//         "layer0.texture" : "",
 
-        "fg": [150,150,180, 255],
-        "match_fg": [150,150,180, 255],
+//         // Borders
+//         "layer1.inner_margin" : [0,0,0,1], 
+//         "layer1.tint" : [210,210,225],
+//         "layer1.texture" : "",        
+//         "layer1.draw_center":false,
 
-        "selected_fg": [150,150,170],
-        "selected_match_fg":[200,200,220]
-    },
+//         // Selected Background
+//         "layer2.inner_margin" : [0,0,0,0], 
+//         "layer2.tint" : [80,80,100,225],
+//         "layer2.texture" : "",        
+//         "layer2.draw_center":true,
 
-    //
-    // SCORE LABEL
-    //
-    {
-        "class": "quick_panel_score_label",
-        "settings":["dc_use_light"],
+//         // Selected Border
+//         "layer3.inner_margin" : [5,0,0,0], 
+//         "layer3.tint" : [150,150,180,0],
+//         "layer3.texture" : "",        
+//         "layer3.draw_center":false,
 
-        "fg": [90,90,110],
-        "selected_fg": [255,255,255]
-    },
+//         "layer0.opacity": 1.0,
+//         "layer1.opacity": 1.0,
+//         "layer2.opacity": 0.0, 
+//         "layer3.opacity": 0.0         
+//     },
+//     //  :selected
+//     {
+//         "class": "quick_panel_row",
+//         "settings":["dc_use_light"],
+//         "attributes": ["selected"],
+
+//         "layer0.opacity": 1.0,
+//         "layer1.opacity": 0.0,
+//         "layer2.opacity": 1.0,
+//         "layer3.opacity": 1.0 
+//     },
+
+//     //
+//     // QUICK PANEL LABEL
+//     //
+//     {
+//         "class": "quick_panel_label",
+//         "settings":["dc_use_light"],
+
+//         "fg":       [90,90,110],
+//         "match_fg": [90,90,110],
+
+//         "selected_fg": [255,255,255],
+//         "selected_match_fg": [255,255,255],    
+//     },
+
+//     //
+//     // PATH LABEL
+//     //
+//     {
+//         "class": "quick_panel_path_label",
+//         "settings":["dc_use_light"],
+
+//         "fg": [150,150,180, 255],
+//         "match_fg": [150,150,180, 255],
+
+//         "selected_fg": [150,150,170],
+//         "selected_match_fg":[200,200,220]
+//     },
+
+//     //
+//     // SCORE LABEL
+//     //
+//     {
+//         "class": "quick_panel_score_label",
+//         "settings":["dc_use_light"],
+
+//         "fg": [90,90,110],
+//         "selected_fg": [255,255,255]
+//     },
 
 
-    //
-    // MINI_QUICK_PANEL ROW
-    //
-    {
-        "class": "mini_quick_panel_row",
-        "settings":["dc_use_light"],
+//     //
+//     // MINI_QUICK_PANEL ROW
+//     //
+//     {
+//         "class": "mini_quick_panel_row",
+//         "settings":["dc_use_light"],
 
-        // Background
-        "layer0.tint" : [205,205,220],
-        "layer0.texture" : "",
+//         // Background
+//         "layer0.tint" : [205,205,220],
+//         "layer0.texture" : "",
 
-        // Borders
-        "layer1.inner_margin" : [0,0,0,1], 
-        "layer1.tint" : [210,210,225],
-        "layer1.texture" : "",        
-        "layer1.draw_center":false,
+//         // Borders
+//         "layer1.inner_margin" : [0,0,0,1], 
+//         "layer1.tint" : [210,210,225],
+//         "layer1.texture" : "",        
+//         "layer1.draw_center":false,
 
-        // Selected Background
-        "layer2.inner_margin" : [0,0,0,0], 
-        "layer2.tint" : [80,80,100,225],
-        "layer2.texture" : "",        
-        "layer2.draw_center":true,
+//         // Selected Background
+//         "layer2.inner_margin" : [0,0,0,0], 
+//         "layer2.tint" : [80,80,100,225],
+//         "layer2.texture" : "",        
+//         "layer2.draw_center":true,
 
-        // Selected Border
-        "layer3.inner_margin" : [5,0,0,0], 
-        "layer3.tint" : [150,150,180,0],
-        "layer3.texture" : "",        
-        "layer3.draw_center":false,
+//         // Selected Border
+//         "layer3.inner_margin" : [5,0,0,0], 
+//         "layer3.tint" : [150,150,180,0],
+//         "layer3.texture" : "",        
+//         "layer3.draw_center":false,
 
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 1.0,
-        "layer2.opacity": 0.0, 
-        "layer3.opacity": 0.0       
-    },
-    //  :selected
-    {
-        "class": "mini_quick_panel_row",
-        "settings":["dc_use_light"],
-        "attributes": ["selected"],
+//         "layer0.opacity": 1.0,
+//         "layer1.opacity": 1.0,
+//         "layer2.opacity": 0.0, 
+//         "layer3.opacity": 0.0       
+//     },
+//     //  :selected
+//     {
+//         "class": "mini_quick_panel_row",
+//         "settings":["dc_use_light"],
+//         "attributes": ["selected"],
 
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
-        "layer2.opacity": 1.0,
-        "layer3.opacity": 1.0 
-    },
+//         "layer0.opacity": 1.0,
+//         "layer1.opacity": 0.0,
+//         "layer2.opacity": 1.0,
+//         "layer3.opacity": 1.0 
+//     },
 
-//
-// STATUS BAR
-//
-    // Panel
-    {
-        "class":"status_bar",
-        "settings":["dc_use_light"],
-        "layer0.tint": [80,80,100,255],
-        "layer1.tint": [80,80,100,255]
-    },
-    // Labels
-    {
-        "class":"label_control",
-        "settings":["dc_use_light"],
-        "parents":[{"class":"status_bar"}],
-        "color":[255,255,255,255]
-    },
-    // Button
-    {
-        "class": "status_button",
-        "settings":["dc_use_light"],
-        "min_size": [55, 0],
-        "layer0.tint":[10,10,10,255],
-        "content_margin": [0,0]
-    }, 
-    // Button Panels   
-    {
-        "class": "panel_button_control",
-        "settings" : ["dc_use_light"],
-        "layer0.tint":[255,255,255]
-    },     
+// //
+// // STATUS BAR
+// //
+//     // Panel
+//     {
+//         "class":"status_bar",
+//         "settings":["dc_use_light"],
+//         "layer0.tint": [80,80,100,255],
+//         "layer1.tint": [80,80,100,255]
+//     },
+//     // Labels
+//     {
+//         "class":"label_control",
+//         "settings":["dc_use_light"],
+//         "parents":[{"class":"status_bar"}],
+//         "color":[255,255,255,255]
+//     },
+//     // Button
+//     {
+//         "class": "status_button",
+//         "settings":["dc_use_light"],
+//         "min_size": [55, 0],
+//         "layer0.tint":[10,10,10,255],
+//         "content_margin": [0,0]
+//     }, 
+//     // Button Panels   
+//     {
+//         "class": "panel_button_control",
+//         "settings" : ["dc_use_light"],
+//         "layer0.tint":[255,255,255]
+//     },     
 
-//
-// CODE COMPLETION DROPDOWN
-//
-    //
-    // POPUP CONTROL
-    //
-    {
-        "class": "popup_control",
-        "settings":["dc_use_light"],
+// //
+// // CODE COMPLETION DROPDOWN
+// //
+//     //
+//     // POPUP CONTROL
+//     //
+//     {
+//         "class": "popup_control",
+//         "settings":["dc_use_light"],
 
-        // Background
-        "layer0.tint" : [255,255,255],
-        // Top-Border
-        "layer1.tint": [170,170,170]
-    },
-    //
-    // COMPLETION ROW
-    //
-    {
-        "class": "table_row",
-        "settings":["dc_use_light"],
-        "layer0.tint": [150,150,180],
-    },
-    //
-    // COMPLETION LABEL
-    // 
-    {
-        "class": "auto_complete_label", 
-        "settings":["dc_use_light"],
+//         // Background
+//         "layer0.tint" : [255,255,255],
+//         // Top-Border
+//         "layer1.tint": [170,170,170]
+//     },
+//     //
+//     // COMPLETION ROW
+//     //
+//     {
+//         "class": "table_row",
+//         "settings":["dc_use_light"],
+//         "layer0.tint": [150,150,180],
+//     },
+//     //
+//     // COMPLETION LABEL
+//     // 
+//     {
+//         "class": "auto_complete_label", 
+//         "settings":["dc_use_light"],
 
-        "fg": [30,30,30], 
-        "match_fg": [30,30,30],
+//         "fg": [30,30,30], 
+//         "match_fg": [30,30,30],
 
-        "selected_fg": [255,255,255], 
-        "selected_match_fg": [255,255,255]
-    }
+//         "selected_fg": [255,255,255], 
+//         "selected_match_fg": [255,255,255]
+//     }
 ]

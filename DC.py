@@ -95,8 +95,9 @@ class ThemeManager:
         
         # Remove existing widget keys
         for key, value in widgetTypes.items():
-            pref.erase(value.SettingKey)
-        
+            if pref.has(value.SettingKey):
+                pref.erase(value.SettingKey)
+
         # Set Widget key
         pref.set(widget.SettingKey, True)
 
