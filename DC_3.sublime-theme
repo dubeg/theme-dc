@@ -4,6 +4,8 @@
 //
     {
         "class": "label_control",
+        "font.face": "Consolas",
+        "font.size":12,
         "color": [204, 204, 204]
     },
 
@@ -12,7 +14,7 @@
 //
     //
     // CONTAINER
-    //\
+    //
     {
         "class": "button_control",
         "content_margin": [6, 7, 6, 6],
@@ -81,7 +83,7 @@
         "content_margin": [7,7],
         "layer0.texture": "Theme - DC/assets/ddl_btn.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [4, 4],
+        // "layer0.inner_margin": [4, 4],
         "layer0.tint":[200,200,200]
     },   
     //  :hover
@@ -621,166 +623,86 @@
 //
 // SCROLLBARS
 //
-
-    //
-    // SCROLL_AREA CONTROL
-    //
     {
         "class": "scroll_area_control",
+        "settings": ["overlay_scroll_bars"],
+        "overlay": true
+    },
+    {
+        "class": "scroll_area_control",
+        "settings": ["!overlay_scroll_bars"],
         "overlay": false
     },
-    //  [ overlay_scroll_bars ]
     {
         "class": "scroll_area_control",
-        "settings": ["overlay_scroll_bars"],
-        "overlay": true
-    },
-    //  [ hide_scrollbars ]
-    {
-        "class": "scroll_area_control",
-        "settings": ["dc_hide_scrollbars"],
-        "overlay": true
-    },
-
-    //
-    // SCROLL_BAR CONTROL
-    // 
-    {
-        "class": "scroll_bar_control",
-        "blur": false,
-
-        "layer0.texture":"",
-        // TODO:set to 30,30,30
-        "layer0.tint" : [28,28,28],
-        "layer0.opacity": 1.0
+        "parents": [{"class": "sidebar_container"}],
+        "content_margin": [0, 10, 0, 10]
     },
     {
         "class": "scroll_bar_control",
-        "settings":["dc_use_light"],
-        "layer0.tint": [200,200,220],
-    },    
-    //  [ hide_scrollbars ]
+        "layer0.opacity": 1.0,
+        "content_margin": 4,
+        "tint_index": 0,
+    },
     {
         "class": "scroll_bar_control",
-        "settings": ["dc_hide_scrollbars"],
-        "layer0.opacity": 0.0
+        "parents": [{"class":"sidebar_container"}],
+        "layer0.opacity": 1.0,
+        "layer0.tint":[30,30,30],
+        "content_margin": 4,
     },
-    //  [ overlay_scroll_bars ]
-    //  Hide scrollbar background on mouse hover
-    //  when overlay_scroll_bars are active.
     {
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
         "layer0.opacity": 0.0
-    },    
-
-    //
-    // SCROLLBAR CORNER
-    //
+    },
     {
-        "class": "scroll_corner_control",
-        "blur": false,
-
-        "layer0.texture":"",
-        "layer0.inner_margin":[0,0],
-        "layer0.tint" : [29,29,29],
+        "class": "scroll_bar_control",
+        "settings": ["!overlay_scroll_bars"],
         "layer0.opacity": 1.0
     },
     {
+        "class": "scroll_track_control",
+        "layer0.texture": "Theme - DC/assets/Adaptive/scroll_bar.png",
+        "layer0.tint":[120,120,120],
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 2,
+        "content_margin": [4, 4, 3, 4]
+    },
+    {
+        "class": "puck_control",
+        "layer0.texture": "Theme - DC/assets/Adaptive/scroll_puck.png",
+        "layer0.tint":[150,150,150],
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 2,
+        "content_margin": [0, 12]
+    },
+    {
         "class": "scroll_corner_control",
-        "settings":["dc_use_light"],
-        "layer0.tint": [200,200,220],
-    },
-    //
-    // PUCK
-    //
-    //  : Outline only/empty puck
-    {
-        "class": "puck_control",
-        "content_margin": [6,6],
-        "blur": false,
-        
-        "layer0.texture":"",
-        "layer0.inner_margin":[1,1],
-        "layer0.tint": [60,60,70],
         "layer0.opacity": 1.0,
-        "layer0.draw_center":false,
-
-        "layer1.opacity":0,
-        "min_size": [0,0]
+        "tint_index": 0
     },
     {
-        "class": "puck_control",
-        "settings":["dc_use_light"],
-        "layer0.tint" : [150,150,170],
-    },    
-    //  [ scrollbars_style2 ]
-    //  : Full puck
-    {
-        "class": "puck_control",
-        "settings": ["dc_use_scrollbars_style2"],
-        "content_margin": [8,8],
-        
-        "layer0.texture":"",
-        "layer0.inner_margin":[1,1],
-        // --------------------------
-        "layer0.tint": 
-            [
-             50,50,54
-            ],
-        // --------------------------
+        "class": "scroll_corner_control",
+        "parents": [{"class":"sidebar_container"}],
         "layer0.opacity": 1.0,
-        "layer0.draw_center":true,
-
-        "layer1.texture":"",
-        "layer1.inner_margin":[4,4],
-        "layer1.tint": [28,28,28],
-        "layer1.opacity": 1.0,
-        "layer1.draw_center":false
-    },  
+        "layer0.tint":[30,30,30],
+        "content_margin": 4,
+    },
+    // Scroll Bars (Horizontal)
     {
-        "class": "puck_control",
-        "settings": ["dc_use_scrollbars_style2","dc_use_light"],
-
-        "layer1.tint": [200,200,220],
-        "layer0.tint": [100,100,120],
-    },     
-
-    //  Hide vertical scrollbar when overlay scrollbars are active, 
-    //  and minimap is visible.
-    {
-        "class": "puck_control",
-        "parents": [{  "class": "sheet_container_control" }],
-        "settings": ["always_show_minimap_viewport", "overlay_scroll_bars"],
-        "layer0.opacity" : 0,
-        "layer1.opacity" : 0
+        "class": "scroll_track_control",
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - DC/assets/Adaptive/scroll_bar_horiz.png",
+        "content_margin": [4, 4, 4, 3]
     },
     {
         "class": "puck_control",
-        "attributes" : ["horizontal"],
-        "parents": [{  "class": "sheet_container_control" }],
-        "settings": ["always_show_minimap_viewport", "overlay_scroll_bars"],
-        "layer0.opacity" : 1,
-        "layer1.opacity" : 1
-    },
-    //  [ hide_scrollbars ]
-    {
-        "class": "puck_control",
-        "settings": ["dc_hide_scrollbars"],
-        "layer0.opacity": 0.0,
-        "layer1.opacity" : 0.0,
-        "content_margin":[0,0]
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - DC/assets/Adaptive/scroll_puck_horiz.png",
+        "content_margin": [12, 0]
     },
 
-
-//
-// SHEET BACKGROUND (Ex: use 2 cols layout, empty column #2, restart ST)
-//
-    {
-        "class": "sheet_container_control",
-        "layer0.tint": [30,30,30],
-        "layer0.opacity": 1.0
-    },
 
 //
 // GRID LAYOUT
@@ -1556,7 +1478,7 @@
 
 
 //
-// PANEL CONTROL (Search panel, Console panel, ...)
+// PANEL CONTROL (Find panel, Console panel, ...)
 //
     //
     // CONTAINER
@@ -1585,19 +1507,16 @@
     {
         "class": "text_line_control",
         "parents" : [{ "class" : "panel_control" }],
-        "content_margin": [4,4]
     },
-    //
-    // LABEL 
-    //
     {
-        "class": "label_control",
-        "parents": [{"class": "panel_control"}],
-        "font.size" : 11,
-        "shadow_color": [50, 50, 50],
-        "shadow_offset": [0, 0]
-    },    
-
+        "class":"panel_grid_control",
+        // Padding to place between each cell of the grid.
+        // "inside_spacing": 10,
+        // Padding to place above and below the grid.
+        // "outside_vspacing": 10,
+        // Padding to place to the left and right of the grid.
+        "outside_hspacing": 5
+    },
 
 //
 // OVERLAY CONTROL (Quick panel, ...)
@@ -1740,7 +1659,7 @@
 
 
 //
-// SEARCH PANEL BUTTONS
+// FIND PANEL BUTTONS
 //
     //
     // BUTTON ACTION
@@ -1748,7 +1667,6 @@
     {
         "class": "button_control",
         "parents" : [{ "class" : "panel_control" }],
-        "content_margin": [5,4],
         "min_size": [50, 0],
     },
     //
@@ -1774,9 +1692,8 @@
 
         "layer0.tint" : [255,255,255,30],
         "layer0.opacity": 1,
-
-        "content_margin": [11,11],
-        "layer0.texture": "Theme - DC/assets/dot_big_1.png",
+        // "content_margin": [10,10],
+        "layer0.texture": "Theme - DC/assets/Adaptive/tab_close.png",
     },        
     // :hover
     {
@@ -2628,5 +2545,35 @@
         "layer1.opacity": 0.0,
         "layer2.opacity": 1.0,
         "layer3.opacity": 1.0 
+    },
+
+    // Font Family
+    {
+        "class": "label_control",
+        "font.face": "Consolas",
+        "font.size":12,
+        "color": [204, 204, 204]
+    },
+    {
+        "class": "sidebar_label",
+        "font.face": "Consolas",
+        "font.size": 12
+    },
+    {
+        "class": "quick_panel_label",
+        "font.face": "Consolas"
+    },
+    {
+        "class": "quick_panel_label",
+        "font.face": "Consolas"
+    },
+    {
+        "class": "quick_panel_label",
+        "font.face": "Consolas"
+    },
+    {
+        "class": "tab_label",
+        "font.face": "Consolas",
+        "font.size":12
     },
 ]

@@ -1,4 +1,7 @@
 {
 	"color_scheme": "Packages/Theme - DC/Widget_DarkDark.tmTheme",
-	"draw_shadows": false
+	"draw_shadows": false,
+	// "draw_centered": true,
+	"font_face": "Consolas",
+	"font_size": 8
 }
