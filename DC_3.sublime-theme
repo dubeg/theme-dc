@@ -641,15 +641,14 @@
     {
         "class": "scroll_bar_control",
         "layer0.opacity": 1.0,
+        "layer0.tint":[30,30,30],
         "content_margin": 4,
-        "tint_index": 0,
     },
     {
         "class": "scroll_bar_control",
-        "parents": [{"class":"sidebar_container"}],
+        "parents": [{"class":"sheet_container_control"}],
         "layer0.opacity": 1.0,
-        "layer0.tint":[30,30,30],
-        "content_margin": 4,
+        "tint_index": 0,
     },
     {
         "class": "scroll_bar_control",
