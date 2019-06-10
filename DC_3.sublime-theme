@@ -1563,7 +1563,7 @@
     //
     {
         "class": "quick_panel",
-        "row_padding": [5,2],
+        "row_padding": [5,5],
         "layer0.tint": [33, 33, 33],
         "layer0.opacity": 1.0,
         "dark_content": true 
@@ -1604,7 +1604,7 @@
         "match_fg": [130, 130, 130, 255],//[170, 170, 170, 255],
 
         "selected_fg": [230, 230, 230],
-        "selected_match_fg": [30,204,185]
+        "selected_match_fg": [255,255,255]
     },
 
     //
@@ -1617,15 +1617,6 @@
 
         "selected_fg": [130, 130, 130, 255],
         "selected_match_fg":[130, 130, 130, 255]
-    },
-
-    //
-    // SCORE LABEL
-    //
-    {
-        "class": "quick_panel_score_label",
-        "fg": [130, 130, 130, 255],
-        "selected_fg": [30,204,185]
     },
 
 
@@ -1720,11 +1711,17 @@
         "class": "icon_regex",
         "content_margin": [8,8],
 
-        "layer0.texture": "Theme - DC/icons/Search/icon_regex.png",
-        "layer1.texture": "Theme - DC/icons/Search/sltd/icon_regex.png",
+        "layer0.tint": [0, 100, 237],
+        "layer0.opacity": 0.0,
+        "layer1.texture": "Theme - DC/icons/Search/icon_regex.png",
+        "layer1.opacity": 1.0,
+    },
+    {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0.0,
+        "layer0.opacity": 0.2,
+        "layer1.opacity": 1.0,
     },
     //  [ soda_search_icons ]
     {
@@ -1733,17 +1730,20 @@
         "content_margin": [7,7],
 
         "layer0.texture": "Theme - DC/icons/Search/soda/icon_regex.png",
+        "layer0.tint":[255,255,255],
         "layer1.texture": "Theme - DC/icons/Search/soda/icon_regex.png",
-        "layer1.tint":[32, 255, 237]
+        "layer1.tint":[32, 255, 237],
+        "layer0.opacity": 1.0,
+        "layer1.opacity": 0.0,
     },  
     {
         "class": "icon_regex",
         "settings" : ["dc_use_soda_search_icons", "dc_use_light"],
         "layer1.tint":[100,100,120]
-    },    
-    //  :selected
+    },
     {
         "class": "icon_regex",
+        "settings" : ["dc_use_soda_search_icons"],
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 
         "layer0.opacity": 0.0,
